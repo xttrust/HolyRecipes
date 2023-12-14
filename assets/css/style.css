@@ -1,56 +1,36 @@
-body {
-    background: #333;
-    color: #fff;
-  }
-  
-  
-  #home-section {
-    background: url(/assets/images/landing_page_bg_img.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 700px;
-  }
-  
-  #home-section .dark-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 700px;
-  }
-  
-  #home-section .home-inner {
-    padding-top: 150px;
-  }
-  
-  #home-section .card-form {
-    opacity: 0.8;
-  }
-  
-  #home-section .fas,
-  #create-section .fas {
-    color: #008ed6;
-    background: #fff;
-    padding: 5px;
-    border-radius: 5px;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&family=Poppins:wght@300&display=swap');
 
-  .circular-image {
-    border-radius: 39%;
-    max-width: 100%;
-    height: auto;
-  }
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 
-
-  .custom-section {
-    height: 400px; 
-  }
-
-  .column {
-    border: 1px solid black; /* Border color */
-    padding: 15px; /* Adjust the padding as needed */
-  }
-  
-
-  
+  /* ===== Custom Colors ===== */
+  --clr-red: #DA2C38;
+  --clr-green: #226F54;
+  --clr-light-green: #87C38F;
+  --clr-teal: #F4F0BB;
+  --clr-brown: #43291F;
+  /* ===== Custom Colors ===== */
+}
