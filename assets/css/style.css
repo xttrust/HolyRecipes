@@ -35,6 +35,7 @@
   /* ===== Custom Colors ===== */
 }
 
+/* ===== Body ===== */
 body {
   margin: 0;
   padding: 0;
@@ -42,10 +43,12 @@ body {
   background-size: cover;
 }
 
+/* ===== Main ===== */
 main {
   background-color: var(--bs-white);
 }
 
+/* ===== Footer ===== */
 footer {
   background-color: var(--bs-white);
 }
