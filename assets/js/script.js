@@ -25,9 +25,9 @@ async function fetchAPI() {
 
     results = data.hits;
 
-    // for (let i = 0; i < results.length; i++) {
-    //     showResults(results[i]);
-    // }
+    for (let i = 0; i < results.length; i++) {
+        showResults(results[i]);
+    }
 
     console.log(results)
 
@@ -74,7 +74,7 @@ function showResults(results) {
 
 searchForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    // resultsHTML.innerHTML = '';
+    resultsHTML.innerHTML = '';
     searchQuery = e.target.querySelector('input').value;
     // mealType = e.target.querySelector('#mealType').value;
     // dishType = e.target.querySelector('#dishType').value;
