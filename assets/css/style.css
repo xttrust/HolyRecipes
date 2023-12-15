@@ -35,9 +35,13 @@
   /* ===== Custom Colors ===== */
 }
 
-/* body, a, nav {
+.hide {
+  display: none;
+}
+
+body, a, nav {
   cursor: url('../images/christmas-cursor.png'), auto !important;
-} */
+}
 
 /* ===== Navigation Bar ===== */
 
@@ -53,8 +57,16 @@ nav a:hover {
   color: #226F54 !important;
 }
 
-.navbar {
+.bg-transparent {
   background: rgba(0, 0, 0, 0.0) !important;
+}
+
+.bg-scroll {
+  background: #226F54 !important;
+}
+
+.scroll-active {
+  color: #87C38F !important;
 }
 
 .navbar li {
