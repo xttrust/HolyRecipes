@@ -50,11 +50,15 @@ main {
 
 /* ===== Footer ===== */
 footer {
-  background-color: var(--bs-white);
+  background-color: #226F54 ;
 }
 
 .hide {
   display: none;
+}
+
+.footer-logo {
+  max-height:50px;
 }
 
 /* ===== Cursor ===== */
@@ -105,7 +109,7 @@ nav a:hover {
 }
 
 input[type="search"]::placeholder {
-  padding-left: 20px;
+  padding-left: 20rem !important;
   background: url('../images/magnifying-glass.png') no-repeat left center;
   background-size: contain;
 }
