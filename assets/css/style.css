@@ -50,11 +50,15 @@ main {
 
 /* ===== Footer ===== */
 footer {
-  background-color: var(--bs-white);
+  background-color: #226F54 ;
 }
 
 .hide {
   display: none;
+}
+
+.footer-logo {
+  max-height:50px;
 }
 
 /* ===== Cursor ===== */
@@ -103,7 +107,6 @@ nav a:hover {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border-radius: 5px;
 }
-
 
 /* ===== Search ===== */
 #top-search-input {
