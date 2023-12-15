@@ -35,9 +35,29 @@
   /* ===== Custom Colors ===== */
 }
 
+/* ===== Body ===== */
+body {
+  margin: 0;
+  padding: 0;
+  background: url('../images/landing_page_bg_img.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* ===== Main ===== */
+main {
+  background-color: var(--bs-white);
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: var(--bs-white);
+}
+
 .hide {
   display: none;
 }
+
+/* ===== Cursor ===== */
 
 body,
 a,
@@ -88,22 +108,4 @@ input[type="search"]::placeholder {
   padding-left: 20px;
   background: url('../images/magnifying-glass.png') no-repeat left center;
   background-size: contain;
-}
-
-/* ===== Body ===== */
-body {
-  margin: 0;
-  padding: 0;
-  background: url('../images/landing_page_bg_img.png') no-repeat center center fixed;
-  background-size: cover;
-}
-
-/* ===== Main ===== */
-main {
-  background-color: var(--bs-white);
-}
-
-/* ===== Footer ===== */
-footer {
-  background-color: var(--bs-white);
 }
