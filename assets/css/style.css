@@ -39,7 +39,9 @@
   display: none;
 }
 
-body, a, nav {
+body,
+a,
+nav {
   cursor: url('../images/christmas-cursor.png'), auto !important;
 }
 
@@ -87,3 +89,17 @@ input[type="search"]::placeholder {
   background-size: contain;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background: url('../images/landing_page_bg_img.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+main {
+  background-color: var(--bs-white);
+}
+
+footer {
+  background-color: var(--bs-white);
+}
