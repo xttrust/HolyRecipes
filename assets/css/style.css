@@ -71,7 +71,11 @@ body,
 a,
 footer,
 i {
-  cursor: url('../images/christmas-cursor.png'), auto;
+  cursor: url('../images/christmas-cursor.png'), auto !important;
+}
+
+button, .nav-link {
+  cursor: url('../images/christmas-cursor.png'), pointer !important;
 }
 
 /* ===== Navigation Bar ===== */
