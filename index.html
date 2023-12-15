@@ -2,43 +2,371 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HolyRecipes</title>
 
     <!-- ===== SEO Meta Tags ===== -->
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="subject" content="">
-    <meta name="language" content="">
-    <meta name="distribution" content="Global">
-    <meta name="rating" content="General">
-    <meta name="robots" content="index,follow">
-
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="subject" content="" />
+    <meta name="language" content="" />
+    <meta name="distribution" content="Global" />
+    <meta name="rating" content="General" />
+    <meta name="robots" content="index,follow" />
 
     <!-- ====== Theme color for address bar ====== -->
-    <meta name="theme-color" content="">
+    <meta name="theme-color" content="" />
 
     <!-- ====== Favicon ====== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="">
-    <link rel="icon" type="image/png" sizes="32x32" href="">
-    <link rel="icon" type="image/png" sizes="16x16" href="">
+    <link rel="apple-touch-icon" sizes="180x180" href="" />
+    <link rel="icon" type="image/png" sizes="32x32" href="" />
+    <link rel="icon" type="image/png" sizes="16x16" href="" />
 
     <!-- ===== Bootstrap styles ===== -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
 
     <!-- ===== Website styles ===== -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- ===== Font awesome styles ===== -->
-    <link rel="stylesheet" href="assets/css/font-awesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome-all.min.css" />
+
+    <!-- ===== Favicon ===== -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/holyrecipes-favicon-color.png" />
 </head>
 
 <body>
+    <!-- ===== Header ===== -->
+    <header>
+        <!-- ===== Navbar ===== -->
+        <nav class="navbar navbar-expand-lg bg-transparent bg-body-tertiary fixed-top p-4" id="navbar">
+            <div class="container">
+                <a class="navbar-brand ps-4" href="index.html">
+                    <img id="logo" src="assets/images/holyrecipes-logo.png" alt="company logo" width="135"
+                        height="60" />
+                    <img id="scroll-logo" class="hide" src="assets/images/holyrecipes-logo-scroll.png"
+                        alt="company logo" width="135" height="60" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul id="nav-links" class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex pe-2" role="search" id="top-search-form">
+                        <div class="input-group mb-3 me-2 mt-3">
+                            <button class="btn bg-white" type="button" id="button-search">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                                aria-describedby="button-search" id="top-search-input">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- ===== /Navbar ===== -->
+    </header>
+    <!-- ===== /Header ===== -->
+
+    <!-- ===== Main ===== -->
+    <main class="container">
+        <!-- ===== Carousel ===== -->
+        <div class="container">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/images/carousel_slide_1.png" class="d-block w-100" alt="image 1" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>
+                                Some representative placeholder content for the first slide.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/carousel_slide_2.png" class="d-block w-100" alt="image 2" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>
+                                Some representative placeholder content for the second slide.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/carousel_slide_3.png" class="d-block w-100" alt="image 3" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>
+                                Some representative placeholder content for the third slide.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- ===== /Carousel ===== -->
+
+        <!-- ===== Featured Recipes use one of these positions ===== -->
+        <div class="container text-center">
+            <div class="row align-items-md-stretch mt-4">
+                <div class="col-md-6">
+                    <div class="h-100 p-5 text-bg-dark">
+                        <h2>Title Here</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                            quaerat iste ipsam et pariatur aliquam consectetur vel
+                            perspiciatis deserunt. Quaerat temporibus provident perspiciatis
+                            explicabo vero molestias ipsam asperiores quam mollitia!
+                        </p>
+                        <button class="btn btn-outline-light" type="button">
+                            Example button
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="h-100 p-5 bg-body-tertiary border">
+                        <h2>Title Here</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                            quaerat iste ipsam et pariatur aliquam consectetur vel
+                            perspiciatis deserunt. Quaerat temporibus provident perspiciatis
+                            explicabo vero molestias ipsam asperiores quam mollitia!
+                        </p>
+                        <button class="btn btn-outline-secondary" type="button">
+                            Example button
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ===== /Featured Recipes ===== -->
+
+        <!-- ===== Recipes ===== -->
+        <div class="album py-5 bg-body-tertiary">
+            <div class="container">
+                <h2 class="display-6 text-center mb-4 py-4">
+                    Very Important Section Title Here
+                </h2>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-4 py-4">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://placehold.co/400x200" alt="Recipe 1" />
+                            <div class="card-body">
+                                <p class="card-text">
+                                    This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit
+                                    longer.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            View
+                                        </button>
+                                    </div>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://placehold.co/400x200" alt="Recipe 1" />
+                            <div class="card-body">
+                                <p class="card-text">
+                                    This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit
+                                    longer.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            View
+                                        </button>
+                                    </div>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://placehold.co/400x200" alt="Recipe 1" />
+                            <div class="card-body">
+                                <p class="card-text">
+                                    This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit
+                                    longer.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            View
+                                        </button>
+                                    </div>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ===== /Recipes ===== -->
+
+        <!-- ===== No Name Feature 1 ===== -->
+        <div class="container text-center my-4">
+            <div class="row align-items-md-stretch mt-4">
+                <div class="col-md-12">
+                    <div class="h-100 p-5 text-bg-dark">
+                        <h2>Title Here</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                            quaerat iste ipsam et pariatur aliquam consectetur vel
+                            perspiciatis deserunt. Quaerat temporibus provident perspiciatis
+                            explicabo vero molestias ipsam asperiores quam mollitia!
+                        </p>
+                        <button class="btn btn-outline-light" type="button">
+                            Example button
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ===== /No Name Feature 1 ===== -->
+
+        <!-- ===== No Name Feature 2 ===== -->
+        <div class="container text-center my-4">
+            <h2 class="display-6 text-center mb-4 py-4">
+                Very Important Section Title Here
+            </h2>
+
+            <div class="row align-items-md-stretch mt-4 py-4">
+                <div class="col-md-6">
+                    <div class="h-100 p-5 text-bg-dark">
+                        <h2>Title Here</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                            quaerat iste ipsam et pariatur aliquam consectetur vel
+                            perspiciatis deserunt. Quaerat temporibus provident perspiciatis
+                            explicabo vero molestias ipsam asperiores quam mollitia!
+                        </p>
+                        <button class="btn btn-outline-light" type="button">
+                            Example button
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="h-100 p-5 bg-body-tertiary border">
+                        <h2>Title Here</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                            quaerat iste ipsam et pariatur aliquam consectetur vel
+                            perspiciatis deserunt. Quaerat temporibus provident perspiciatis
+                            explicabo vero molestias ipsam asperiores quam mollitia!
+                        </p>
+                        <button class="btn btn-outline-secondary" type="button">
+                            Example button
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ===== /No Name Feature 2 ===== -->
+    </main>
+    <!-- ===== /Main ===== -->
+
+    <!-- ===== Footer ===== -->
+
+    <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top-0 container text-white">
+
+        <p class="col-12 col-md-6 col-lg-4 mb-0 ">Hacked together by...</p>
+
+        <a href="/"
+            class="col-12 col-md-6 col-lg-4  d-flex align-items-top justify-content-center mb-0 mb-md-0 me-md-auto link-body-emphasis ">
+            <img class="img-fluid footer-logo" src="assets/images/ball.png" alt="footer logo" />
+        </a>
+
+        <ul class="nav col-12 col-md-6 col-lg-4 justify-content-end text-capitalize">
+            <li class="nav-item">
+                <a href="https://github.com/xttrust" class="nav-link px-2 text-white">florin</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://github.com/lee-joanne" class="nav-link px-2 text-white">joanne</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://github.com/caleom" class="nav-link px-2 text-white">liam</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://github.com/NikolettaGr" class="nav-link px-2 text-white">nikoletta</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://github.com/phillywhitty" class="nav-link px-2 text-white">phil whitty</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://github.com/sammartin92" class="nav-link px-2 text-white">sam</a>
+            </li>
+        </ul>
+    </footer>
+    <!-- ===== /Footer ===== -->
+
+    <!-- ===== jQuery===== -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- ===== Bootstrap javascript ===== -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-
     <!-- ===== Website javascript ===== -->
     <script src="assets/js/script.js"></script>
 </body>

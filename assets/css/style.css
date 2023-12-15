@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&family=Poppins:wght@300&display=swap');
+
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+
+  /* ===== Custom Colors ===== */
+  --clr-red: #DA2C38;
+  --clr-green: #226F54;
+  --clr-light-green: #87C38F;
+  --clr-teal: #F4F0BB;
+  --clr-brown: #43291F;
+  /* ===== Custom Colors ===== */
+}
+
+/* ===== Body ===== */
+body {
+  margin: 0;
+  padding: 0;
+  background: url('../images/landing_page_bg_img.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* ===== Main ===== */
+main {
+  background-color: var(--bs-white);
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #226F54 ;
+}
+
+.hide {
+  display: none;
+}
+
+.footer-logo {
+  max-height:50px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Cursor ===== */
+
+body,
+a,
+footer,
+i {
+  cursor: url('../images/christmas-cursor.png'), auto;
+}
+
+/* ===== Navigation Bar ===== */
+
+nav {
+  font-family: 'Kalnia', serif !important;
+}
+
+nav .active {
+  color: #226F54 !important;
+}
+
+nav a:hover {
+  color: rgb(135, 195, 143, 0.8) !important;
+}
+
+.bg-transparent {
+  background: rgba(0, 0, 0, 0.75) !important;
+}
+
+.bg-scroll {
+  background: #226F54 !important;
+}
+
+.navbar li {
+  padding-right: 15px;
+}
+
+#nav-links {
+  border: white solid !important;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 25px;
+  background-color: white;
+}
+
+/* ===== Search ===== */
+#top-search-input {
+  max-width: 100%;
+}
+
+/* ===== Extra small devices (phones) ===== */
+@media (max-width: 575.98px) {
+  /* ... */
+}
+
+/* ===== Small devices (tablets) ===== */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  /* ... */
+  #top-search-form {
+      margin-left: 15px;
+    }
+}
+
+/* ===== Medium devices (desktops) ===== */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  /* ... */
+  #top-search-form {
+    margin-left: 15px;
+  }
+}
+
+/* ===== Large devices (desktops) ===== */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #top-search-input {
+    max-width: 150px;
+  }
+}
+
+/* ===== Extra large devices (large desktops) ===== */
+@media (min-width: 1200px) {
+  /* ... */
+}
