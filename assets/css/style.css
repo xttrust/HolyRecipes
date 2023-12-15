@@ -104,8 +104,43 @@ nav a:hover {
   border-radius: 5px;
 }
 
-input[type="search"]::placeholder {
-  padding-left: 20px;
-  background: url('../images/magnifying-glass.png') no-repeat left center;
-  background-size: contain;
+
+/* ===== Search ===== */
+#top-search-input {
+  max-width: 100%;
+}
+
+/* ===== Extra small devices (phones) ===== */
+@media (max-width: 575.98px) {
+  /* ... */
+}
+
+/* ===== Small devices (tablets) ===== */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  /* ... */
+  #top-search-form {
+      margin-left: 15px;
+    }
+}
+
+/* ===== Medium devices (desktops) ===== */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  /* ... */
+  #top-search-form {
+    margin-left: 15px;
+  }
+}
+
+/* ===== Large devices (desktops) ===== */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #top-search-input {
+    max-width: 150px;
+  }
+}
+
+/* ===== Extra large devices (large desktops) ===== */
+@media (min-width: 1200px) {
+  /* ... */
 }
