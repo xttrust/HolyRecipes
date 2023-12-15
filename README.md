@@ -123,31 +123,21 @@
 # UX
 ## Goals
 ### Visitor Goals
-The target audience for Horizon Photography are:
-- People who want to view beautiful photos.
-- People who are interested in seeing different countries.
-- People that may want to license a photo.
-- People interested in hiring a photographer.
-- People interested in the photographer's travels.
 
 User goals are:
-- View a gallery of different photos.
-- Explore different countries on the map to see what they look like.
-- Contact the photographer.
-- Get an overview of a country's statistics.
-- Follow the photographer's journey.
+- Elevate your holiday celebrations with a variety of festive dishes.
+- Boost confidence, whether you're a seasoned chef or kitchen novice.
+- Add innovation and surprise to your holiday feast.
+- Contribute recipes, exchange tips, and inspire others such as family and friends.
+- Create a festive meal even with time constraints.
 
 
 ### User Stories
-1. As a user interested in photography, I expect to see lots of different beautiful photos.
-0. I expect the photos to be highlighted first and foremost.
-0. As a user interested in travel, I expect to see different countries on display.
-0. As a user interested in different countries, I expect to see information on the countries.
-0. As a person interested in hiring a photographer, I expect to find an easy way to contact the photographer.
-0. I expect to hear a little about the photographer if I am interested.
-0. I expect to be able to follow the photographer through social media.
-0. I would like to be able to hear about the photographer's updates through social media.
-0. If I were interested in buying a photo, I expect to know where.
+1. As a user, I want to easily browse and find diverse Christmas recipes on the website to enhance my holiday celebrations with a variety of festive dishes.
+0. As a user, I want clear and concise step-by-step instructions for each recipe, regardless of my cooking expertise, to navigate holiday cooking with confidence.
+0. As a user, I want a section showcasing unique and innovative Christmas recipes to inspire creativity and add a special touch to my holiday feast.
+0. As a user, I want a dedicated section featuring quick and easy holiday recipes, allowing me to prepare a festive meal even when short on time
+
 
 ## Visual Design
 ### Wireframes
