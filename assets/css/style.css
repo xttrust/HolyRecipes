@@ -43,6 +43,10 @@ body {
   background-size: cover;
 }
 
+.hide {
+  display: none;
+}
+
 /* ===== Main ===== */
 main {
   background-color: var(--bs-white);
@@ -53,12 +57,7 @@ footer {
   background-color: var(--bs-white);
 }
 
-.hide {
-  display: none;
-}
-
 /* ===== Cursor ===== */
-
 body,
 a,
 footer,
