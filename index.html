@@ -103,7 +103,7 @@
                             <option value="snack">Snack</option>
                             <option value="Teatime">Tea Time</option>
                         </select> -->
-            
+
                         <!-- <select name="dishType" id="dishType">
                             <option value="">Category</option>
                             <option value="cocktail">Cocktail</option>
@@ -112,7 +112,8 @@
                             <option value="condiments">Condiments</option>
                             <option value="desserts">Dessert</option>
                         </select> -->
-                        <input id="btn button-search" type="submit" value="Search">
+                        <input id="btn button-search" type="submit" value="Search" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">>
                     </form>
                 </div>
             </div>
@@ -120,7 +121,24 @@
         <!-- ===== /Navbar ===== -->
     </header>
     <!-- ===== /Header ===== -->
-
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- ===== Main ===== -->
     <main class="container">
         <!-- ===== Carousel ===== -->
