@@ -41,8 +41,9 @@
 
 body,
 a,
-nav {
-  cursor: url('../images/christmas-cursor.png'), auto !important;
+footer,
+i {
+  cursor: url('../images/christmas-cursor.png'), auto;
 }
 
 /* ===== Navigation Bar ===== */
@@ -89,6 +90,7 @@ input[type="search"]::placeholder {
   background-size: contain;
 }
 
+/* ===== Body ===== */
 body {
   margin: 0;
   padding: 0;
@@ -96,10 +98,12 @@ body {
   background-size: cover;
 }
 
+/* ===== Main ===== */
 main {
   background-color: var(--bs-white);
 }
 
+/* ===== Footer ===== */
 footer {
   background-color: var(--bs-white);
 }
