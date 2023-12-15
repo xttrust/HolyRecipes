@@ -1,4 +1,4 @@
-const searchForm = document.querySelector('form');
+const searchForm = document.querySelector("#top-search-input");
 let searchQuery = "";
 let mealType = "";
 let dishType = "";
@@ -6,7 +6,7 @@ let results;
 let baseURL;
 
 const resultsHTML = document.querySelector('#results');
-const btn = document.getElementById('btn');
+const btn = document.getElementById('button-search');
 
 async function fetchAPI() {
     baseURL = `https://api.edamam.com/search?q=christmas+${searchQuery}&app_id=${APP_ID}&app_key=${APP_KEY}&to=20`
@@ -80,3 +80,17 @@ searchForm.addEventListener('submit', (e) => {
     dishType = e.target.querySelector('#dishType').value;
     fetchAPI();
 })
+
+// Functionality to change navbar styles when page is hovered 
+$(document).ready(function() {
+    
+    $(window).scroll(function() {
+        // style when scrolling 
+        if ($(window).scrollTop() > 50) {
+            $('#navbar').removeClass('bg-transparent').addClass('bg-scroll')
+        // style when scrolled to top
+        } else {
+            $('#navbar').removeClass('bg-scroll').addClass('bg-transparent');
+        }
+    });
+});
