@@ -1,3 +1,4 @@
+// Functionality to change navbar styles when page is hovered 
 $(document).ready(function() {
     
     $(window).scroll(function() {

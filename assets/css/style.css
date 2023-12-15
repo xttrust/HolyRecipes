@@ -77,7 +77,7 @@ nav .active {
 }
 
 nav a:hover {
-  color: #226F54 !important;
+  color: rgb(135, 195, 143, 0.8) !important;
 }
 
 .bg-transparent {
