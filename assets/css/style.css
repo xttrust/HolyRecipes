@@ -61,6 +61,10 @@ footer {
   max-height:50px;
 }
 
+footer a:hover {
+  text-decoration: underline;
+}
+
 /* ===== Cursor ===== */
 
 body,
