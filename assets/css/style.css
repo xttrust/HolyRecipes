@@ -43,6 +43,10 @@ body {
   background-size: cover;
 }
 
+.hide {
+  display: none;
+}
+
 /* ===== Main ===== */
 main {
   background-color: var(--bs-white);
@@ -51,4 +55,56 @@ main {
 /* ===== Footer ===== */
 footer {
   background-color: var(--bs-white);
+}
+
+/* ===== Cursor ===== */
+body,
+a,
+footer,
+i {
+  cursor: url('../images/christmas-cursor.png'), auto;
+}
+
+/* ===== Navigation Bar ===== */
+
+nav {
+  font-family: 'Kalnia', serif !important;
+}
+
+nav .active {
+  color: #226F54 !important;
+}
+
+nav a:hover {
+  color: rgb(135, 195, 143, 0.8) !important;
+}
+
+.bg-transparent {
+  background: rgba(0, 0, 0, 0.0) !important;
+}
+
+.bg-scroll {
+  background: #226F54 !important;
+}
+
+.scroll-active {
+  color: #87C38F !important;
+}
+
+.navbar li {
+  padding-right: 15px;
+}
+
+#nav-links {
+  border: #87C38F solid !important;
+  padding-right: 20px;
+  padding-left: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 5px;
+}
+
+input[type="search"]::placeholder {
+  padding-left: 20px;
+  background: url('../images/magnifying-glass.png') no-repeat left center;
+  background-size: contain;
 }
