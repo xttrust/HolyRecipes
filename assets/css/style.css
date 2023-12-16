@@ -213,6 +213,11 @@ border-color: #DA2C38;
     max-width: 100%;
 }
 
+
+
+.js {
+    display: none;
+}
 /* ===== Media queries ===== */
 
 @media(max-width: 750px) {
