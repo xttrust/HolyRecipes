@@ -6,7 +6,7 @@ let results;
 let baseURL;
 
 const resultsHTML = document.querySelector('#results');
-const btn = document.getElementById('button-search');
+
 
 // async function fetchAPI() {
 //     baseURL = `https://api.edamam.com/search?q=christmas+${searchQuery}&app_id=${APP_ID}&app_key=${APP_KEY}&to=20`

@@ -95,24 +95,31 @@
       </div>
     </nav>
   </header>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <form class="search-function">
+                        
+            <input type="text" placeholder="Search Your Recipe...">
+
+            <input id="button-search" class ="btn" type="submit" value="Search">
+        </form>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <section id="results">
+
+          </section>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
   <!-- ===== Main ===== -->
   <main class="container">
@@ -133,7 +140,7 @@
             <div class="carousel-caption d-none d-md-block">
               <h5><strong>Enchanting Moments</strong></h5>
               <p><strong>Experience enchanting moments of seasonal splendor
-                <br> as we bring you the best of holiday joy and celebration</strong></p>
+                  <br> as we bring you the best of holiday joy and celebration</strong></p>
               </p>
             </div>
           </div>
@@ -141,16 +148,17 @@
             <img src="./assets/images/carousel_slide_2.png" class="d-block w-100" alt="image 2">
             <div class="carousel-caption d-none d-md-block">
               <h5><strong>Warm Winter Vibes</strong></h5>
-              <p><strong>Embrace warm winter vibes in cozy gatherings 
-                <br>that fill your home with love, laughter, and the spirit of the holidays</strong></p>
+              <p><strong>Embrace warm winter vibes in cozy gatherings
+                  <br>that fill your home with love, laughter, and the spirit of the holidays</strong></p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="./assets/images/carousel_slide_3.png" class="d-block w-100" alt="image 3">
             <div class="carousel-caption d-none d-md-block">
               <h5><strong>Savory Herb-Roasted Turkey</strong></h5>
-              <p><strong>Elevate your Christmas feast with the grandeur of a Savory Herb-Roasted Turkey a true culinary masterpiece
-                <br>a true culinary masterpiece</strong></p>
+              <p><strong>Elevate your Christmas feast with the grandeur of a Savory Herb-Roasted Turkey a true culinary
+                  masterpiece
+                  <br>a true culinary masterpiece</strong></p>
             </div>
           </div>
         </div>
@@ -381,7 +389,6 @@
   <!-- ===== Website javascript ===== -->
   <script src="assets/js/config.js"></script>
   <script src="assets/js/script.js"></script>
->>>>>>> f0512ba24770216056d0a34cde06da0d8e153d48
 </body>
 
 </html>
