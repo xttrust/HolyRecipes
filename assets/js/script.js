@@ -45,6 +45,9 @@ function fetchAPI() {
 
     // Append the script element to the document head
     document.head.appendChild(script);
+
+    //reset health
+    health= "";
 }
 
 
@@ -103,13 +106,6 @@ function showResults(results) {
     }    
 }
 
-function returnHealthInfo(health) {
-    let checkboxes = document.querySelectorAll('input[name="health":checked]');
-
-    checkboxes.forEach((checkboxes) => {
-        health += `&health=${checkbox.value} `
-    })
-}
 
 
 searchForms.forEach(searchForm => {
