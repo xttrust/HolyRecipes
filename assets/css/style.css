@@ -97,20 +97,6 @@ button,
     cursor: url('../images/christmas-cursor.png'), pointer !important;
 }
 
-/* ===== Navigation Bar ===== */
-
-nav {
-    font-family: 'Kalnia', serif !important;
-}
-
-nav .active {
-    color: #226F54 !important;
-}
-
-nav a:hover {
-    color: rgb(135, 195, 143, 0.8) !important;
-}
-
 /* ===== Standard Styles ===== */
 .bg-transparent {
     background: rgba(0, 0, 0, 0.75) !important;
@@ -120,62 +106,12 @@ nav a:hover {
     background: #226F54 !important;
 }
 
-/* ===== Carousel ===== */
-
-.carousel-caption {
-    border: solid 1px;
-    border-radius: 20px;
-    background-color: white;
-    opacity: 0.9;
-    color: #226F54 !important;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.carousel-indicators [data-bs-target] {
-    background-color: #226F54;
-}
-
-
-
-.navbar li {
-    padding-right: 15px;
-}
-
-#nav-links {
-    border: white solid !important;
-    padding-right: 20px;
-    padding-left: 20px;
-    border-radius: 25px;
-    background-color: white !important;
-}
-
-.navbar-toggler {
-    border: 2px solid var(--clr-green);
-    background-color: var(--bs-light);
-    margin-right: 20px;
-}
-
-.cookie {
-    color: #fff !important;
-    background-color: #226f54 !important;
-    background-size: cover;
-    background-position: center;
-    border-radius: 5px;
-    border: none;
-}
-
 .shadow {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px !important;
 }
 
 .shadow:hover {
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px !important;
-}
-
-.drinks {
-    border-radius: 5px;
-    background-color: #F4F0BB !important;
 }
 
 .btn1 {
@@ -203,15 +139,71 @@ nav a:hover {
     border-color: #DA2C38;
 }
 
-.modal-content img {
-    width: 100%;
+/* ===== Navigation Bar ===== */
+
+nav {
+    font-family: 'Kalnia', serif !important;
 }
 
+nav .active {
+    color: #226F54 !important;
+}
 
+nav a:hover {
+    color: rgb(135, 195, 143, 0.8) !important;
+}
 
-/* ===== 404 page ===== */
-/* ===== 404 page ===== */
+.navbar li {
+    padding-right: 15px;
+}
 
+#nav-links {
+    border: white solid !important;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 25px;
+    background-color: white !important;
+}
+
+.navbar-toggler {
+    border: 2px solid var(--clr-green);
+    background-color: var(--bs-light);
+    margin-right: 20px;
+}
+
+/* ===== Carousel ===== */
+.carousel-caption {
+    border: solid 1px;
+    border-radius: 20px;
+    background-color: white;
+    opacity: 0.9;
+    color: #226F54 !important;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #226F54;
+}
+
+/* ===== Feature Recipes ===== */
+.feature-recipes-col-1 {
+    color: #fff !important;
+    background-color: #226f54 !important;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    border: none;
+}
+
+.feature-recipes-col-2 {
+    border-radius: 5px;
+    background-color: #F4F0BB !important;
+}
+
+.feature-recipes-modal-image {
+    width: 100%;
+}
 
 /* ===== 404 page ===== */
 
