@@ -227,6 +227,7 @@ nav a:hover {
 
 /* ===== Search ===== */
 #button-search {
+    border-radius: 20px !important;
     border: var(--clr-light-green) solid !important;
     background-color: var(--clr-teal);
     padding-left: 15px;
