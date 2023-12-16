@@ -126,9 +126,6 @@ footer a:hover {
     border-color: #DA2C38;
 }
 
-.bg-teal {
-    background-color: var(--clr-teal);
-}
 
 /* ===== Navigation Bar ===== */
 
@@ -149,11 +146,11 @@ nav a:hover {
 }
 
 #nav-links {
-    border: var(--clr-light-green) solid !important;
+    border: var(--bs-white) solid !important;
     padding-right: 20px;
     padding-left: 20px;
     border-radius: 25px;
-    background-color: var(--clr-teal) !important;
+    background-color: var(--bs-white) !important;
 }
 
 .navbar-toggler {
@@ -178,7 +175,7 @@ nav a:hover {
 }
 
 .section1 img {
-  width: 100%;
+    width: 100%;
 }
 
 /* ===== Feature Recipes ===== */
@@ -226,8 +223,7 @@ nav a:hover {
 /* ===== Search ===== */
 #button-search {
     border-radius: 20px !important;
-    border: var(--clr-light-green) solid !important;
-    background-color: var(--clr-teal);
+    background-color: var(--bs-white);
     padding-left: 15px;
     padding-right: 15px;
 }
