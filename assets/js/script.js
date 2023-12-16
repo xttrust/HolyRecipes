@@ -1,6 +1,6 @@
 const searchForms = document.querySelectorAll('.search-function');
 let searchQuery = "";
-let mealType = "";
+// let mealType = "";
 let dishType = "";
 let results;
 let baseURL;
@@ -8,30 +8,57 @@ let baseURL;
 const resultsHTML = document.querySelector('#results');
 const btn = document.getElementById('button-search');
 
-async function fetchAPI() {
-    baseURL = `https://api.edamam.com/search?q=christmas+${searchQuery}&app_id=${APP_ID}&app_key=${APP_KEY}&to=20`
+// async function fetchAPI() {
+//     baseURL = `https://api.edamam.com/search?q=christmas+${searchQuery}&app_id=${APP_ID}&app_key=${APP_KEY}&to=20`
 
-    if (mealType != "") {
-        baseURL += `&mealType=${mealType}`
-    }
+//     if (mealType != "") {
+//         baseURL += `&mealType=${mealType}`
+//     }
 
-    if (dishType != "") {
-        baseURL += `&dishType=${dishType}`
-    }
+//     if (dishType != "") {
+//         baseURL += `&dishType=${dishType}`
+//     }
 
 
-    const response = await fetch(baseURL);
-    const data = await response.json();
+//     const response = await fetch(baseURL);
+//     const data = await response.json();
 
+//     results = data.hits;
+
+//     for (let i = 0; i < results.length; i++) {
+//         showResults(results[i]);
+//     }
+
+//     console.log(results)
+
+
+// }
+
+function fetchAPI() {
+    // Define a callback function name (replace CALLBACK_FUNCTION_NAME)
+    const callbackFunctionName = 'handleEdamamResponse';
+
+    // Create a script element
+    const script = document.createElement('script');
+
+    // Define the API URL with the callback parameter
+    const apiURL = `https://api.edamam.com/search?q=christmas+${searchQuery}&app_id=${APP_ID}&app_key=${APP_KEY}&to=20&callback=${callbackFunctionName}`;
+
+    // Set the script source to the API URL
+    script.src = apiURL;
+
+    // Append the script element to the document head
+    document.head.appendChild(script);
+}
+
+
+function handleEdamamResponse(data) {
+    // Process the data here
     results = data.hits;
 
     for (let i = 0; i < results.length; i++) {
         showResults(results[i]);
     }
-
-    console.log(results)
-
-
 }
 
 function showResults(results) {
@@ -55,10 +82,9 @@ function showResults(results) {
 
         resultsHTML.innerHTML += `<div>
             <h2>${results.recipe.label}</h2>
-            <a href="${results.recipe.url}" target ="_blank">Link<p><a/>
-
-
-            <h3> 'Ingredient Line Values' </h3>
+            <img src="${results.recipe.image}">
+            <p><a href="${results.recipe.url}" target ="_blank">Link</a></p>
+            <h3> 'Ingredient Line Values' </h3>            
             <ol>
                 ${ingredientLines}
             </ol>
@@ -66,7 +92,7 @@ function showResults(results) {
             <ol>
                 ${instructionLines}
             </ol>
-            <img src="${results.recipe.image}"
+            
         </div>`;
     }
 }
