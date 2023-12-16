@@ -131,10 +131,11 @@ footer a:hover {
 
 .nav-link {
     font-family: 'Kalnia', serif !important;
+    color: #226F54;
 }
 
 nav .active {
-    color: #226F54 !important;
+    color: #DA2C38 !important;
 }
 
 nav a:hover {
