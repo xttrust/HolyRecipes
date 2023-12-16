@@ -61,16 +61,22 @@ function showResults(results) {
             instructionLines += `<li> ${instructions[i]} </li>`;
         }
 
-        resultsHTML.innerHTML += `<div class="card">
+        resultsHTML.innerHTML += `<div class="card shadow search-results-card">
         <img src="${results.recipe.image}" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">${results.recipe.label}</h5>
             <p class="card-text">${results.recipe.summary}</p>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                Recipe
+            <button class="btn btn-primary" type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#collapseExample" 
+                    aria-expanded="false" 
+                    aria-controls="collapseExample"
+            >
+            <i class="fa-regular fa-rectangle-list"></i> 
+                View Recipe
             </button>
             <div class="collapse" id="collapseExample">
-            <div class="card card-body">
+            <div class="card card-body my-4">
             <h5 class="card-title">Ingredients</h5>
                 <ol>
                     ${ingredientLines}
@@ -81,7 +87,7 @@ function showResults(results) {
                 </ol>
             </div>
             `
-    }    
+    }
 }
 
 
