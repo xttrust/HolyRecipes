@@ -6,6 +6,8 @@ let results;
 let baseURL;
 
 let resultsHTML = document.querySelector('#results');
+let recipeButtons = document.querySelectorAll('.recipe-button')
+let ingredientButtons = document.querySelectorAll('.ingredient-button')
 
 
 function fetchAPI() {
@@ -47,13 +49,10 @@ function showResults(results) {
         ingredientLines += `<li> ${ingredients[i]} </li>`
     }
 
-
-
     if (instructions && instructions.length > 0) {
         for (let i = 0; i < instructions.length; i++) {
             instructionLines += `<li> ${instructions[i]} </li>`;
         }
-
 
         // resultsHTML.innerHTML += `<div>
         //     <h2>${results.recipe.label}</h2>
@@ -75,15 +74,33 @@ function showResults(results) {
         <div class="card-body">
             <h5 class="card-title">${results.recipe.label}</h5>
             <p class="card-text">${results.recipe.summary}</p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#recipeModal">
-                See Recipe
+            <p>
+            <button class="btn btn-primary ingredients-button" type="button" data-bs-toggle="collapse" data-bs-target="#ingredients-collapse" aria-expanded="false" aria-controls="collapseExample">
+                Ingredients
             </button>
-        </div>
-        </div>
-        `
-    }
-}
+            <button class="btn btn-primary recipe-button" type="button" data-bs-toggle="collapse" data-bs-target="#recipe-collapse" aria-expanded="false">
+                Recipe
+            </button>
+            </p>
+            <div class="collapse multi-collapse" id="recipe-collapse">
+      <div class="card card-body">
+      <ol>
+        ${instructionLines}
+        </ol>
+      </div>
+    </div>
+            <div class="collapse multi-collapse" id="ingredients-collapse">
+      <div class="card card-body">
+      <ol>
+      ${ingredientLines}
+        </ol>
+      </div>
+      </div> 
+        </div>`
 
+    }
+
+}
 
 
 searchForms.forEach(searchForm => {
@@ -96,6 +113,10 @@ searchForms.forEach(searchForm => {
         fetchAPI();
     })
 })
+
+
+
+
 
 
 // Functionality to change navbar styles when page is hovered 
