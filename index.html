@@ -183,32 +183,112 @@
     <div class="container text-center">
       <div class="row align-items-md-stretch mt-4">
         <div class="col-md-6">
-          <div class="h-100 p-5 text-bg-dark cookie">
+          <div class="h-100 p-5 text-bg-dark cookie shadow">
             <img src="assets/images/gingerbread-man.png" width="150px" class="mb-3">
-            <h2 class="mb-3">Classic Christmas Cookies</h2>
+            <h2 class="mb-3">Christmas Sugar Cookies</h2>
             <p class="mb-4">
-              Dive into the magic of Christmas with our delightful collection of classic Christmas cookie recipes. From
-              gingerbread to sugar cookies, these treats are perfect for spreading holiday cheer. Gather your family and
-              friends for a baking extravaganza!
+              Delight your guests with these classic Christmas Sugar Cookies. The soft, buttery cookies are cut into
+              holiday shapes
+              and decorated with vibrant royal icing and festive sprinkles. Perfect for spreading holiday cheer and
+              creating sweet
+              memories with your loved ones. Get creative with the shapes and colors to make your Christmas celebration
+              even more
+              special.
             </p>
-            <button class="btn btn-light btn1" type="button">
-              Explore Recipes
+            <button class="btn btn-light btn1" type="button" onclick="showRecipeModal1()">
+              View Recipe
             </button>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="h-100 p-5 bg-body-tertiary drinks">
+          <div class="h-100 p-5 bg-body-tertiary drinks shadow">
             <img src="assets/images/cup.png" width="150px" class="mb-3">
-            <h2 class="mb-3">Festive Holiday Drinks</h2>
+            <h2 class="mb-3">Peppermint Hot Chocolate</h2>
             <p class="mb-4">
-              Warm up your winter celebrations with our selection of festive holiday drinks. From spiced eggnog to
-              peppermint hot chocolate, these recipes will add a cozy touch to your Christmas gatherings. Cheers to
-              creating
-              joyful memories!
+              Warm up your winter festivities with this indulgent Peppermint Hot Chocolate. This comforting drink
+              combines rich cocoa
+              with a hint of peppermint, creating a delicious and festive treat. Garnish with whipped cream and crushed
+              candy canes
+              for an extra touch of holiday magic. Share a cup with friends and family by the fireplace or as a sweet
+              ending to your
+              Christmas dinner.
             </p>
-            <button class="btn btn-dark btn2" type="button">
-              Discover Drinks
+            <button class="btn btn-dark btn2" type="button" onclick="showRecipeModal2()">
+              View Recipe
             </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recipe Modals -->
+    <div class="modal fade" id="recipeModal1" tabindex="-1" role="dialog" aria-labelledby="recipeModal1Label"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <img src="assets/images/cookies-.jpg" class="rounded">
+          <div class="modal-header">
+            <h2 class="modal-title" id="recipeModal1Label">Christmas Sugar Cookies</h2>
+          </div>
+          <div class="modal-body">
+            <!-- Recipe 1 Details -->
+            <h3 class="mb-3">Ingredients:</h3>
+            <p>
+              - Sugar cookie dough
+              <br>
+              - Royal icing (in various colors)
+              <br>
+              - Festive sprinkles
+            </p>
+            <h3 class="mb-3">Instructions:</h3>
+            <p>
+              <strong>1.</strong> Roll out the sugar cookie dough and cut into Christmas shapes using cookie
+              cutters.<br>
+              <strong>2.</strong> Bake the cookies according to the recipe instructions.<br>
+              <strong>3.</strong> Once cooled, decorate the cookies with royal icing and sprinkles.<br>
+              <strong>4.</strong> Allow the icing to set before serving.
+            </p>
+            <h2 class="text-uppercase text-success">Enjoy!</h2>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn2" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="recipeModal2" tabindex="-1" role="dialog" aria-labelledby="recipeModal2Label"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <img src="assets/images/hot-chocolate.jpg" class="rounded">
+          <div class="modal-header">
+            <h2 class="modal-title" id="recipeModal2Label">Peppermint Hot Chocolate</h2>
+          </div>
+          <div class="modal-body">
+            <!-- Recipe 2 Details -->
+            <h3 class="mb-3">Ingredients:</h3>
+            <p>
+              - Hot chocolate mix or cocoa powder
+              <br>
+              - Peppermint extract
+              <br>
+              - Whipped cream
+              <br>
+              - Crushed candy canes
+            </p>
+            <h3 class="mb-3">Instructions:</h3>
+            <p class="mb-4">
+              <strong>1.</strong> Prepare hot chocolate according to package instructions or using your favorite
+              homemade recipe.<br>
+              <strong>2.</strong> Stir in a few drops of peppermint extract to taste.<br>
+              <strong>3.</strong> Pour the hot chocolate into mugs and top with a generous dollop of whipped cream.<br>
+              <strong>4.</strong> Sprinkle crushed candy canes over the whipped cream.
+            </p>
+            <h2 class="text-uppercase text-success">Enjoy!</h2>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn1" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
