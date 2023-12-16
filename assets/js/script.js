@@ -5,34 +5,8 @@ let dishType = "";
 let results;
 let baseURL;
 
-const resultsHTML = document.querySelector('#results');
+let resultsHTML = document.querySelector('#results');
 
-
-// async function fetchAPI() {
-//     baseURL = `https://api.edamam.com/search?q=christmas+${searchQuery}&app_id=${APP_ID}&app_key=${APP_KEY}&to=20`
-
-//     if (mealType != "") {
-//         baseURL += `&mealType=${mealType}`
-//     }
-
-//     if (dishType != "") {
-//         baseURL += `&dishType=${dishType}`
-//     }
-
-
-//     const response = await fetch(baseURL);
-//     const data = await response.json();
-
-//     results = data.hits;
-
-//     for (let i = 0; i < results.length; i++) {
-//         showResults(results[i]);
-//     }
-
-//     console.log(results)
-
-
-// }
 
 function fetchAPI() {
     // Define a callback function name (replace CALLBACK_FUNCTION_NAME)
@@ -55,6 +29,7 @@ function fetchAPI() {
 function handleEdamamResponse(data) {
     // Process the data here
     results = data.hits;
+    console.log(results);
 
     for (let i = 0; i < results.length; i++) {
         showResults(results[i]);
@@ -80,22 +55,35 @@ function showResults(results) {
         }
 
 
-        resultsHTML.innerHTML += `<div>
-            <h2>${results.recipe.label}</h2>
-            <img src="${results.recipe.image}">
-            <p><a href="${results.recipe.url}" target ="_blank">Link</a></p>
-            <h3> 'Ingredient Line Values' </h3>            
-            <ol>
-                ${ingredientLines}
-            </ol>
-            <h3> 'Instruction Line Values' </h3>
-            <ol>
-                ${instructionLines}
-            </ol>
-            
-        </div>`;
+        // resultsHTML.innerHTML += `<div>
+        //     <h2>${results.recipe.label}</h2>
+        //     <img src="${results.recipe.image}">
+        //     <p><a href="${results.recipe.url}" target ="_blank">Link</a></p>
+        //     <h3> 'Ingredient Line Values' </h3>            
+        //     <ol>
+        //         ${ingredientLines}
+        //     </ol>
+        //     <h3> 'Instruction Line Values' </h3>
+        //     <ol>
+        //         ${instructionLines}
+        //     </ol>
+
+        // </div>`;
+
+        resultsHTML.innerHTML += `<div class="card" style="width: 18rem;">
+        <img src="${results.recipe.image}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${results.recipe.label}</h5>
+            <p class="card-text">${results.recipe.summary}</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#recipeModal">
+                See Recipe
+            </button>
+        </div>
+        </div>
+        `
     }
 }
+
 
 
 searchForms.forEach(searchForm => {
