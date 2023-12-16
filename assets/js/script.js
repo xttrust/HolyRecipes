@@ -6,6 +6,10 @@ let results;
 let baseURL;
 
 let resultsHTML = document.querySelector('#results');
+let recipeButtons = document.querySelectorAll('.recipe-button')
+let ingredientButtons = document.querySelectorAll('.ingredient-button')
+let recipeCollapses = document.querySelectorAll('.recipe-collapse')
+let ingredientCollapses = document.querySelectorAll('.ingredient-collapse')
 
 
 function fetchAPI() {
@@ -47,13 +51,10 @@ function showResults(results) {
         ingredientLines += `<li> ${ingredients[i]} </li>`
     }
 
-
-
     if (instructions && instructions.length > 0) {
         for (let i = 0; i < instructions.length; i++) {
             instructionLines += `<li> ${instructions[i]} </li>`;
         }
-
 
         // resultsHTML.innerHTML += `<div>
         //     <h2>${results.recipe.label}</h2>
@@ -75,15 +76,23 @@ function showResults(results) {
         <div class="card-body">
             <h5 class="card-title">${results.recipe.label}</h5>
             <p class="card-text">${results.recipe.summary}</p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#recipeModal">
-                See Recipe
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Recipe
             </button>
-        </div>
-        </div>
-        `
-    }
+            <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+            <h5 class="card-title">Ingredients</h5>
+                <ol>
+                    ${ingredientLines}
+                </ol>
+            <h5 class="card-title">Instructions</h5>
+                <ol>
+                    ${instructionLines}
+                </ol>
+            </div>
+            `
+    }    
 }
-
 
 
 searchForms.forEach(searchForm => {
@@ -96,6 +105,10 @@ searchForms.forEach(searchForm => {
         fetchAPI();
     })
 })
+
+
+
+
 
 
 // Functionality to change navbar styles when page is hovered 
