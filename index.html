@@ -88,34 +88,60 @@
           </ul>
           <form class="d-flex pe-2" role="search" id="top-search-form">
             <div class="input-group mb-3 me-2 mt-3">
-              <button class="btn bg-white" type="button" id="button-search">
-                <i class="fa fa-search"></i>
+              <button class="btn bg-white" type="button" id="button-search" data-bs-toggle="modal"
+                data-bs-target="#searchModal">
+                <i class="fa fa-search"></i> Search
               </button>
-              <input type="text" class="form-control" placeholder="Search" aria-label="Search"
-                aria-describedby="button-search" id="top-search-input">
             </div>
           </form>
         </div>
       </div>
     </nav>
+    <!-- ===== /Navbar ===== -->
   </header>
-  <!-- Modal -->
+  <!-- ===== /Header ===== -->
+
+  <!-- ===== Modal ===== -->
   <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
       <div class="modal-content">
+
+        <!-- ===== Modal header ===== -->
         <div class="modal-header">
+
+          <!-- ===== Search form ===== -->
           <form class="search-function">
-            <h1>Find your Christmas recipe</h1>
-            <input type="text" placeholder="Search Your Recipe...">
-            <select name="dishType" id="dishType">
-              <option value="">Category</option>
-              <option value="cocktail">Cocktail</option>
-              <option value="biscuits">Biscuits</option>
-              <option value="Bread">Bread</option>
-              <option value="condiments">Condiments</option>
-              <option value="desserts">Dessert</option>
-            </select>
-            <input id="button-search" type="submit" value="Search">
+            <h3 class="mb-3">Find your Christmas recipe</h3>
+            <p>
+              We have a delightful collection of Christmas recipes that will add joy to your festive celebrations. From
+              classic holiday treats to creative twists on traditional dishes, our curated selection is sure to inspire
+              your holiday menu.
+            </p>
+
+            <div class="row">
+              <div class="col-md-6 col-sm-12 mb-3">
+                <input type="text" class="form-control" placeholder="Search Your Recipe...">
+              </div>
+
+              <div class="col-md-4 col-sm-12 mb-3">
+                <select class="form-select" name="dishType" id="dishType">
+                  <option value="">Category</option>
+                  <option value="cocktail">Cocktail</option>
+                  <option value="biscuits">Biscuits</option>
+                  <option value="Bread">Bread</option>
+                  <option value="condiments">Condiments</option>
+                  <option value="desserts">Dessert</option>
+                </select>
+              </div>
+
+              <div class="col-md-2 col-sm-12">
+                <button type="submit" class="btn btn-outline-success d-flex align-items-center">
+                  <i class="fa fa-search me-2"></i>
+                  Search
+                </button>
+              </div>
+
+            </div>
             <input type="checkbox" name="health" class="btn-check" id="dairy-free" value="dairy-free" autocomplete="off">
             <label class="btn btn-outline-primary" for="dairy-free">Dairy Free</label>
             <input type="checkbox" name="health" class="btn-check" id="gluten-free" value="gluten-free" autocomplete="off">
@@ -125,19 +151,33 @@
             <input type="checkbox" name="health" class="btn-check" id="vegan" value="vegan" autocomplete="off">
             <label class="btn btn-outline-primary" for="vegan">Vegan</label>
           </form>
+          <!-- ===== /Search form ===== -->
+
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
         </div>
+        <!-- ===== /Modal header ===== -->
+
+        <!-- ===== Modal body ===== -->
         <div class="modal-body">
           <section id="results">
 
           </section>
         </div>
+        <!-- ===== /Modal body ===== -->
+
+        <!-- ===== Modal footer ===== -->
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
+        <!-- ===== /Modal footer ===== -->
+
       </div>
     </div>
   </div>
+  <!-- ===== /Modal ===== -->
+
+
   <!-- ===== Main ===== -->
   <main class="container">
     <!-- ===== Carousel ===== -->

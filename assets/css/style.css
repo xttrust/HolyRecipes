@@ -229,8 +229,14 @@ nav a:hover {
 }
 
 /* ===== Search ===== */
-#top-search-input {
-    max-width: 100%;
+#button-search {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.search-results-card {
+    width: 80%;
+    margin: 50px auto 90px;
 }
 
 
@@ -238,7 +244,7 @@ nav a:hover {
 
 /* ===== Small devices (landscape phones, 576px and up) ===== */
 @media (min-width: 576px) {
-    #top-search-form {
+    #button-search {
         margin-left: 15px;
     }
 
@@ -257,12 +263,8 @@ nav a:hover {
 
 /* ===== Large devices (desktops, 992px and up) ===== */
 @media (min-width: 992px) {
-    #top-search-form {
+    #button-search {
         margin-left: 15px;
-    }
-
-    #top-search-input {
-        max-width: 150px;
     }
 }
 
