@@ -20,7 +20,7 @@ function fetchAPI() {
     const script = document.createElement('script');
 
     // Define the API URL with the callback parameter
-    let apiURL = `https://api.edamam.com/search?q=christmas+${searchQuery}&app_id=${APP_ID}&app_key=${APP_KEY}&to=20&callback=${callbackFunctionName}`;
+    let apiURL = `https://api.edamam.com/search?q=christmas+${searchQuery}&app_id=${APP_ID}&app_key=${APP_KEY}&to=20&tag=christmas&callback=${callbackFunctionName}`;
 
     if (dishType != "") {
         apiURL += `&dishType=${dishType}`
