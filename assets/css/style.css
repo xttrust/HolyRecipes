@@ -37,7 +37,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url('../images/holy_recipe_img_bg16.png') no-repeat center center fixed;
+    background: url('../images/holy_recipe_img_bg\(5\).png') no-repeat center center fixed;
     background-size: cover;
 }
 
