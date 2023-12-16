@@ -46,6 +46,8 @@ body {
 /* ===== Main ===== */
 main {
   background-color: var(--bs-white);
+  margin-top: 140px;
+  padding-top: 20px;
 }
 
 /* ===== Footer ===== */
