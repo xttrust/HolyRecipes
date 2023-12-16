@@ -35,6 +35,10 @@
     /* ===== Custom Colors ===== */
 }
 
+* {
+    transition: all 0.5s !important;
+}
+
 /* ===== Body ===== */
 body {
     margin: 0;
@@ -107,6 +111,15 @@ nav a:hover {
     color: rgb(135, 195, 143, 0.8) !important;
 }
 
+/* ===== Standard Styles ===== */
+.bg-transparent {
+    background: rgba(0, 0, 0, 0.75) !important;
+}
+
+.bg-scroll {
+    background: #226F54 !important;
+}
+
 /* ===== Carousel ===== */
 
 .carousel-caption {
@@ -123,13 +136,7 @@ nav a:hover {
     background-color: #226F54;
 }
 
-.bg-transparent {
-    background: rgba(0, 0, 0, 0.75) !important;
-}
 
-.bg-scroll {
-    background: #226F54 !important;
-}
 
 .navbar li {
     padding-right: 15px;
@@ -159,7 +166,11 @@ nav a:hover {
 }
 
 .shadow {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px !important;
+}
+
+.shadow:hover {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px !important;
 }
 
 .drinks {
@@ -193,8 +204,14 @@ nav a:hover {
 }
 
 .modal-content img {
-  width: 100%;
+    width: 100%;
 }
+
+
+
+/* ===== 404 page ===== */
+/* ===== 404 page ===== */
+
 
 /* ===== 404 page ===== */
 
