@@ -2,8 +2,16 @@ const searchForms = document.querySelectorAll('.search-function');
 let searchQuery = "";
 // let mealType = "";
 let dishType = "";
+let health = "";
 let results;
 let baseURL;
+
+//checkboxes
+var dairyFreeCheckbox = document.getElementById("dairy-free");
+var glutenFreeCheckbox = document.getElementById("gluten-free");
+var vegetarianCheckbox = document.getElementById("vegetarian");
+var veganCheckbox = document.getElementById("vegan");
+
 
 let resultsHTML = document.querySelector('#results');
 let recipeButtons = document.querySelectorAll('.recipe-button')
@@ -25,6 +33,11 @@ function fetchAPI() {
     if (dishType != "") {
         apiURL += `&dishType=${dishType}`
     }
+
+    if (health != "") {
+        apiURL += `${health}`
+    }
+
     // Set the script source to the API URL
     script.src = apiURL;
 
@@ -32,6 +45,9 @@ function fetchAPI() {
 
     // Append the script element to the document head
     document.head.appendChild(script);
+
+    //reset health
+    health= "";
 }
 
 
@@ -87,8 +103,9 @@ function showResults(results) {
                 </ol>
             </div>
             `
-    }
+    }    
 }
+
 
 
 searchForms.forEach(searchForm => {
@@ -96,6 +113,12 @@ searchForms.forEach(searchForm => {
         e.preventDefault();
         resultsHTML.innerHTML = '';
         searchQuery = e.target.querySelector('input').value;
+        let checkboxes = document.querySelectorAll('.btn-check');
+        checkboxes.forEach((checkbox) => {
+            if (checkbox.checked == true){
+                health += `&health=${checkbox.value}`
+            }
+        })
         // mealType = e.target.querySelector('#mealType').value;
         dishType = e.target.querySelector('#dishType').value;
         fetchAPI();
