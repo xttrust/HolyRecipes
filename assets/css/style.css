@@ -214,10 +214,6 @@ border-color: #DA2C38;
 }
 
 
-
-.js {
-    display: none;
-}
 /* ===== Media queries ===== */
 
 @media(max-width: 750px) {
