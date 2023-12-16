@@ -174,7 +174,9 @@ nav a:hover {
     background-color: #226F54;
 }
 
-
+.section1 img {
+    width: 100%;
+}
 
 /* ===== Feature Recipes ===== */
 .feature-recipes-col-1 {
@@ -220,6 +222,7 @@ nav a:hover {
 
 /* ===== Search ===== */
 #button-search {
+    font-family: 'Kalnia', serif !important;
     border-radius: 20px !important;
     background-color: var(--bs-white);
     padding-left: 15px;
@@ -227,6 +230,7 @@ nav a:hover {
 }
 
 .search-results-card {
+    font-family: 'Kalnia', serif !important;
     width: 80%;
     margin: 50px auto 90px;
 }
