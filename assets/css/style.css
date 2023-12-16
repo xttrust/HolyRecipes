@@ -36,6 +36,7 @@
 }
 
 * {
+    cursor: url('../images/christmas-cursor.png'), pointer !important;
     transition: all 0.5s !important;
 }
 
@@ -83,20 +84,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* ===== Cursor ===== */
-
-body,
-a,
-footer,
-i {
-    cursor: url('../images/christmas-cursor.png'), auto !important;
-}
-
-button,
-.nav-link {
-    cursor: url('../images/christmas-cursor.png'), pointer !important;
-}
-
 /* ===== Standard Styles ===== */
 .bg-transparent {
     background: rgba(0, 0, 0, 0.75) !important;
@@ -139,6 +126,10 @@ button,
     border-color: #DA2C38;
 }
 
+.bg-teal {
+    background-color: var(--clr-teal);
+}
+
 /* ===== Navigation Bar ===== */
 
 nav {
@@ -157,12 +148,18 @@ nav a:hover {
     padding-right: 15px;
 }
 
+.dropdown-menu .dropdown-item {
+    font-weight: 600;
+}
+
+
 #nav-links {
-    border: white solid !important;
+    border: var(--clr-light-green) solid !important;
     padding-right: 20px;
     padding-left: 20px;
     border-radius: 25px;
-    background-color: white !important;
+    background-color: var(--clr-teal) !important;
+    font-weight: 600;
 }
 
 .navbar-toggler {
@@ -230,6 +227,8 @@ nav a:hover {
 
 /* ===== Search ===== */
 #button-search {
+    border: var(--clr-light-green) solid !important;
+    background-color: var(--clr-teal);
     padding-left: 15px;
     padding-right: 15px;
 }

@@ -59,37 +59,18 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul id="nav-links" class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link active" id="active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" id="active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#searchModal">Recipe
-                    Search</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Another action</a>
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
           <form class="d-flex pe-2" role="search" id="top-search-form">
             <div class="input-group mb-3 me-2 mt-3">
-              <button class="btn bg-white" type="button" id="button-search" data-bs-toggle="modal"
-                data-bs-target="#searchModal">
+              <button class="btn" type="button" id="button-search" data-bs-toggle="modal" data-bs-target="#searchModal">
                 <i class="fa fa-search"></i> Search
               </button>
             </div>
@@ -145,8 +126,6 @@
           </form>
           <!-- ===== /Search form ===== -->
 
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-
         </div>
         <!-- ===== /Modal header ===== -->
 
@@ -160,7 +139,9 @@
 
         <!-- ===== Modal footer ===== -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">
+            <i class="fa fa-remove"></i> Close
+          </button>
         </div>
         <!-- ===== /Modal footer ===== -->
 
