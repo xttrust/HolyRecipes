@@ -148,18 +148,12 @@ nav a:hover {
     padding-right: 15px;
 }
 
-.dropdown-menu .dropdown-item {
-    font-weight: 600;
-}
-
-
 #nav-links {
     border: var(--clr-light-green) solid !important;
     padding-right: 20px;
     padding-left: 20px;
     border-radius: 25px;
     background-color: var(--clr-teal) !important;
-    font-weight: 600;
 }
 
 .navbar-toggler {
