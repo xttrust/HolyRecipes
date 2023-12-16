@@ -1,4 +1,4 @@
-const searchForm = document.querySelector("form");
+const searchForms = document.querySelectorAll('.search-function');
 let searchQuery = "";
 let mealType = "";
 let dishType = "";
@@ -72,23 +72,26 @@ function showResults(results) {
 }
 
 
-searchForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    resultsHTML.innerHTML = '';
-    searchQuery = e.target.querySelector('input').value;
-    // mealType = e.target.querySelector('#mealType').value;
-    // dishType = e.target.querySelector('#dishType').value;
-    fetchAPI();
+searchForms.forEach(searchForm => {
+    searchForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        resultsHTML.innerHTML = '';
+        searchQuery = e.target.querySelector('input').value;
+        // mealType = e.target.querySelector('#mealType').value;
+        // dishType = e.target.querySelector('#dishType').value;
+        fetchAPI();
+    })
 })
 
+
 // Functionality to change navbar styles when page is hovered 
-$(document).ready(function() {
-    
-    $(window).scroll(function() {
+$(document).ready(function () {
+
+    $(window).scroll(function () {
         // style when scrolling 
         if ($(window).scrollTop() > 50) {
             $('#navbar').removeClass('bg-transparent').addClass('bg-scroll')
-        // style when scrolled to top
+            // style when scrolled to top
         } else {
             $('#navbar').removeClass('bg-scroll').addClass('bg-transparent');
         }
