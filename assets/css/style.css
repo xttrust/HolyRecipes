@@ -183,6 +183,10 @@ nav a:hover {
     background-color: #226F54;
 }
 
+.section1 img {
+  width: 100%;
+}
+
 /* ===== Feature Recipes ===== */
 .feature-recipes-col-1 {
     color: #fff !important;
