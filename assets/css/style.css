@@ -1,80 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalnia&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia &family=Poppins:wght@300&display=swap');:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 
-:root {
-  --bs-blue: #0d6efd;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
-  --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #ffc107;
-  --bs-green: #198754;
-  --bs-teal: #20c997;
-  --bs-cyan: #0dcaf0;
-  --bs-white: #fff;
-  --bs-gray: #6c757d;
-  --bs-gray-dark: #343a40;
-  --bs-primary: #0d6efd;
-  --bs-secondary: #6c757d;
-  --bs-success: #198754;
-  --bs-info: #0dcaf0;
-  --bs-warning: #ffc107;
-  --bs-danger: #dc3545;
-  --bs-light: #f8f9fa;
-  --bs-dark: #212529;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-
-  /* ===== Custom Colors ===== */
-  --clr-red: #DA2C38;
-  --clr-green: #226F54;
-  --clr-light-green: #87C38F;
-  --clr-teal: #F4F0BB;
-  --clr-brown: #43291F;
-  /* ===== Custom Colors ===== */
+    /* ===== Custom Colors ===== */
+    --clr-red: #DA2C38;
+    --clr-green: #226F54;
+    --clr-light-green: #87C38F;
+    --clr-teal: #F4F0BB;
+    --clr-brown: #43291F;
+    /* ===== Custom Colors ===== */
 }
 
 /* ===== Body ===== */
 body {
-  margin: 0;
-  padding: 0;
-  background: url('../images/christmas-wallpaper.jpg') no-repeat center center fixed;
-  background-size: cover;
+    margin: 0;
+    padding: 0;
+    background: url('../images/holy_recipe_img_bg\(5\).png') no-repeat center center fixed;
+    background-size: cover;
 }
 
 /* ===== Fonts ===== */
 
-h1, h2, h3 {
-  font-family: 'Kalnia', serif;
+h1,
+h2,
+h3 {
+    font-family: 'Kalnia', serif;
 }
 
 p {
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* ===== Main ===== */
 main {
-  background-color: var(--bs-white);
-  margin-top: 140px;
-  padding-top: 20px;
+    background-color: var(--bs-white);
+    margin-top: 140px;
+    padding-top: 20px;
 }
 
 /* ===== Footer ===== */
 footer {
-  background-color: #226F54;
+    background-color: #226F54;
 }
 
 .hide {
-  display: none;
+    display: none;
 }
 
 .footer-logo {
-  max-height: 50px;
+    max-height: 50px;
 }
 
 footer a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* ===== Cursor ===== */
@@ -83,52 +83,67 @@ body,
 a,
 footer,
 i {
-  cursor: url('../images/christmas-cursor.png'), auto !important;
+    cursor: url('../images/christmas-cursor.png'), auto !important;
 }
 
 button,
 .nav-link {
-  cursor: url('../images/christmas-cursor.png'), pointer !important;
+    cursor: url('../images/christmas-cursor.png'), pointer !important;
 }
 
 /* ===== Navigation Bar ===== */
 
 nav {
-  font-family: 'Kalnia', serif !important;
+    font-family: 'Kalnia', serif !important;
 }
 
 nav .active {
-  color: #226F54 !important;
+    color: #226F54 !important;
 }
 
 nav a:hover {
-  color: rgb(135, 195, 143, 0.8) !important;
+    color: rgb(135, 195, 143, 0.8) !important;
 }
 
+/* ===== Carousel ===== */
+
+.carousel-caption {
+    border: solid 1px;
+    border-radius: 20px;
+    background-color: white;
+    opacity: 0.9;
+    color: #226F54 !important;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #226F54;
+}
 .bg-transparent {
-  background: rgba(0, 0, 0, 0.75) !important;
+    background: rgba(0, 0, 0, 0.75) !important;
 }
 
 .bg-scroll {
-  background: #226F54 !important;
+    background: #226F54 !important;
 }
 
 .navbar li {
-  padding-right: 15px;
+    padding-right: 15px;
 }
 
 #nav-links {
-  border: white solid !important;
-  padding-right: 20px;
-  padding-left: 20px;
-  border-radius: 25px;
-  background-color: white !important;
+    border: white solid !important;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 25px;
+    background-color: white !important;
 }
 
 .navbar-toggler {
-  border: 2px solid var(--clr-green);
-  background-color: var(--bs-light);
-  margin-right: 20px;
+    border: 2px solid var(--clr-green);
+    background-color: var(--bs-light);
+    margin-right: 20px;
 }
 
 .cookie {
@@ -173,41 +188,42 @@ border-color: #DA2C38;
 /* ===== 404 page ===== */
 
 .fourohfour {
-  background-color: rgb(255, 255, 255, 0.9);
-  width: 50%;
-  margin-top: 25px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 75px 90px;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: rgb(255, 255, 255, 0.9);
+    width: 50%;
+    margin-top: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 75px 90px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
 }
 
 .fourohfour-icon {
-  color: #DA2C38;
-  font-size: 50px;
+    color: #DA2C38;
+    font-size: 50px;
 }
 
 .fourohfour-icon:hover {
-  color:#87C38F;
+    color: #87C38F;
 }
 
 /* ===== Search ===== */
 #top-search-input {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 /* ===== Media queries ===== */
 
-@media (max-width: 750px) {
-  .fourohfour {
-    width: 80%;
-    padding: 10%;
-  }
+@media(max-width: 750px) {
+    .fourohfour {
+        width: 80%;
+        padding: 10%;
+    }
 }
 
 /* ===== Extra small devices (phones) ===== */
+ main
 @media (max-width: 575.98px) {
   .col-md-6 {
     margin-bottom: 25px;
@@ -223,21 +239,30 @@ border-color: #DA2C38;
   .col-md-6 {
     margin-bottom: 25px;
   }
+
+@media(max-width: 575.98px) {}
+
+/* ===== Small devices (tablets) ===== */
+@media(min-width: 576px) and(max-width: 767.98px) {
+    #top-search-form {
+        margin-left: 15px;
+    }
+ main
 }
 
 /* ===== Medium devices (desktops) ===== */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  #top-search-form {
-    margin-left: 15px;
-  }
+@media(min-width: 768px) and(max-width: 991.98px) {
+    #top-search-form {
+        margin-left: 15px;
+    }
 }
 
 /* ===== Large devices (desktops) ===== */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  #top-search-input {
-    max-width: 150px;
-  }
+@media(min-width: 992px) and(max-width: 1199.98px) {
+    #top-search-input {
+        max-width: 150px;
+    }
 }
 
 /* ===== Extra large devices (large desktops) ===== */
-@media (min-width: 1200px) {}
+@media(min-width: 1200px) {}
