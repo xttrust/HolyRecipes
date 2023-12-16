@@ -66,19 +66,32 @@ function showResults(results) {
         <div class="card-body">
             <h5 class="card-title">${results.recipe.label}</h5>
             <p class="card-text">${results.recipe.summary}</p>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                Recipe
-            </button>
-            <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-            <h5 class="card-title">Ingredients</h5>
-                <ol>
-                    ${ingredientLines}
-                </ol>
-            <h5 class="card-title">Instructions</h5>
-                <ol>
-                    ${instructionLines}
-                </ol>
+
+            <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Ingredients
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                ${ingredientLines}
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Instructions
+                </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                ${instructionLines}
+                </div>
+                </div>
+            </div>
             </div>
             `
     }    
