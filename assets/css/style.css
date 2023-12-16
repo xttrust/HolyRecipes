@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalnia &family=Poppins:wght@300&display=swap');:root {
+@import url('https://fonts.googleapis.com/css2?family=Kalnia &family=Poppins:wght@300&display=swap');
+
+:root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
@@ -120,6 +122,7 @@ nav a:hover {
 .carousel-indicators [data-bs-target] {
     background-color: #226F54;
 }
+
 .bg-transparent {
     background: rgba(0, 0, 0, 0.75) !important;
 }
@@ -147,42 +150,42 @@ nav a:hover {
 }
 
 .cookie {
-  color: #fff !important; 
-  background-color: #226f54 !important;
-  background-size: cover;
-  background-position: center;
-  border-radius: 5px;
-  border: none;
+    color: #fff !important;
+    background-color: #226f54 !important;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    border: none;
 }
 
 .drinks {
-  border-radius: 5px;
-  background-color: #F4F0BB !important;
+    border-radius: 5px;
+    background-color: #F4F0BB !important;
 }
 
 .btn1 {
- background-color: #F4F0BB;
- color: #212529;
- border: none;
- height: 43px;
+    background-color: #F4F0BB;
+    color: #212529;
+    border: none;
+    height: 43px;
 }
 
 .btn1:hover {
-  background-color: #DA2C38 !important;
-  color: #F4F0BB;
-  border-color: #DA2C38;
+    background-color: #DA2C38 !important;
+    color: #F4F0BB;
+    border-color: #DA2C38;
 }
 
 .btn2 {
-  background-color: #226F54;
-  color: #f8f9fa;
-  border: none;
-  height: 45px;
+    background-color: #226F54;
+    color: #f8f9fa;
+    border: none;
+    height: 45px;
 }
 
 .btn2:hover {
-background-color: #DA2C38 !important;
-border-color: #DA2C38;
+    background-color: #DA2C38 !important;
+    border-color: #DA2C38;
 }
 
 /* ===== 404 page ===== */
@@ -215,54 +218,38 @@ border-color: #DA2C38;
 
 /* ===== Media queries ===== */
 
-@media(max-width: 750px) {
+/* ===== Small devices (landscape phones, 576px and up) ===== */
+@media (min-width: 576px) {
+    #top-search-form {
+        margin-left: 15px;
+    }
+
+    .col-md-6 {
+        margin-bottom: 25px;
+    }
+}
+
+/* ===== Medium devices (tablets, 768px and up) ===== */
+@media (min-width: 768px) {
     .fourohfour {
         width: 80%;
         padding: 10%;
     }
 }
 
-/* ===== Extra small devices (phones) ===== */
- main
-@media (max-width: 575.98px) {
-  .col-md-6 {
-    margin-bottom: 25px;
-  }
-}
-
-/* ===== Small devices (tablets) ===== */
-@media (min-width: 576px) and (max-width: 767.98px) {
-  #top-search-form {
-    margin-left: 15px;
-  }
-
-  .col-md-6 {
-    margin-bottom: 25px;
-  }
-
-@media(max-width: 575.98px) {}
-
-/* ===== Small devices (tablets) ===== */
-@media(min-width: 576px) and(max-width: 767.98px) {
+/* ===== Large devices (desktops, 992px and up) ===== */
+@media (min-width: 992px) {
     #top-search-form {
         margin-left: 15px;
     }
- main
-}
 
-/* ===== Medium devices (desktops) ===== */
-@media(min-width: 768px) and(max-width: 991.98px) {
-    #top-search-form {
-        margin-left: 15px;
-    }
-}
-
-/* ===== Large devices (desktops) ===== */
-@media(min-width: 992px) and(max-width: 1199.98px) {
     #top-search-input {
         max-width: 150px;
     }
 }
 
-/* ===== Extra large devices (large desktops) ===== */
-@media(min-width: 1200px) {}
+/* ===== X-Large devices (large desktops, 1200px and up) ===== */
+@media (min-width: 1200px) {}
+
+/* ===== XX-Large devices (larger desktops, 1400px and up) ===== */
+@media (min-width: 1400px) {}
