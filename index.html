@@ -68,7 +68,8 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Recipe
+                    Search</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">Another action</a>
@@ -94,9 +95,31 @@
         </div>
       </div>
     </nav>
-    <!-- ===== /Navbar ===== -->
   </header>
-  <!-- ===== /Header ===== -->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <form class="search-function">
+            <h1>Find your Christmas recipe</h1>
+            <input type="text" placeholder="Search Your Recipe...">
+
+            <input id="button-search" type="submit" value="Search">
+          </form>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <section id="results">
+
+          </section>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- ===== Main ===== -->
   <main class="container">
@@ -117,7 +140,7 @@
             <div class="carousel-caption d-none d-md-block">
               <h5><strong>Enchanting Moments</strong></h5>
               <p><strong>Experience enchanting moments of seasonal splendor
-                <br> as we bring you the best of holiday joy and celebration</strong></p>
+                  <br> as we bring you the best of holiday joy and celebration</strong></p>
               </p>
             </div>
           </div>
@@ -125,16 +148,17 @@
             <img src="./assets/images/carousel_slide_2.png" class="d-block w-100" alt="image 2">
             <div class="carousel-caption d-none d-md-block">
               <h5><strong>Warm Winter Vibes</strong></h5>
-              <p><strong>Embrace warm winter vibes in cozy gatherings 
-                <br>that fill your home with love, laughter, and the spirit of the holidays</strong></p>
+              <p><strong>Embrace warm winter vibes in cozy gatherings
+                  <br>that fill your home with love, laughter, and the spirit of the holidays</strong></p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="./assets/images/carousel_slide_3.png" class="d-block w-100" alt="image 3">
             <div class="carousel-caption d-none d-md-block">
               <h5><strong>Savory Herb-Roasted Turkey</strong></h5>
-              <p><strong>Elevate your Christmas feast with the grandeur of a Savory Herb-Roasted Turkey a true culinary masterpiece
-                <br>a true culinary masterpiece</strong></p>
+              <p><strong>Elevate your Christmas feast with the grandeur of a Savory Herb-Roasted Turkey a true culinary
+                  masterpiece
+                  <br>a true culinary masterpiece</strong></p>
             </div>
           </div>
         </div>
@@ -187,7 +211,6 @@
     </div>
     <!-- ===== /Featured Recipes ===== -->
 
-    <!-- ===== Recipes ===== -->
     <div class="album py-5 bg-body-tertiary">
       <div class="container">
         <h2 class="display-6 text-center mb-4 py-4">
@@ -283,7 +306,6 @@
     </div>
     <!-- ===== /No Name Feature 1 ===== -->
 
-    <!-- ===== No Name Feature 2 ===== -->
     <div class="container text-center my-4">
       <h2 class="display-6 text-center mb-4 py-4">
         Very Important Section Title Here
@@ -365,6 +387,7 @@
   <!-- ===== Bootstrap javascript ===== -->
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <!-- ===== Website javascript ===== -->
+  <script src="assets/js/config.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
 
