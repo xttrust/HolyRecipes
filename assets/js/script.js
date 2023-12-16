@@ -111,3 +111,36 @@ $(document).ready(function () {
         }
     });
 });
+
+// Feature recipes modal
+
+// Function to show the modal for Recipe 1
+function showRecipeModal1() {
+    $('#recipeModal1').modal('show');
+}
+
+// Function to show the modal for Recipe 2
+function showRecipeModal2() {
+    $('#recipeModal2').modal('show');
+}
+
+// Function to close Recipe Modal 1
+function closeRecipeModal1() {
+    $('#recipeModal1').modal('hide');
+}
+
+// Function to close Recipe Modal 2
+function closeRecipeModal2() {
+    $('#recipeModal2').modal('hide');
+}
+
+// Event listener for close buttons
+$(document).ready(function () {
+    $('.btn2').click(function () {
+        closeRecipeModal1();
+    });
+
+    $('.btn1').click(function () {
+        closeRecipeModal2();
+    });
+});
