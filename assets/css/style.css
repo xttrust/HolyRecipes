@@ -222,11 +222,11 @@ nav a:hover {
 
 /* ===== Search ===== */
 #button-search {
+    width: 100%;
     font-family: 'Kalnia', serif !important;
     border-radius: 20px !important;
     background-color: var(--bs-white);
-    padding-left: 15px;
-    padding-right: 15px;
+
 }
 
 .search-results-card {
@@ -240,10 +240,6 @@ nav a:hover {
 
 /* ===== Small devices (landscape phones, 576px and up) ===== */
 @media (min-width: 576px) {
-    #button-search {
-        margin-left: 15px;
-    }
-
     .col-md-6 {
         margin-bottom: 25px;
     }
@@ -258,11 +254,7 @@ nav a:hover {
 }
 
 /* ===== Large devices (desktops, 992px and up) ===== */
-@media (min-width: 992px) {
-    #button-search {
-        margin-left: 15px;
-    }
-}
+@media (min-width: 992px) {}
 
 /* ===== X-Large devices (large desktops, 1200px and up) ===== */
 @media (min-width: 1200px) {}
