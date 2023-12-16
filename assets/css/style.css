@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalnia &family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&family=Poppins:wght@300&display=swap');
 
 :root {
     --bs-blue: #0d6efd;
@@ -129,7 +129,7 @@ footer a:hover {
 
 /* ===== Navigation Bar ===== */
 
-nav {
+.nav-link {
     font-family: 'Kalnia', serif !important;
 }
 
