@@ -39,8 +39,18 @@
 body {
   margin: 0;
   padding: 0;
-  background: url('../images/landing_page_bg_img.png') no-repeat center center fixed;
+  background: url('../images/christmas-wallpaper.jpg') no-repeat center center fixed;
   background-size: cover;
+}
+
+/* ===== Fonts ===== */
+
+h1, h2, h3 {
+  font-family: 'Kalnia', serif;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
 }
 
 /* ===== Main ===== */
@@ -121,9 +131,41 @@ nav a:hover {
   margin-right: 20px;
 }
 
+/* ===== 404 page ===== */
+
+.fourohfour {
+  background-color: rgb(255, 255, 255, 0.9);
+  width: 50%;
+  margin-top: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 75px 90px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.fourohfour-icon {
+  color: #DA2C38;
+  font-size: 50px;
+}
+
+.fourohfour-icon:hover {
+  color:#87C38F;
+}
+
 /* ===== Search ===== */
 #top-search-input {
   max-width: 100%;
+}
+
+/* ===== Media queries ===== */
+
+@media (max-width: 750px) {
+  .fourohfour {
+    width: 80%;
+    padding: 10%;
+  }
 }
 
 /* ===== Extra small devices (phones) ===== */
