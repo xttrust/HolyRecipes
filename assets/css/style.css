@@ -31,11 +31,9 @@
         "Noto Color Emoji";
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
         "Liberation Mono", "Courier New", monospace;
-    --bs-gradient: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.15),
-        rgba(255, 255, 255, 0)
-    );
+    --bs-gradient: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.15),
+            rgba(255, 255, 255, 0));
 
     /* ===== Custom Colors ===== */
     --clr-red: #da2c38;
@@ -55,8 +53,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url("../images/holy_recipe_img_bg\(5\).png") no-repeat center
-        center fixed;
+    background: url("../images/holy_recipe_img_bg\(5\).png") no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -223,6 +220,7 @@ nav a:hover {
 .modal img {
     width: 100%;
 }
+
 .modal3 {
     max-width: 70%;
 }
@@ -360,13 +358,28 @@ nav a:hover {
 
 @media (max-width: 900px) {
     .contact-container {
-        width: 75%;
+        width: 85%;
         padding: 15px 50px;
     }
 
     .fourohfour {
         width: 75%;
         padding: 15px 50px;
+    }
+}
+
+@media (max-width: 585px) {
+    main {
+        background-color: transparent !important;
+    }
+
+    .carousel {
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+                rgba(0, 0, 0, 0.22) 0px 15px 12px !important;
+    }
+
+    .album {
+        padding: 0 !important
     }
 }
 
@@ -393,9 +406,7 @@ nav a:hover {
 }
 
 /* ===== X-Large devices (large desktops, 1200px and up) ===== */
-@media (min-width: 1200px) {
-}
+@media (min-width: 1200px) {}
 
 /* ===== XX-Large devices (larger desktops, 1400px and up) ===== */
-@media (min-width: 1400px) {
-}
+@media (min-width: 1400px) {}
