@@ -256,28 +256,26 @@ nav a:hover {
     box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
 }
 
-form button {
+.contact-container button {
     background-color: #226F54 !important;
     border: none !important;
 }
 
-form button:hover {
+.contact-container form button:hover {
     background-color: #87C38F !important;
     border: none !important;
 }
 
 /* Media queries  */
 
+/* media query for contact page  */
+
 @media (max-width: 900px) {
     .contact-container {
         width: 75%;
         padding: 15px 50px;
     }
-}
 
-/* ===== Media queries ===== */
-
-@media (max-width: 900px) {
     .fourohfour {
         width: 75%;
         padding: 15px 50px;
