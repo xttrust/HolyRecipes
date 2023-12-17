@@ -9,119 +9,119 @@
 1.  <details open>
         <summary><a href="#ux">UX</a></summary>
 
-        <ul>
-        <li><details>
-        <summary><a href="#goals">Goals</a></summary>
+      <ul>
+      <li><details>
+      <summary><a href="#goals">Goals</a></summary>
 
-        - [Visitor Goals](#visitor-goals)
-        - [User Stories](#user-stories)
-        </details></li>
+      - [Visitor Goals](#visitor-goals)
+      - [User Stories](#user-stories)
+      </details></li>
 
-        <li><details>
-        <summary><a href="#visual-design">Visual Design</a></summary>
+      <li><details>
+      <summary><a href="#visual-design">Visual Design</a></summary>
 
-        - [Wireframes](#wireframes)
-        - [Fonts](#fonts)
-        - [Icons](#icons)
-        - [Colors](#colors)
-        - [Images](#images)
-        - [Styling](#styling)
-        </details></li>
-        </ul>
+      - [Wireframes](#wireframes)
+      - [Fonts](#fonts)
+      - [Icons](#icons)
+      - [Colors](#colors)
+      - [Images](#images)
+      - [Styling](#styling)
+      </details></li>
+      </ul>
 
     </details>
 
 2.  <details open>
         <summary><a href="#features">Features</a></summary>
 
-        <ul>
-        <li><details>
-        <summary><a href="#page-elements">Page Elements</a></summary>
+      <ul>
+      <li><details>
+      <summary><a href="#page-elements">Page Elements</a></summary>
 
-        - [All Pages](#all-pages)
-        - [Index Page](#index-page)
-        - [Gallery Page](#gallery-page)
-        - [Contact Page](#contact-page)
-        </details></li>
+      - [All Pages](#all-pages)
+      - [Index Page](#index-page)
+      - [Gallery Page](#gallery-page)
+      - [Contact Page](#contact-page)
+      </details></li>
 
-        <li><details>
-        <summary><a href="#additional-features">Additional Features</a></summary>
+      <li><details>
+      <summary><a href="#additional-features">Additional Features</a></summary>
 
-        - [Image Loading Blur](#image-loading-blur)
-        - [Email](#email)
-        </details></li>
+      - [Image Loading Blur](#image-loading-blur)
+      - [Email](#email)
+      </details></li>
 
-        <li><details>
-        <summary><a href="#feature-ideas">Feature Ideas</a></summary>
+      <li><details>
+      <summary><a href="#feature-ideas">Feature Ideas</a></summary>
 
-        - [Basic](#basic)
-        - [Content](#content)
-        </details></li>
-        </ul>
+      - [Basic](#basic)
+      - [Content](#content)
+      </details></li>
+      </ul>
 
     </details>
 
 3.  <details open>
         <summary><a href="#technologies-used">Technologies Used</a></summary>
 
-        - [Languages](#languages)
-        - [Frameworks](#frameworks)
-        - [Libraries](#libraries)
-        - [APIs](#apis)
-        - [Platforms](#platforms)
-        - [Other Tools](#other-tools)
+      - [Languages](#languages)
+      - [Frameworks](#frameworks)
+      - [Libraries](#libraries)
+      - [APIs](#apis)
+      - [Platforms](#platforms)
+      - [Other Tools](#other-tools)
 
     </details>
 
 4.  <details open>
         <summary><a href="#testing">Testing</a></summary>
 
-        <ul>
-        <li><details>
-        <summary><a href="#methods">Methods</a></summary>
+      <ul>
+      <li><details>
+      <summary><a href="#methods">Methods</a></summary>
 
-        - [Validation](#validation)
-        - [General Testing](#general-testing)
-        - [Mobile Testing](#mobile-testing)
-        - [Desktop Testing](#desktop-testing)
-        </details></li>
+      - [Validation](#validation)
+      - [General Testing](#general-testing)
+      - [Mobile Testing](#mobile-testing)
+      - [Desktop Testing](#desktop-testing)
+      </details></li>
 
-        <li><details>
-        <summary><a href="#bugs">Bugs</a></summary>
+      <li><details>
+      <summary><a href="#bugs">Bugs</a></summary>
 
-        - [Known Bugs](#known-bugs)
-        - [Fixed Bugs](#fixed-bugs)
-        </details></li>
-        </ul>
+      - [Known Bugs](#known-bugs)
+      - [Fixed Bugs](#fixed-bugs)
+      </details></li>
+      </ul>
 
     </details>
 
 5.  <details open>
         <summary><a href="#deployment">Deployment</a></summary>
 
-        <ul>
-        <li><details>
-        <summary><a href="#local-deployment">Local Deployment</a></summary>
+      <ul>
+      <li><details>
+      <summary><a href="#local-deployment">Local Deployment</a></summary>
 
-        - [Local Preparation](#local-preparation)
-        - [Local Instructions](#local-instructions)
-        </details></li>
+      - [Local Preparation](#local-preparation)
+      - [Local Instructions](#local-instructions)
+      </details></li>
 
-        <li><details>
-        <summary><a href="#github-deployment">Github Deployment</a></summary>
+      <li><details>
+      <summary><a href="#github-deployment">Github Deployment</a></summary>
 
-        - [Github Preparation](#github-preparation)
-        - [Github Instructions](#github-instructions)
-        </details></li>
-        </ul>
+      - [Github Preparation](#github-preparation)
+      - [Github Instructions](#github-instructions)
+      </details></li>
+      </ul>
 
     </details>
 
 6.  <details open>
         <summary><a href="#credit-and-contact">Credit and Contact</a></summary>
 
-        - [Content](#content)
-        - [Contact](#contact)
+      - [Content](#content)
+      - [Contact](#contact)
 
     </details>
 
