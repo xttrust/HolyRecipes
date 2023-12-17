@@ -266,6 +266,9 @@ nav a:hover {
     border: none !important;
 }
 
+#footer-text {
+    text-align: center;
+}
 
 /* Media queries  */
 
@@ -299,7 +302,11 @@ nav a:hover {
 }
 
 /* ===== Large devices (desktops, 992px and up) ===== */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    #footer-text {
+        text-align: left;
+    }
+}
 
 /* ===== X-Large devices (large desktops, 1200px and up) ===== */
 @media (min-width: 1200px) {}
