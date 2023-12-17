@@ -209,16 +209,6 @@ nav a:hover {
 max-width: 70%;
 }
 
-.hovereffect {
-width:100%;
-height:100%;
-float:left;
-overflow:hidden;
-position:relative;
-text-align:center;
-cursor:default;
-}
-
 /* ===== Instant Classic ===== */
 .instant-classic-text{
     text-align: center !important;
