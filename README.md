@@ -9,119 +9,119 @@
 1.  <details open>
         <summary><a href="#ux">UX</a></summary>
 
-        <ul>
-        <li><details>
-        <summary><a href="#goals">Goals</a></summary>
+      <ul>
+      <li><details>
+      <summary><a href="#goals">Goals</a></summary>
 
-        - [Visitor Goals](#visitor-goals)
-        - [User Stories](#user-stories)
-        </details></li>
+      - [Visitor Goals](#visitor-goals)
+      - [User Stories](#user-stories)
+      </details></li>
 
-        <li><details>
-        <summary><a href="#visual-design">Visual Design</a></summary>
+      <li><details>
+      <summary><a href="#visual-design">Visual Design</a></summary>
 
-        - [Wireframes](#wireframes)
-        - [Fonts](#fonts)
-        - [Icons](#icons)
-        - [Colors](#colors)
-        - [Images](#images)
-        - [Styling](#styling)
-        </details></li>
-        </ul>
+      - [Wireframes](#wireframes)
+      - [Fonts](#fonts)
+      - [Icons](#icons)
+      - [Colors](#colors)
+      - [Images](#images)
+      - [Styling](#styling)
+      </details></li>
+      </ul>
 
     </details>
 
 2.  <details open>
         <summary><a href="#features">Features</a></summary>
 
-        <ul>
-        <li><details>
-        <summary><a href="#page-elements">Page Elements</a></summary>
+      <ul>
+      <li><details>
+      <summary><a href="#page-elements">Page Elements</a></summary>
 
-        - [All Pages](#all-pages)
-        - [Index Page](#index-page)
-        - [Gallery Page](#gallery-page)
-        - [Contact Page](#contact-page)
-        </details></li>
+      - [All Pages](#all-pages)
+      - [Index Page](#index-page)
+      - [Gallery Page](#gallery-page)
+      - [Contact Page](#contact-page)
+      </details></li>
 
-        <li><details>
-        <summary><a href="#additional-features">Additional Features</a></summary>
+      <li><details>
+      <summary><a href="#additional-features">Additional Features</a></summary>
 
-        - [Image Loading Blur](#image-loading-blur)
-        - [Email](#email)
-        </details></li>
+      - [Image Loading Blur](#image-loading-blur)
+      - [Email](#email)
+      </details></li>
 
-        <li><details>
-        <summary><a href="#feature-ideas">Feature Ideas</a></summary>
+      <li><details>
+      <summary><a href="#feature-ideas">Feature Ideas</a></summary>
 
-        - [Basic](#basic)
-        - [Content](#content)
-        </details></li>
-        </ul>
+      - [Basic](#basic)
+      - [Content](#content)
+      </details></li>
+      </ul>
 
     </details>
 
 3.  <details open>
         <summary><a href="#technologies-used">Technologies Used</a></summary>
 
-        - [Languages](#languages)
-        - [Frameworks](#frameworks)
-        - [Libraries](#libraries)
-        - [APIs](#apis)
-        - [Platforms](#platforms)
-        - [Other Tools](#other-tools)
+      - [Languages](#languages)
+      - [Frameworks](#frameworks)
+      - [Libraries](#libraries)
+      - [APIs](#apis)
+      - [Platforms](#platforms)
+      - [Other Tools](#other-tools)
 
     </details>
 
 4.  <details open>
         <summary><a href="#testing">Testing</a></summary>
 
-        <ul>
-        <li><details>
-        <summary><a href="#methods">Methods</a></summary>
+      <ul>
+      <li><details>
+      <summary><a href="#methods">Methods</a></summary>
 
-        - [Validation](#validation)
-        - [General Testing](#general-testing)
-        - [Mobile Testing](#mobile-testing)
-        - [Desktop Testing](#desktop-testing)
-        </details></li>
+      - [Validation](#validation)
+      - [General Testing](#general-testing)
+      - [Mobile Testing](#mobile-testing)
+      - [Desktop Testing](#desktop-testing)
+      </details></li>
 
-        <li><details>
-        <summary><a href="#bugs">Bugs</a></summary>
+      <li><details>
+      <summary><a href="#bugs">Bugs</a></summary>
 
-        - [Known Bugs](#known-bugs)
-        - [Fixed Bugs](#fixed-bugs)
-        </details></li>
-        </ul>
+      - [Known Bugs](#known-bugs)
+      - [Fixed Bugs](#fixed-bugs)
+      </details></li>
+      </ul>
 
     </details>
 
 5.  <details open>
         <summary><a href="#deployment">Deployment</a></summary>
 
-        <ul>
-        <li><details>
-        <summary><a href="#local-deployment">Local Deployment</a></summary>
+      <ul>
+      <li><details>
+      <summary><a href="#local-deployment">Local Deployment</a></summary>
 
-        - [Local Preparation](#local-preparation)
-        - [Local Instructions](#local-instructions)
-        </details></li>
+      - [Local Preparation](#local-preparation)
+      - [Local Instructions](#local-instructions)
+      </details></li>
 
-        <li><details>
-        <summary><a href="#github-deployment">Github Deployment</a></summary>
+      <li><details>
+      <summary><a href="#github-deployment">Github Deployment</a></summary>
 
-        - [Github Preparation](#github-preparation)
-        - [Github Instructions](#github-instructions)
-        </details></li>
-        </ul>
+      - [Github Preparation](#github-preparation)
+      - [Github Instructions](#github-instructions)
+      </details></li>
+      </ul>
 
     </details>
 
 6.  <details open>
         <summary><a href="#credit-and-contact">Credit and Contact</a></summary>
 
-        - [Content](#content)
-        - [Contact](#contact)
+      - [Content](#content)
+      - [Contact](#contact)
 
     </details>
 
@@ -152,7 +152,7 @@ User goals are:
 
 ### Wireframes
 
-Wireframes: (link or url)
+Wireframes: To see the wireframes created at the UX stage [Click Here!](https://github.com/xttrust/HolyRecipes/tree/main/wireframes)
 
 ### Fonts
 
@@ -160,30 +160,27 @@ Wireframes: (link or url)
   <img src="https://user-images.githubusercontent.com/44118951/92331221-6f750000-f075-11ea-8096-288bcc957e33.png" alt="Fonts">
 </div>
 
-- The primary font, [Montserrat](https://fonts.google.com/specimen/Montserrat#standard-styles) was chosen because it is standard, plain and informative but not too rigid. It looks friendly and conversational but holds a seriousness. It is also sans-serif, making it very easily readable throughout different color schemes and complementary to the font used for Headings.
-- The secondary font, [Julius Sans One](https://fonts.google.com/specimen/Julius+Sans+One#standard-styles) was chosen because it is thin, elegant and refined yet it has flair. As a font, it gave me the impression of an art gallery. It is sans-serif, so it is clear, clean and simple, maintaining the idea of a minimalist aesthetic. It was chosen for headings as it is evident but doesn't distract, keeping the eyes more focused on the photography.
+- The primary font, [Kalnia](https://fonts.google.com/specimen/Kalnia) was chosen because it instantly gives a more festive feel than what you may normally see on the web due to it going against the grain and being more decorative with a serif. This is more inline witth other festive designs around at this time of year giving it a holiday recognisability
+- The secondary font, [Poppins](https://fonts.google.com/specimen/Poppins) was chosen because it possesses increased readability over style while giving the page a very clean and professional look allowing the user to trust the content they are reading has merit.
 
 ### Icons
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/44118951/92331590-1fe40380-f078-11ea-814b-d15b413f59aa.png" alt="Icons">
+  <img src="Readme_Images/HolyFavicons.png" alt="Icons">
 </div>
 
 - Icons are taken from the [Fontawesome](https://fontawesome.com/) Icon library and are utilised as classes in the `<i>` tag.
 - As they are utilised as classes, they can easily be styled using other classes or IDs in the same tag. I often used Bootstrap classes to style them uniformly.
-- Icons are utilised in the footer for social account icons and the "scroll-to-top" arrow on the gallery page.
+- Icons are utilised as decoration for the page, adding flair to buttons that convey meaning as to their purpose secondary to the text description, an icon is often recognised quicker than what we read so this give a more fluid user experience when navigating the site
 
 ### Colors
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/44118951/92331821-a64d1500-f079-11ea-9ceb-a9b1b85872bd.png" alt="Color Pallette">
+  <img src="/workspace/HolyRecipes/Readme_Images/HolyColourPalette.png" alt="Color Pallette">
 </div>
 
-- I wanted the site to maintain a minimal aesthetic, colors are very basic and clean for highlighting the photos.
-- The primary color used is black. This is used to create a stark contrast with the colors of the photos, drawing the eyes and focus on them. This removes distraction, a common practice in theatre, cinemas, etc. White is often used in galleries but has more to do with lighting and reflection. On most computer screens, wherein the light is emitted from the screen, black is a better choice.
-- One accent color was chosen, the green to give a thematic connection to nature, the outdoors and travel. A little bit more than black and white is necessary to have an impact.
-- Text is primarily written in white to contrast on the bold color backgrounds of the primary and accent colors.
-- Finally, a neutral grey color is used for the footer to set it apart from the other elements on the site.
+- The primary goal of this colour palette was to give instant recognition to holiday colours we are all very familiar with, the second colour christmas tree green was used for the main navigation areas of the site (NavBar, Footer). 
+- The other colours were all used decorateively in other areas as the holidays are a colourful time of year, santa red was used as a hover effect on buttons to clearly display they were interactive to the user and the more muted green was used for as a link hover to clearly display to the user when they could interact with site.
 
 ### Images
 
@@ -218,12 +215,12 @@ Wireframes: (link or url)
 #### Navbar
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/44118951/92332641-b831b680-f07f-11ea-8ff6-d414e661b490.png" alt="Medium Header">
-  <img src="https://user-images.githubusercontent.com/44118951/92332689-f29b5380-f07f-11ea-9646-162f1b7b66c9.png" alt="Small Header">
+  <img src="/workspace/HolyRecipes/Readme_Images/HolyNavBar.png" alt="Medium Header">
+  <img src="/workspace/HolyRecipes/Readme_Images/HolyNavBarMobile.png" alt="Small Header">
 </div>
 
-- The Navbar is simple, providing only three options with only two very evident the Gallery and Contact pages, to maintain the minimalist style.
-- The Logo is always highlighted, swapping position as necessary depending on device size.
+- The Navbar is simple, providing only four options, the home page so the user can always access the landing page if they wish, an about page detailing the origin and expertise of HolyRecipes, a contact page if the user has any needs they want to convery to HolyRecipes and a search box so the user can look for all the recipes on the sites using any parameter they wish
+- The Logo is always highlighted, swapping size as necessary depending on device size.
 - On smaller devices, the menu becomes collapsible.
 - The mobile nav button has been placed to the right for ease of use with one hand.
 - The navbar is fixed so it is visible no matter how far you scroll.
@@ -231,20 +228,19 @@ Wireframes: (link or url)
 #### Footer
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/44118951/92339926-c18b4500-f0b8-11ea-9101-c5f3e55b4b95.png" alt="Medium Footer">
-  <img src="https://user-images.githubusercontent.com/44118951/92339924-c0f2ae80-f0b8-11ea-8fb1-7f7593dd2dae.png" alt="Small Footer">
+  <img src="/workspace/HolyRecipes/Readme_Images/HolyFooter.png" alt="Medium Footer">
+  <img src="/workspace/HolyRecipes/Readme_Images/HolyFooterMobile.png" alt="Small Footer">
 </div>
 
-- Located at the bottom of every page, mainly highlighting contact and social aspects with the photographer.
+- Located at the bottom of every page, highlighting the creators of the site
 - Made of three columns, changing shape for larger or smaller devices.
-- The first column has a newsletter signup box that uses EmailJS to make contact with the photographer.
-- A modal confirming the message has been sent and changes on success or an error is used for a response.
-- A message encouraging contact is used as the second column.
-- The third column represents social media links, highlighting 500px as the place to purchase photos.
+- The first column has a bit of descriptive text
+- The site logo is in the second column
+- The third column represents Github links of the sites creators
 
 ### Index Page
 
-#### Jumbotron Image
+#### Carousel
 
 - Used as a splash image that highlights a dramatic photograph, representing a sense of adventure.
 - An image with a person in it is used so the viewer can connect with it on a personal level.

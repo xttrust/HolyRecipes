@@ -2,42 +2,42 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HolyRecipes</title>
 
   <!-- ===== SEO Meta Tags ===== -->
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <meta name="subject" content="" />
-  <meta name="language" content="" />
-  <meta name="distribution" content="Global" />
-  <meta name="rating" content="General" />
-  <meta name="robots" content="index,follow" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="subject" content="">
+  <meta name="language" content="">
+  <meta name="distribution" content="Global">
+  <meta name="rating" content="General">
+  <meta name="robots" content="index,follow">
 
   <!-- ====== Theme color for address bar ====== -->
-  <meta name="theme-color" content="" />
+  <meta name="theme-color" content="">
 
   <!-- ====== Favicon ====== -->
   <!-- ====== Standard favicon ====== -->
-  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
   <!-- ====== Apple Touch Icons ====== -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
   <!-- ====== Favicon for Microsoft Edge ====== -->
-  <meta name="msapplication-config" content="assets/favicon/site.webmanifest" />
+  <meta name="msapplication-config" content="assets/favicon/site.webmanifest">
   <!-- ===== Bootstrap styles ===== -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
   <!-- ===== Website styles ===== -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
 
   <!-- ===== Font awesome styles ===== -->
-  <link rel="stylesheet" href="assets/css/font-awesome-all.min.css" />
+  <link rel="stylesheet" href="assets/css/font-awesome-all.min.css">
 
   <!-- ===== Animate CSS styles ===== -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
   <!-- ===== Page related CSS styles ===== -->
   <style>
@@ -64,7 +64,7 @@
       <nav class="navbar navbar-expand-lg bg-transparent bg-body-tertiary fixed-top p-4" id="navbar">
         <div class="container">
           <a class="navbar-brand ps-4" href="index.html">
-            <img id="logo" src="assets/images/holyrecipes-logo.png" alt="company logo" width="135" height="60" />
+            <img id="logo" src="assets/images/holyrecipes-logo.png" alt="company logo" width="135" height="60">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -99,24 +99,27 @@
     <!-- ===== /Header ===== -->
 
     <!-- ===== Modal ===== -->
-    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
         <div class="modal-content">
+
           <!-- ===== Modal header ===== -->
           <div class="modal-header">
+
             <!-- ===== Search form ===== -->
             <form class="search-function">
               <h3 class="mb-3">Find your Christmas recipe</h3>
               <p>
-                We have a delightful collection of Christmas recipes that will
-                add joy to your festive celebrations. From classic holiday
-                treats to creative twists on traditional dishes, our curated
-                selection is sure to inspire your holiday menu.
+                We have a delightful collection of Christmas recipes that will add joy to your festive
+                celebrations. From
+                classic holiday treats to creative twists on traditional dishes, our curated selection is
+                sure to inspire
+                your holiday menu.
               </p>
 
               <div class="row">
                 <div class="col-md-6 col-sm-12 mb-3">
-                  <input type="text" class="form-control" placeholder="Search Your Recipe..." />
+                  <input type="text" class="form-control" placeholder="Search Your Recipe...">
                 </div>
 
                 <div class="col-md-4 col-sm-12 mb-3">
@@ -129,71 +132,76 @@
                     <option value="desserts">Dessert</option>
                   </select>
                 </div>
+                <div class="checkbox-div">
+                  <input type="checkbox" name="health" class="btn-check" id="dairy-free" value="dairy-free">
+                  <label class="btn btn-outline-primary" for="dairy-free">Dairy Free</label>
+                  <input type="checkbox" name="health" class="btn-check" id="gluten-free" value="gluten-free">
+                  <label class="btn btn-outline-primary" for="gluten-free">Gluten Free</label>
 
-                <div class="col-md-2 col-sm-12">
+
+                  <input type="checkbox" name="health" class="btn-check" id="vegetarian" value="vegetarian">
+                  <label class="btn btn-outline-primary" for="vegetarian">Vegetarian</label>
+                  <input type="checkbox" name="health" class="btn-check" id="vegan" value="vegan">
+                  <label class="btn btn-outline-primary" for="vegan">Vegan</label>
+
+
                   <button type="submit" class="btn btn-outline-success d-flex align-items-center">
                     <i class="fa fa-search me-2"></i>
                     Search
                   </button>
                 </div>
+
               </div>
-              <input type="checkbox" name="health" class="btn-check" id="dairy-free" value="dairy-free"
-                autocomplete="off" />
-              <label class="btn btn-outline-primary" for="dairy-free">Dairy Free</label>
-              <input type="checkbox" name="health" class="btn-check" id="gluten-free" value="gluten-free"
-                autocomplete="off" />
-              <label class="btn btn-outline-primary" for="gluten-free">Gluten Free</label>
-              <input type="checkbox" name="health" class="btn-check" id="vegetarian" value="vegetarian"
-                autocomplete="off" />
-              <label class="btn btn-outline-primary" for="vegetarian">Vegetarian</label>
-              <input type="checkbox" name="health" class="btn-check" id="vegan" value="vegan" autocomplete="off" />
-              <label class="btn btn-outline-primary" for="vegan">Vegan</label>
+
             </form>
             <!-- ===== /Search form ===== -->
+
           </div>
           <!-- ===== /Modal header ===== -->
 
           <!-- ===== Modal body ===== -->
           <div class="modal-body">
-            <section id="results"></section>
+            <div id="results"></div>
           </div>
           <!-- ===== /Modal body ===== -->
 
           <!-- ===== Modal footer ===== -->
           <div class="modal-footer">
             <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">
-              <i class="fa fa-remove"></i> Close
+              <i class="fa fa-remove"></i>
+              Close
             </button>
           </div>
           <!-- ===== /Modal footer ===== -->
+
         </div>
       </div>
     </div>
-    <!-- ===== /Modal ===== -->
+
 
     <!-- ===== Main ===== -->
     <section id="contact-page">
       <div class="contact-container text-center">
         <div id="form-header">
-          <img src="assets/images/contact-img.png" height="80" width="80" />
+          <img src="assets/images/contact-img.png" height="80" width="80" alt="Reindeer">
           <h1 class="pb-3">Any Questions? Send us a message!</h1>
         </div>
         <div id="email-success" class="hide">
-          <img src="assets/images/contact-success.png" height="80" width="80" />
+          <img src="assets/images/contact-success.png" height="80" width="80" alt="Santa Claus">
           <h2 class="text-center mt-4">
             Thank you! Santa will read your mail and reply in 3-5 business
             days.
           </h2>
         </div>
         <div id="email-fail" class="hide">
-          <img src="assets/images/contact-error.png" height="80" width="80" />
+          <img src="assets/images/contact-error.png" height="80" width="80" alt="Sad Santa">
           <h2 class="text-center mt-4">
             Sorry, there's something wrong... please try again
           </h2>
         </div>
         <form id="contact-form" onsubmit="return sendMail(this);">
-          <input type="text" name="name" id="name" class="form-control mb-2" placeholder="Name" required />
-          <input type="email" name="email" id="emailaddress" class="form-control mb-2" placeholder="Email" required />
+          <input type="text" name="name" id="name" class="form-control mb-2" placeholder="Name" required>
+          <input type="email" name="email" id="emailaddress" class="form-control mb-2" placeholder="Email" required>
           <textarea rows="5" name="content" id="content" class="form-control mb-4" placeholder="Write your message here"
             required></textarea>
           <div class="form-row text-center">
@@ -209,48 +217,40 @@
     <!-- ===== /Main ===== -->
 
     <!-- ===== Footer ===== -->
-
-    <footer
-      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top-0 container text-white">
-      <p class="col-12 col-md-6 col-lg-4 mb-0">Hacked together by...</p>
-
-      <a href="/"
-        class="col-12 col-md-6 col-lg-4 d-flex align-items-top justify-content-center mb-0 mb-md-0 me-md-auto link-body-emphasis">
-        <img class="img-fluid footer-logo" src="assets/images/holyrecipes-logo.png" alt="footer logo" />
-      </a>
-
-      <ul class="nav col-12 col-md-6 col-lg-4 justify-content-end text-capitalize">
-        <li class="nav-item">
-          <a href="https://github.com/xttrust" class="nav-link px-2 text-white">florin</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://github.com/lee-joanne" class="nav-link px-2 text-white">joanne</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://github.com/caleom" class="nav-link px-2 text-white">liam</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://github.com/NikolettaGr" class="nav-link px-2 text-white">nikoletta</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://github.com/phillywhitty" class="nav-link px-2 text-white">phil whitty</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://github.com/sammartin92" class="nav-link px-2 text-white">sam</a>
-        </li>
-      </ul>
+    <footer class="py-3 my-4 border-top-0 container text-white">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-lg-5 mb-3 mb-lg-0 text-lg-left">
+          <p id="footer-text" class="my-2">Hacked together by...</p>
+        </div>
+        <div class="col-12 col-lg-2 d-flex justify-content-center mb-3 mb-lg-0">
+          <img class="img-fluid footer-logo" src="assets/images/holyrecipes-logo.png" alt="footer logo">
+        </div>
+        <div class="col-12 col-lg-5 d-flex justify-content-center justify-content-lg-end">
+          <ul class="nav text-capitalize">
+            <li class="nav-item"><a href="https://github.com/xttrust" class="nav-link text-white px-2">florin</a></li>
+            <li class="nav-item"><a href="https://github.com/lee-joanne" class="nav-link text-white px-2">joanne</a>
+            </li>
+            <li class="nav-item"><a href="https://github.com/caleom" class="nav-link text-white px-2">liam</a></li>
+            <li class="nav-item"><a href="https://github.com/NikolettaGr" class="nav-link text-white px-2">nikoletta</a>
+            </li>
+            <li class="nav-item"><a href="https://github.com/phillywhitty" class="nav-link text-white px-2">phil
+                whitty</a></li>
+            <li class="nav-item"><a href="https://github.com/sammartin92" class="nav-link text-white px-2">sam</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
+    <!-- ===== /Footer ===== -->
+
+    <!-- ===== jQuery===== -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- ===== Bootstrap javascript ===== -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- ===== Website javascript ===== -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/sendEmail.js"></script>
   </div>
-  <!-- ===== /Footer ===== -->
-
-  <!-- ===== jQuery===== -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-  <!-- ===== Bootstrap javascript ===== -->
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <!-- ===== Website javascript ===== -->
-  <script src="assets/js/script.js"></script>
-  <script src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalnia&family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kalnia&family=Poppins:wght@300&display=swap");
 
 :root {
+    --clr-3: #da2c38;
+    --clr-4: #226f54;
+    --clr-5: #f4f0bb;
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
@@ -22,21 +25,29 @@
     --bs-danger: #dc3545;
     --bs-light: #f8f9fa;
     --bs-dark: #212529;
-    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.15),
+        rgba(255, 255, 255, 0)
+    );
 
     /* ===== Custom Colors ===== */
-    --clr-red: #DA2C38;
-    --clr-green: #226F54;
-    --clr-light-green: #87C38F;
-    --clr-teal: #F4F0BB;
-    --clr-brown: #43291F;
+    --clr-red: #da2c38;
+    --clr-green: #226f54;
+    --clr-light-green: #87c38f;
+    --clr-teal: #f4f0bb;
+    --clr-brown: #43291f;
     /* ===== Custom Colors ===== */
 }
 
 * {
-    cursor: url('../images/christmas-cursor.png'), pointer !important;
+    cursor: url("../images/christmas-cursor.png"), pointer !important;
     transition: all 0.5s !important;
 }
 
@@ -44,7 +55,8 @@
 body {
     margin: 0;
     padding: 0;
-    background: url('../images/holy_recipe_img_bg\(5\).png') no-repeat center center fixed;
+    background: url("../images/holy_recipe_img_bg\(5\).png") no-repeat center
+        center fixed;
     background-size: cover;
 }
 
@@ -53,11 +65,12 @@ body {
 h1,
 h2,
 h3 {
-    font-family: 'Kalnia', serif;
+    font-family: "Kalnia", serif;
 }
 
-p {
-    font-family: 'Poppins', sans-serif;
+p,
+li {
+    font-family: "Poppins", sans-serif;
 }
 
 /* ===== Main ===== */
@@ -67,9 +80,16 @@ main {
     padding-top: 20px;
 }
 
+.checkbox-div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
 /* ===== Footer ===== */
 footer {
-    background-color: #226F54;
+    background-color: #226f54;
+    margin-top: 1.5rem !important;
 }
 
 .hide {
@@ -84,17 +104,23 @@ footer a:hover {
     text-decoration: underline;
 }
 
+.names {
+    display: flex;
+    justify-content: center;
+}
+
 /* ===== Standard Styles ===== */
 .bg-transparent {
     background: rgba(0, 0, 0, 0.75) !important;
 }
 
 .bg-scroll {
-    background: #226F54 !important;
+    background: #226f54 !important;
 }
 
 .shadow {
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px !important;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px !important;
 }
 
 .shadow:hover {
@@ -102,40 +128,39 @@ footer a:hover {
 }
 
 .btn1 {
-    background-color: #F4F0BB;
+    background-color: #f4f0bb;
     color: #212529;
     border: none;
     height: 43px;
 }
 
 .btn1:hover {
-    background-color: #DA2C38 !important;
-    color: #F4F0BB;
-    border-color: #DA2C38;
+    background-color: #da2c38 !important;
+    color: #f4f0bb;
+    border-color: #da2c38;
 }
 
 .btn2 {
-    background-color: #226F54;
+    background-color: #226f54;
     color: #f8f9fa;
     border: none;
     height: 45px;
 }
 
 .btn2:hover {
-    background-color: #DA2C38 !important;
-    border-color: #DA2C38;
+    background-color: #da2c38 !important;
+    border-color: #da2c38;
 }
-
 
 /* ===== Navigation Bar ===== */
 
 .nav-link {
-    font-family: 'Kalnia', serif !important;
-    color: #226F54;
+    font-family: "Kalnia", serif !important;
+    color: #226f54;
 }
 
 nav .active {
-    color: #DA2C38 !important;
+    color: #da2c38 !important;
 }
 
 nav a:hover {
@@ -166,13 +191,13 @@ nav a:hover {
     border-radius: 20px;
     background-color: white;
     opacity: 0.9;
-    color: #226F54 !important;
+    color: #226f54 !important;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 .carousel-indicators [data-bs-target] {
-    background-color: #226F54;
+    background-color: #226f54;
 }
 
 .section1 img {
@@ -191,22 +216,67 @@ nav a:hover {
 
 .feature-recipes-col-2 {
     border-radius: 5px;
-    background-color: #F4F0BB !important;
+    background-color: #f4f0bb !important;
 }
 
-.feature-recipes-modal-image {
+.feature-recipes-modal-image,
+.modal img {
     width: 100%;
 }
-
-.viewmore-btn {
-    background-color: #226F54 !important;
-    border-radius: 5px !important;
-    color: white !important;
-    font-family: 'Poppins', sans-serif !important;
+.modal3 {
+    max-width: 70%;
 }
 
-.viewmore-btn:hover {
-    background-color: #DA2C38 !important;
+/* ===== Instant Classic Section ===== */
+
+.instant-content {
+    background-color: #f8f9fad9;
+}
+
+.instant-classic-bg-img {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.instant-classic-bg-img::before,
+.instant-classic-bg-img::after {
+    content: "";
+    position: absolute;
+    inset: -0.5rem;
+    z-index: -1;
+}
+
+.instant-classic-bg-img::before {
+    border-top: 2px solid var(--clr-3);
+    border-bottom: 2px solid var(--clr-3);
+}
+
+.instant-classic-bg-img::after {
+    background: conic-gradient(from 0deg,
+            var(--clr-3),
+            var(--clr-4),
+            var(--clr-5),
+            var(--clr-4),
+            var(--clr-3));
+    border-radius: inherit;
+    filter: blur(3.5rem);
+    animation: rotation 20s linear infinite;
+}
+
+.col-md-6 img {
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* ===== 404 page ===== */
@@ -224,25 +294,24 @@ nav a:hover {
 }
 
 .fourohfour-icon {
-    color: #DA2C38;
+    color: #da2c38;
     font-size: 50px;
 }
 
 .fourohfour-icon:hover {
-    color: #87C38F;
+    color: #87c38f;
 }
 
 /* ===== Search ===== */
 #button-search {
     width: 100%;
-    font-family: 'Kalnia', serif !important;
+    font-family: "Kalnia", serif !important;
     border-radius: 20px !important;
     background-color: var(--bs-white);
-
 }
 
 .search-results-card {
-    font-family: 'Kalnia', serif !important;
+    font-family: "Kalnia", serif !important;
     width: 80%;
     margin: 50px auto 90px;
 }
@@ -254,7 +323,7 @@ nav a:hover {
 }
 
 .contact-container {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     border-radius: 5px;
     background-color: rgb(255, 255, 255, 0.8);
     width: 50%;
@@ -268,13 +337,21 @@ nav a:hover {
 }
 
 .contact-container button {
-    background-color: #226F54 !important;
+    background-color: #226f54 !important;
     border: none !important;
 }
 
 .contact-container form button:hover {
-    background-color: #87C38F !important;
+    background-color: #87c38f !important;
     border: none !important;
+}
+
+#footer-text {
+    text-align: center;
+}
+
+.detail-box {
+    text-align: left;
 }
 
 /* Media queries  */
@@ -309,10 +386,16 @@ nav a:hover {
 }
 
 /* ===== Large devices (desktops, 992px and up) ===== */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    #footer-text {
+        text-align: left;
+    }
+}
 
 /* ===== X-Large devices (large desktops, 1200px and up) ===== */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
 
 /* ===== XX-Large devices (larger desktops, 1400px and up) ===== */
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+}
