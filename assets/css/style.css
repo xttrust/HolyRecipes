@@ -239,6 +239,13 @@ nav a:hover {
 
 /* ===== Media queries ===== */
 
+@media (max-width: 900px) {
+    .fourohfour {
+        width: 75%;
+        padding: 15px 50px;
+    }
+}
+
 /* ===== Small devices (landscape phones, 576px and up) ===== */
 @media (min-width: 576px) {
     .col-md-6 {
