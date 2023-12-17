@@ -198,6 +198,17 @@ nav a:hover {
     width: 100%;
 }
 
+.viewmore-btn {
+    background-color: #226F54 !important;
+    border-radius: 5px !important;
+    color: white !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.viewmore-btn:hover {
+    background-color: #DA2C38 !important;
+}
+
 /* ===== 404 page ===== */
 
 .fourohfour {
