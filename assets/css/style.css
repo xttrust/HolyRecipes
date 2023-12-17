@@ -270,6 +270,10 @@ nav a:hover {
     text-align: center;
 }
 
+.detail-box {
+    text-align: left;
+}
+
 /* Media queries  */
 
 /* media query for contact page  */
