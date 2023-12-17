@@ -47,7 +47,7 @@ function fetchAPI() {
     document.head.appendChild(script);
 
     //reset health
-    health= "";
+    health = "";
 }
 
 
@@ -103,7 +103,7 @@ function showResults(results) {
                 </ol>
             </div>
             `
-    }    
+    }
 }
 
 
@@ -115,7 +115,7 @@ searchForms.forEach(searchForm => {
         searchQuery = e.target.querySelector('input').value;
         let checkboxes = document.querySelectorAll('.btn-check');
         checkboxes.forEach((checkbox) => {
-            if (checkbox.checked == true){
+            if (checkbox.checked == true) {
                 health += `&health=${checkbox.value}`
             }
         })
@@ -137,7 +137,7 @@ $(document).ready(function () {
         // style when scrolling 
         if ($(window).scrollTop() > 50) {
             $('#navbar').removeClass('bg-transparent').addClass('bg-scroll')
-        // style when scrolled to top
+            // style when scrolled to top
         } else {
             $('#navbar').removeClass('bg-scroll').addClass('bg-transparent');
         }
@@ -174,5 +174,44 @@ $(document).ready(function () {
 
     $('.btn1').click(function () {
         closeRecipeModal2();
+    });
+});
+
+// Function to show the modal for Recipe 3
+function showRecipeModal3() {
+    $('#recipeModal3').modal('show');
+}
+
+// Function to show the modal for Recipe 4
+function showRecipeModal4() {
+    $('#recipeModal4').modal('show');
+}
+
+// Function to show the modal for Recipe 5
+function showRecipeModal5() {
+    $('#recipeModal5').modal('show');
+}
+
+// Function to close modals
+document.addEventListener('DOMContentLoaded', function () {
+    // Get the modal elements
+    var recipeModal3 = new bootstrap.Modal(document.getElementById('recipeModal3'));
+    var recipeModal4 = new bootstrap.Modal(document.getElementById('recipeModal4'));
+    var recipeModal5 = new bootstrap.Modal(document.getElementById('recipeModal5'));
+
+    // Attach click event listeners to the close buttons
+    document.getElementById('closeRecipeModal3').addEventListener('click', function () {
+        // Close the modal
+        recipeModal3.hide();
+    });
+
+    document.getElementById('closeRecipeModal4').addEventListener('click', function () {
+        // Close the modal
+        recipeModal4.hide();
+    });
+
+    document.getElementById('closeRecipeModal5').addEventListener('click', function () {
+        // Close the modal
+        recipeModal5.hide();
     });
 });
