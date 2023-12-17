@@ -70,6 +70,7 @@ main {
 /* ===== Footer ===== */
 footer {
     background-color: #226F54;
+    margin-top: 1.5rem !important;
 }
 
 .hide {
@@ -82,6 +83,11 @@ footer {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+.names{
+    display: flex;
+    justify-content: center;
 }
 
 /* ===== Standard Styles ===== */
