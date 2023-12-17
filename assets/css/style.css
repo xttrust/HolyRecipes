@@ -328,7 +328,7 @@ nav a:hover {
 /* ===== Contact page ===== */
 
 #contact-page {
-    height: 80vh;
+    height: 86vh;
 }
 
 .contact-container {
@@ -384,7 +384,7 @@ nav a:hover {
         background-color: transparent !important;
     }
 
-    .carousel {
+    .carousel, .instant-div {
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
                 rgba(0, 0, 0, 0.22) 0px 15px 12px !important;
     }
