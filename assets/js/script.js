@@ -1,6 +1,5 @@
 const searchForms = document.querySelectorAll('.search-function');
 let searchQuery = "";
-// let mealType = "";
 let dishType = "";
 let health = "";
 let results;
@@ -67,12 +66,13 @@ function showResults(results) {
     let instructionLines = "";
     let ingredients = results.recipe.ingredientLines;
     let instructions = results.recipe.instructionLines;
+    let summary = results.recipe.summary;
 
     for (let i = 0; i < ingredients.length; i++) {
         ingredientLines += `<li> ${ingredients[i]} </li>`
     }
 
-    if (instructions && instructions.length > 0) {
+    if (instructions && instructions.length > 0 && summary) {
         for (let i = 0; i < instructions.length; i++) {
             instructionLines += `<li> ${instructions[i]} </li>`;
         }
@@ -81,7 +81,7 @@ function showResults(results) {
         <img src="${results.recipe.image}" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">${results.recipe.label}</h5>
-            <p class="card-text">${results.recipe.summary}</p>
+            <p class="card-text">${summary}</p>
             <button class="btn btn-primary" type="button" 
                     data-bs-toggle="collapse" 
                     data-bs-target="#collapseExample" 
@@ -119,7 +119,6 @@ searchForms.forEach(searchForm => {
                 health += `&health=${checkbox.value}`
             }
         })
-        // mealType = e.target.querySelector('#mealType').value;
         dishType = e.target.querySelector('#dishType').value;
         fetchAPI();
     })
