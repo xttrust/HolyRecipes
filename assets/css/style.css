@@ -225,6 +225,17 @@ nav a:hover {
     max-width: 70%;
 }
 
+.viewmore-btn {
+    background-color: #226F54 !important;
+    border-radius: 5px !important;
+    color: white !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.viewmore-btn:hover {
+    background-color: #DA2C38 !important;
+}
+
 /* ===== Instant Classic Section ===== */
 
 .instant-content {
@@ -317,7 +328,7 @@ nav a:hover {
 /* ===== Contact page ===== */
 
 #contact-page {
-    height: 80vh;
+    height: 86vh;
 }
 
 .contact-container {
@@ -373,13 +384,17 @@ nav a:hover {
         background-color: transparent !important;
     }
 
-    .carousel {
+    .carousel, .instant-div {
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
                 rgba(0, 0, 0, 0.22) 0px 15px 12px !important;
     }
 
     .album {
         padding: 0 !important
+    }
+
+    .viewmore-btn {
+        margin-bottom: 10% !important;
     }
 }
 
