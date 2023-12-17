@@ -198,6 +198,12 @@ nav a:hover {
     width: 100%;
 }
 
+
+/* ===== Instant Classic ===== */
+.instant-classic-text{
+    text-align: center !important;
+}
+
 /* ===== 404 page ===== */
 
 .fourohfour {
