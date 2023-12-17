@@ -3,20 +3,11 @@ let searchQuery = "";
 let dishType = "";
 let health = "";
 let results;
-let baseURL;
 
-//checkboxes
-var dairyFreeCheckbox = document.getElementById("dairy-free");
-var glutenFreeCheckbox = document.getElementById("gluten-free");
-var vegetarianCheckbox = document.getElementById("vegetarian");
-var veganCheckbox = document.getElementById("vegan");
 
 
 let resultsHTML = document.querySelector('#results');
-let recipeButtons = document.querySelectorAll('.recipe-button')
-let ingredientButtons = document.querySelectorAll('.ingredient-button')
-let recipeCollapses = document.querySelectorAll('.recipe-collapse')
-let ingredientCollapses = document.querySelectorAll('.ingredient-collapse')
+
 
 
 function fetchAPI() {
@@ -34,13 +25,13 @@ function fetchAPI() {
     }
 
     if (health != "") {
-        apiURL += `${health}`
+        apiURL += `${health}`;
     }
 
     // Set the script source to the API URL
     script.src = apiURL;
 
-    console.log(apiURL)
+    console.log(apiURL);
 
     // Append the script element to the document head
     document.head.appendChild(script);
@@ -69,7 +60,7 @@ function showResults(results) {
     let summary = results.recipe.summary;
 
     for (let i = 0; i < ingredients.length; i++) {
-        ingredientLines += `<li> ${ingredients[i]} </li>`
+        ingredientLines += `<li> ${ingredients[i]} </li>`;
     }
 
     if (instructions && instructions.length > 0 && summary) {
@@ -102,7 +93,7 @@ function showResults(results) {
                     ${instructionLines}
                 </ol>
             </div>
-            `
+            `;
     }
 }
 
@@ -116,13 +107,13 @@ searchForms.forEach(searchForm => {
         let checkboxes = document.querySelectorAll('.btn-check');
         checkboxes.forEach((checkbox) => {
             if (checkbox.checked == true) {
-                health += `&health=${checkbox.value}`
+                health += `&health=${checkbox.value}`;
             }
-        })
+        });
         dishType = e.target.querySelector('#dishType').value;
         fetchAPI();
-    })
-})
+    });
+});
 
 
 
@@ -135,7 +126,7 @@ $(document).ready(function () {
     $(window).scroll(function () {
         // style when scrolling 
         if ($(window).scrollTop() > 50) {
-            $('#navbar').removeClass('bg-transparent').addClass('bg-scroll')
+            $('#navbar').removeClass('bg-transparent').addClass('bg-scroll');
             // style when scrolled to top
         } else {
             $('#navbar').removeClass('bg-scroll').addClass('bg-transparent');
