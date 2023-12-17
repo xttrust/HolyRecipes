@@ -225,6 +225,17 @@ nav a:hover {
     max-width: 70%;
 }
 
+.viewmore-btn {
+    background-color: #226F54 !important;
+    border-radius: 5px !important;
+    color: white !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.viewmore-btn:hover {
+    background-color: #DA2C38 !important;
+}
+
 /* ===== Instant Classic Section ===== */
 
 .instant-content {
@@ -380,6 +391,10 @@ nav a:hover {
 
     .album {
         padding: 0 !important
+    }
+
+    .viewmore-btn {
+        margin-bottom: 10% !important;
     }
 }
 
