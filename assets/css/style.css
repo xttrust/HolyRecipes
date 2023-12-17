@@ -198,6 +198,9 @@ nav a:hover {
     width: 100%;
 }
 
+.modal3 {
+max-width: 70%;
+}
 
 /* ===== Instant Classic ===== */
 .instant-classic-text{
