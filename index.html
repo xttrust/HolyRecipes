@@ -44,7 +44,7 @@
         rel="stylesheet" href="assets/css/font-awesome-all.min.css">
 
         <!-- ===== Animate CSS styles ===== -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     </head>
 
     <body>
@@ -87,7 +87,7 @@
         <!-- ===== /Header ===== -->
 
         <!-- ===== Modal ===== -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-xl modal-dialog-scrollable">
                 <div
                     class="modal-content">
@@ -131,13 +131,13 @@
                                 </div>
 
                             </div>
-                            <input type="checkbox" name="health" class="btn-check" id="dairy-free" value="dairy-free" autocomplete="off">
+                            <input type="checkbox" name="health" class="btn-check" id="dairy-free" value="dairy-free">
                             <label class="btn btn-outline-primary" for="dairy-free">Dairy Free</label>
-                            <input type="checkbox" name="health" class="btn-check" id="gluten-free" value="gluten-free" autocomplete="off">
+                            <input type="checkbox" name="health" class="btn-check" id="gluten-free" value="gluten-free">
                             <label class="btn btn-outline-primary" for="gluten-free">Gluten Free</label>
-                            <input type="checkbox" name="health" class="btn-check" id="vegetarian" value="vegetarian" autocomplete="off">
+                            <input type="checkbox" name="health" class="btn-check" id="vegetarian" value="vegetarian">
                             <label class="btn btn-outline-primary" for="vegetarian">Vegetarian</label>
-                            <input type="checkbox" name="health" class="btn-check" id="vegan" value="vegan" autocomplete="off">
+                            <input type="checkbox" name="health" class="btn-check" id="vegan" value="vegan">
                             <label class="btn btn-outline-primary" for="vegan">Vegan</label>
                         </form>
                         <!-- ===== /Search form ===== -->
@@ -147,7 +147,7 @@
 
                     <!-- ===== Modal body ===== -->
                     <div class="modal-body">
-                        <section id="results"></section>
+                        <div id="results"></div>
                     </div>
                     <!-- ===== /Modal body ===== -->
 
@@ -189,7 +189,6 @@
                                         <br>
                                         as we bring you the best of holiday joy and celebration</strong>
                                 </p>
-                            </p>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -239,7 +238,7 @@
                 <!-- ===== Featured Recipe 1 ===== -->
                 <div class="col-md-6 mb-4">
                     <div class="h-100 p-5 text-bg-dark feature-recipes-col-1 shadow">
-                        <img src="assets/images/gingerbread-man.png" width="150px" class="mb-3">
+                        <img src="assets/images/gingerbread-man.png" width="150" class="mb-3" alt="Gingerbread man">
                         <h2 class="mb-3">
                             <i class="fa fa-star text-danger"></i>
                             Christmas Sugar Cookies
@@ -267,7 +266,7 @@
                 <!-- ===== Featured Recipe 2 ===== -->
                 <div class="col-md-6 mb-4">
                     <div class="h-100 p-5 bg-body-tertiary feature-recipes-col-2 shadow">
-                        <img src="assets/images/cup.png" width="150px" class="mb-3">
+                        <img src="assets/images/cup.png" width="150" class="mb-3" alt="Cup of Peppermint Hot Chocolate">
                         <h2 class="mb-3">
                             <i class="fa fa-star text-danger"></i>
                             Peppermint Hot Chocolate
@@ -299,7 +298,7 @@
         <div class="modal fade" id="recipeModal1" tabindex="-1" role="dialog" aria-labelledby="recipeModal1Label" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <img src="assets/images/cookies-.jpg" class="rounded feature-recipes-modal-image">
+                    <img src="assets/images/cookies-.jpg" class="rounded feature-recipes-modal-image" alt="Christmas Cookies">
                     <div class="modal-header">
                         <h2 class="modal-title" id="recipeModal1Label">Christmas Sugar Cookies</h2>
                     </div>
@@ -338,7 +337,7 @@
         <div class="modal fade" id="recipeModal2" tabindex="-1" role="dialog" aria-labelledby="recipeModal2Label" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <img src="assets/images/hot-chocolate.jpg" class="rounded feature-recipes-modal-image">
+                    <img src="assets/images/hot-chocolate.jpg" class="rounded feature-recipes-modal-image" alt="Hot Chocolate">
                     <div class="modal-header">
                         <h2 class="modal-title" id="recipeModal2Label">Peppermint Hot Chocolate</h2>
                     </div>
@@ -517,7 +516,7 @@
                 </div>
                 <div class="col-md-6 mb-4">
                     <div class="h-100 p-3 text-bg-white shadow rounded">
-                        <img src="assets/images/kid.jpg" class="img-fluid rounded my-2">
+                        <img src="assets/images/kid.jpg" class="img-fluid rounded my-2" alt="Child hanging tree decorations">
                         <p>
                             As the winter chill embraces the world, a special kind of enchantment blankets the hearts of
                                                                                                                                                                                                                                                             children.
@@ -533,7 +532,8 @@
         </div>
         <!-- ===== /Family Dinner Traditions ===== -->
     </body>
-</html></main><!-- ===== /Main ===== --><!-- ===== Footer ===== --><footer class="py-3 my-4 border-top-0 container text-white">
+  </main>
+</html><!-- ===== /Main ===== --><!-- ===== Footer ===== --><footer class="py-3 my-4 border-top-0 container text-white">
 <div class="row justify-content-center align-items-center">
     <div class="col-12 col-lg-5 mb-3 mb-lg-0 text-lg-left">
         <p id="footer-text" class="my-2">Hacked together by...</p>

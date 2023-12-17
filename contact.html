@@ -2,42 +2,42 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HolyRecipes</title>
 
   <!-- ===== SEO Meta Tags ===== -->
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <meta name="subject" content="" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="subject" content="">
   <meta name="language" content="" />
-  <meta name="distribution" content="Global" />
-  <meta name="rating" content="General" />
-  <meta name="robots" content="index,follow" />
+  <meta name="distribution" content="Global">
+  <meta name="rating" content="General">
+  <meta name="robots" content="index,follow">
 
   <!-- ====== Theme color for address bar ====== -->
-  <meta name="theme-color" content="" />
+  <meta name="theme-color" content="">
 
   <!-- ====== Favicon ====== -->
   <!-- ====== Standard favicon ====== -->
-  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
   <!-- ====== Apple Touch Icons ====== -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
   <!-- ====== Favicon for Microsoft Edge ====== -->
-  <meta name="msapplication-config" content="assets/favicon/site.webmanifest" />
+  <meta name="msapplication-config" content="assets/favicon/site.webmanifest">
   <!-- ===== Bootstrap styles ===== -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
   <!-- ===== Website styles ===== -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
 
   <!-- ===== Font awesome styles ===== -->
-  <link rel="stylesheet" href="assets/css/font-awesome-all.min.css" />
+  <link rel="stylesheet" href="assets/css/font-awesome-all.min.css">
 
   <!-- ===== Animate CSS styles ===== -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
   <!-- ===== Page related CSS styles ===== -->
   <style>
@@ -64,7 +64,7 @@
       <nav class="navbar navbar-expand-lg bg-transparent bg-body-tertiary fixed-top p-4" id="navbar">
         <div class="container">
           <a class="navbar-brand ps-4" href="index.html">
-            <img id="logo" src="assets/images/holyrecipes-logo.png" alt="company logo" width="135" height="60" />
+            <img id="logo" src="assets/images/holyrecipes-logo.png" alt="company logo" width="135" height="60">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -99,7 +99,7 @@
     <!-- ===== /Header ===== -->
 
     <!-- ===== Modal ===== -->
-    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-xl modal-dialog-scrollable">
         <div class="modal-content">
           <!-- ===== Modal header ===== -->
@@ -116,7 +116,7 @@
 
               <div class="row">
                 <div class="col-md-6 col-sm-12 mb-3">
-                  <input type="text" class="form-control" placeholder="Search Your Recipe..." />
+                  <input type="text" class="form-control" placeholder="Search Your Recipe...">
                 </div>
 
                 <div class="col-md-4 col-sm-12 mb-3">
@@ -137,16 +137,13 @@
                   </button>
                 </div>
               </div>
-              <input type="checkbox" name="health" class="btn-check" id="dairy-free" value="dairy-free"
-                autocomplete="off" />
+              <input type="checkbox" name="health" class="btn-check" id="dairy-free" value="dairy-free">
               <label class="btn btn-outline-primary" for="dairy-free">Dairy Free</label>
-              <input type="checkbox" name="health" class="btn-check" id="gluten-free" value="gluten-free"
-                autocomplete="off" />
+              <input type="checkbox" name="health" class="btn-check" id="gluten-free" value="gluten-free">
               <label class="btn btn-outline-primary" for="gluten-free">Gluten Free</label>
-              <input type="checkbox" name="health" class="btn-check" id="vegetarian" value="vegetarian"
-                autocomplete="off" />
+              <input type="checkbox" name="health" class="btn-check" id="vegetarian" value="vegetarian">
               <label class="btn btn-outline-primary" for="vegetarian">Vegetarian</label>
-              <input type="checkbox" name="health" class="btn-check" id="vegan" value="vegan" autocomplete="off" />
+              <input type="checkbox" name="health" class="btn-check" id="vegan" value="vegan">
               <label class="btn btn-outline-primary" for="vegan">Vegan</label>
             </form>
             <!-- ===== /Search form ===== -->
@@ -155,7 +152,7 @@
 
           <!-- ===== Modal body ===== -->
           <div class="modal-body">
-            <section id="results"></section>
+            <div id="results"></div>
           </div>
           <!-- ===== /Modal body ===== -->
 
@@ -175,25 +172,25 @@
     <section id="contact-page">
       <div class="contact-container text-center">
         <div id="form-header">
-          <img src="assets/images/contact-img.png" height="80" width="80" />
+          <img src="assets/images/contact-img.png" height="80" width="80" alt="Reindeer">
           <h1 class="pb-3">Any Questions? Send us a message!</h1>
         </div>
         <div id="email-success" class="hide">
-          <img src="assets/images/contact-success.png" height="80" width="80" />
+          <img src="assets/images/contact-success.png" height="80" width="80" alt="Santa Claus">
           <h2 class="text-center mt-4">
             Thank you! Santa will read your mail and reply in 3-5 business
             days.
           </h2>
         </div>
         <div id="email-fail" class="hide">
-          <img src="assets/images/contact-error.png" height="80" width="80" />
+          <img src="assets/images/contact-error.png" height="80" width="80" alt="Sad Santa">
           <h2 class="text-center mt-4">
             Sorry, there's something wrong... please try again
           </h2>
         </div>
         <form id="contact-form" onsubmit="return sendMail(this);">
-          <input type="text" name="name" id="name" class="form-control mb-2" placeholder="Name" required />
-          <input type="email" name="email" id="emailaddress" class="form-control mb-2" placeholder="Email" required />
+          <input type="text" name="name" id="name" class="form-control mb-2" placeholder="Name" required>
+          <input type="email" name="email" id="emailaddress" class="form-control mb-2" placeholder="Email" required>
           <textarea rows="5" name="content" id="content" class="form-control mb-4" placeholder="Write your message here"
             required></textarea>
           <div class="form-row text-center">
@@ -242,6 +239,7 @@
     <!-- ===== Website javascript ===== -->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/sendEmail.js"></script>
+  </div>
 </body>
 
 </html>
