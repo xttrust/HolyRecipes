@@ -67,6 +67,12 @@ main {
     padding-top: 20px;
 }
 
+.checkbox-div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
 /* ===== Footer ===== */
 footer {
     background-color: #226F54;

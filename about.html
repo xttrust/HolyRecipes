@@ -84,7 +84,7 @@
 
   <!-- ===== Modal ===== -->
   <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+    <div class="modal-dialog modal-xl">
       <div class="modal-content">
 
         <!-- ===== Modal header ===== -->
@@ -94,8 +94,10 @@
           <form class="search-function">
             <h3 class="mb-3">Find your Christmas recipe</h3>
             <p>
-              We have a delightful collection of Christmas recipes that will add joy to your festive celebrations. From
-              classic holiday treats to creative twists on traditional dishes, our curated selection is sure to inspire
+              We have a delightful collection of Christmas recipes that will add joy to your festive
+              celebrations. From
+              classic holiday treats to creative twists on traditional dishes, our curated selection is
+              sure to inspire
               your holiday menu.
             </p>
 
@@ -114,8 +116,19 @@
                   <option value="desserts">Dessert</option>
                 </select>
               </div>
+              <div class="checkbox-div">
+                <input type="checkbox" name="health" class="btn-check" id="dairy-free" value="dairy-free">
+                <label class="btn btn-outline-primary" for="dairy-free">Dairy Free</label>
+                <input type="checkbox" name="health" class="btn-check" id="gluten-free" value="gluten-free">
+                <label class="btn btn-outline-primary" for="gluten-free">Gluten Free</label>
 
-              <div class="col-md-2 col-sm-12">
+
+                <input type="checkbox" name="health" class="btn-check" id="vegetarian" value="vegetarian">
+                <label class="btn btn-outline-primary" for="vegetarian">Vegetarian</label>
+                <input type="checkbox" name="health" class="btn-check" id="vegan" value="vegan">
+                <label class="btn btn-outline-primary" for="vegan">Vegan</label>
+
+
                 <button type="submit" class="btn btn-outline-success d-flex align-items-center">
                   <i class="fa fa-search me-2"></i>
                   Search
@@ -123,14 +136,7 @@
               </div>
 
             </div>
-            <input type="checkbox" name="health" class="btn-check" id="dairy-free" value="dairy-free">
-            <label class="btn btn-outline-primary" for="dairy-free">Dairy Free</label>
-            <input type="checkbox" name="health" class="btn-check" id="gluten-free" value="gluten-free">
-            <label class="btn btn-outline-primary" for="gluten-free">Gluten Free</label>
-            <input type="checkbox" name="health" class="btn-check" id="vegetarian" value="vegetarian">
-            <label class="btn btn-outline-primary" for="vegetarian">Vegetarian</label>
-            <input type="checkbox" name="health" class="btn-check" id="vegan" value="vegan">
-            <label class="btn btn-outline-primary" for="vegan">Vegan</label>
+
           </form>
           <!-- ===== /Search form ===== -->
 
@@ -139,15 +145,15 @@
 
         <!-- ===== Modal body ===== -->
         <div class="modal-body">
-          <div id="results">
-          </div>
+          <div id="results"></div>
         </div>
         <!-- ===== /Modal body ===== -->
 
         <!-- ===== Modal footer ===== -->
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">
-            <i class="fa fa-remove"></i> Close
+            <i class="fa fa-remove"></i>
+            Close
           </button>
         </div>
         <!-- ===== /Modal footer ===== -->
