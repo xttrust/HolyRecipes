@@ -200,7 +200,8 @@ nav a:hover {
     background-color: #F4F0BB !important;
 }
 
-.feature-recipes-modal-image {
+.feature-recipes-modal-image,
+.modal img {
     width: 100%;
 }
 
