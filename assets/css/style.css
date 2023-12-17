@@ -235,17 +235,16 @@ nav a:hover {
 }
 
 .instant-classic-bg-img {
-    height: 75vh;
     position: relative;
-    z-index: 1; /* Ensure the container is above other elements */
-    overflow: hidden; /* Hide overflow to prevent pseudo-elements from extending outside the container */
+    z-index: 1; 
+    overflow: hidden; 
 }
 
 .instant-classic-bg-img::before,
 .instant-classic-bg-img::after {
     content: "";
     position: absolute;
-    inset: -0.5rem; /* This ensures the pseudo-elements are placed within the container */
+    inset: -0.5rem; 
     z-index: -1;
 }
 
@@ -269,9 +268,8 @@ nav a:hover {
 }
 
 .col-md-6 img {
-    /* width: 100%; Make sure the image fills the container */
-    height: auto; /* Maintain the aspect ratio */
-    border-radius: 0.5rem; /* Apply border-radius to the image */
+    height: auto; 
+    border-radius: 0.5rem; 
 }
 
 @keyframes rotation {
