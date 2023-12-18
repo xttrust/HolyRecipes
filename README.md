@@ -303,6 +303,12 @@ Wireframes: To see the wireframes created at the UX stage [Click Here!](https://
 - CSS has been validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 - Links checked with [W3C Link Checker](https://validator.w3.org/checklink).
 
+<div align="center">
+  <img src="./Readme_Images/HolyLighthouse.png" alt="Google Lighthouse Result">
+</div>
+
+- Google Lighthouse tool was used to assess the web-site
+
 ### Manual Testing
 **TEST** | **ACTION** | **EXPECTATION** | **RESULT** 
 ----------|----------|----------|----------
@@ -318,13 +324,10 @@ Contact page test | All phone sizes checked using Chrome Dev Tools | Elements lo
 
 ## Bugs
 
-### Known Bugs
-
-- 
-
 ### Fixed Bugs
 
-- 
+- One bug that occurred on our website was a lack of responsiveness. The website did not adjust its layout properly when accessed on different devices such as smartphones, tablets, or desktops. As a result, the content appeared incorrectly.  
+However, this bug has now been fixed. The issue was media querys not being appropriately and correctly used due to a team members first use of them, this was later reviewed by a more experienced team member and resolved
 
 ---
 
@@ -347,9 +350,13 @@ The live link can be found [HERE](https://xttrust.github.io/HolyRecipes/)
 
 - Images taken from <a href="https://www.flaticon.com/">Flaticon</a>
 
+- Images taken from <a href="https://www.canva.com/en_gb/">Canva</a>
+
 #### Writing
 
 - Recipes taken from <a href="https://www.taste.com.au/">www.taste.au</a>
+
+- Recipes and website text created using <a href="https://chat.openai.com/">ChatGPT4</a>
 
 ## Contributors
 
