@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/images/am_i_responsive_holyrecipe.png" alt="Home Page">
+  <img src="./Readme_Images/HolyFlexible.png" alt="Home Page">
 </div>
 
 [Holy Recipe](https://xttrust.github.io/HolyRecipes/) is a virtual kitchen, we understand that the heart of any holiday celebration is the joy of preparing and sharing delicious meals with loved ones. Our website is a festive hub where culinary enthusiasts, whether seasoned chefs or those taking their first steps in the kitchen, can find inspiration for creating memorable Christmas feasts
@@ -24,8 +24,6 @@
       - [Fonts](#fonts)
       - [Icons](#icons)
       - [Colors](#colors)
-      - [Images](#images)
-      - [Styling](#styling)
       </details></li>
       </ul>
 
@@ -40,15 +38,8 @@
 
       - [All Pages](#all-pages)
       - [Index Page](#index-page)
-      - [Gallery Page](#gallery-page)
+      - [About Page](#about-page)
       - [Contact Page](#contact-page)
-      </details></li>
-
-      <li><details>
-      <summary><a href="#additional-features">Additional Features</a></summary>
-
-      - [Image Loading Blur](#image-loading-blur)
-      - [Email](#email)
       </details></li>
 
       <li><details>
@@ -81,9 +72,7 @@
       <summary><a href="#methods">Methods</a></summary>
 
       - [Validation](#validation)
-      - [General Testing](#general-testing)
-      - [Mobile Testing](#mobile-testing)
-      - [Desktop Testing](#desktop-testing)
+      - [Manual Testing](#manual-testing)
       </details></li>
 
       <li><details>
@@ -96,34 +85,17 @@
 
     </details>
 
-5.  <details open>
-        <summary><a href="#deployment">Deployment</a></summary>
-
-      <ul>
-      <li><details>
-      <summary><a href="#local-deployment">Local Deployment</a></summary>
-
-      - [Local Preparation](#local-preparation)
-      - [Local Instructions](#local-instructions)
-      </details></li>
-
-      <li><details>
-      <summary><a href="#github-deployment">Github Deployment</a></summary>
-
-      - [Github Preparation](#github-preparation)
-      - [Github Instructions](#github-instructions)
-      </details></li>
-      </ul>
-
-    </details>
+5. <a href="#deployment">Deployment</a>
 
 6.  <details open>
-        <summary><a href="#credit-and-contact">Credit and Contact</a></summary>
+        <summary><a href="#credits">Credits</a></summary>
 
-      - [Content](#content)
-      - [Contact](#contact)
-
+      - [Images](#images)
+      - [Writing](#writing)
+      
     </details>
+
+7. <a href="#contributors">Contributors</a>
 
 ---
 
@@ -157,7 +129,10 @@ Wireframes: To see the wireframes created at the UX stage [Click Here!](https://
 ### Fonts
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/44118951/92331221-6f750000-f075-11ea-8096-288bcc957e33.png" alt="Fonts">
+  <img src="./Readme_Images/HolyKalnia.png" alt="Kalnia Font">
+</div>
+<div align="center">
+  <img src="./Readme_Images/HolyPoppins.png" alt="Poppins Font">
 </div>
 
 - The primary font, [Kalnia](https://fonts.google.com/specimen/Kalnia) was chosen because it instantly gives a more festive feel than what you may normally see on the web due to it going against the grain and being more decorative with a serif. This is more inline witth other festive designs around at this time of year giving it a holiday recognisability
@@ -166,7 +141,7 @@ Wireframes: To see the wireframes created at the UX stage [Click Here!](https://
 ### Icons
 
 <div align="center">
-  <img src="Readme_Images/HolyFavicons.png" alt="Icons">
+  <img src="./Readme_Images/HolyFavicons.png" alt="Icons">
 </div>
 
 - Icons are taken from the [Fontawesome](https://fontawesome.com/) Icon library and are utilised as classes in the `<i>` tag.
@@ -176,33 +151,11 @@ Wireframes: To see the wireframes created at the UX stage [Click Here!](https://
 ### Colors
 
 <div align="center">
-  <img src="/workspace/HolyRecipes/Readme_Images/HolyColourPalette.png" alt="Color Pallette">
+  <img src="./Readme_Images/HolyColourPalette.png" alt="Color Pallette">
 </div>
 
 - The primary goal of this colour palette was to give instant recognition to holiday colours we are all very familiar with, the second colour christmas tree green was used for the main navigation areas of the site (NavBar, Footer). 
 - The other colours were all used decorateively in other areas as the holidays are a colourful time of year, santa red was used as a hover effect on buttons to clearly display they were interactive to the user and the more muted green was used for as a link hover to clearly display to the user when they could interact with site.
-
-### Images
-
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/44118951/92332253-c7633500-f07c-11ea-8f9e-a5f03b0fe1da.png" alt="Images">
-</div>
-
-- The site has a heavy focus on image use, using full-size quality images for exhibition purposes.
-- As such, the images use a script while loading that blurs thumbnails and swaps in the full quality image when fully loaded.
-- In the main gallery, images are displayed in three columns responsively, so they can easily be seen on any size device.
-- Clicking on a small image will open up a full-page modal that displays the image in detail.
-- The images will automatically space themselves vertically within the column, so the gallery height is even.
-- Images will swap out on selecting another country, resetting the loading blur feature and changing URLs.
-
-### Styling
-
-- For this project I have utilised Bootstrap 4.5 source files to override their class defaults to my liking, making customisation much easier. The entire site can be restyled with a single switch in the code.
-- The primary and secondary colors have been applied to bootstrap classes for easy use across the site.
-- Using the SASS, sharp-edged boxes have been applied by default, taking advantage of the features.
-- Responsive text sizing has also been enabled using SASS.
-- As the site has a beeline focus on use, links on each page are re-used to direct the user to either the Gallery or the Contact page no matter where they look.
-- Animations are utilised for smoothness in certain transitions, such as when a new country is selected in the gallery or on the Travel Gallery link.
 
 ---
 
@@ -215,8 +168,8 @@ Wireframes: To see the wireframes created at the UX stage [Click Here!](https://
 #### Navbar
 
 <div align="center">
-  <img src="/workspace/HolyRecipes/Readme_Images/HolyNavBar.png" alt="Medium Header">
-  <img src="/workspace/HolyRecipes/Readme_Images/HolyNavBarMobile.png" alt="Small Header">
+  <img src="./Readme_Images/HolyNavBar.png" alt="Medium Header">
+  <img src="./Readme_Images/HolyNavBarMobile.png" alt="Small Header">
 </div>
 
 - The Navbar is simple, providing only four options, the home page so the user can always access the landing page if they wish, an about page detailing the origin and expertise of HolyRecipes, a contact page if the user has any needs they want to convery to HolyRecipes and a search box so the user can look for all the recipes on the sites using any parameter they wish
@@ -228,8 +181,8 @@ Wireframes: To see the wireframes created at the UX stage [Click Here!](https://
 #### Footer
 
 <div align="center">
-  <img src="/workspace/HolyRecipes/Readme_Images/HolyFooter.png" alt="Medium Footer">
-  <img src="/workspace/HolyRecipes/Readme_Images/HolyFooterMobile.png" alt="Small Footer">
+  <img src="./Readme_Images/HolyFooter.png" alt="Medium Footer">
+  <img src="./Readme_Images/HolyFooterMobile.png" alt="Small Footer">
 </div>
 
 - Located at the bottom of every page, highlighting the creators of the site
@@ -238,78 +191,55 @@ Wireframes: To see the wireframes created at the UX stage [Click Here!](https://
 - The site logo is in the second column
 - The third column represents Github links of the sites creators
 
+#### Searchbox
+
+<div align="center">
+  <img src="./Readme_Images/HolySearch.png" alt="Search Box">
+</div>
+
+- A comprehensive search box using [Edamam Recipe API](https://developer.edamam.com/edamam-docs-recipe-api-v1) when clicked it brings up a modal with several categories of food, dietary filters and a search box. All results are in the modal with an option for the user to expand the recipe if they have further interest.
+
 ### Index Page
 
 #### Carousel
 
-- Used as a splash image that highlights a dramatic photograph, representing a sense of adventure.
-- An image with a person in it is used so the viewer can connect with it on a personal level.
-- Uses the javascript lazy loading feature as the image is large and must show all at once for an impact
-- Text is blurred and comes into view with the image to draw attention to the phrase.
-
-#### About Section
-
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/44118951/92338749-aae1ef80-f0b2-11ea-854d-6700642cdef9.png" alt="About">
+  <img src="./Readme_Images/HolyCarousel.gif" alt="Carousel Gif">
 </div>
 
-- After the initial image to give a strong impact, the about section is presented in the contrasting accent color to make it stand out.
-- Hopefully, the impact will create enough interest to read about the photographer.
-- The section is responsive and the two columns will stack on resize.
-- The section contains a fully responsive image and a small text section with responsively sized text.
-- Contains a small link to a place where you can purchase or license photographs, highlighted and underlined in bold, this is in addition to the link in the footer.
+- A simple carousel with bright festive images that grab the users attention as soon as they land on the page, the user can interact to see the sites other featured items
 
-#### Travel Gallery Link
+### About Page
 
-- A full-width banner link that switches to brings the user to the gallery.
-- Animated with CSS to draw attention on hover.
-- Expands in size, seeming to exit from the page, and darkens the background to draw attention to the item.
+<div align="center">
+  <img src="Readme_Images/HolyAbout.png" alt="About">
+</div>
+
+- A simple about section describing the teams journey and expertise, there are bootstrap cards at the bottom describing the team members role and skills they bring to the site.
 
 ### Contact Page
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/44118951/92344558-159d2600-f0c7-11ea-9e1d-836b5bc2586a.png" alt="Iframe Gallery">
+  <img src="./Readme_Images/HolyContact.png" alt="Contact Page">
 </div>
 
-- A simple page highlighting the author with a contact form that utilises [EmailJS](https://www.emailjs.com/) to send the emails.
+- A friendly and welcoming page that invites questions and uses [EmailJS](https://www.emailjs.com/) to send the emails.
 - The form has validation and is fully responsive.
-- Once the send button is pressed, a modal will open notifying the user that the message is sending.
-- The modal has fields that are modified by the `sendMail.js` script.
-- A success or an error message will be displayed depending on the result.
-- The form fields will be cleared only on a successful response.
-- A response message is sent to every email received, set up in EmailJS as a template.
-
-## Additional Features
-
-### Image Loading Blur
-
-- All images utilise a loading blur function to smooth out their loading as the high-quality images can slow things down.
-- The function places a low-quality thumbnail as the default image, covering it with a CSS blur filter.
-- Simultaneously, it loads the full quality image set as the background image. Once it detects it is loaded it adds a class.
-- The class makes the thumbnail transparent, using animation to smooth the transition.
-- Had to be carefully used to correctly open the image modal.
-
-### Email
-
-- EmailJS is functional on every page through the newsletter form.
-- The newsletter form has all the same basic features, like the contact form; validation, the modal, success and error messages are all present.
-- Differentiates between the contact page form for messages and the newsletter form.
+- Once the send button is pressed, a message will appear letting the user know if the message is successful or has failed
 
 ## Feature Ideas
 
 ### Basic
 
-- A selection of countries to click on that brings you directly to the gallery.
-- The ability to share photos directly to social media.
-- Purchasing on the site
-- More details about countries.
+- A random recipe button
+- A way for users to save recipes for later
+- A way for users to share recipes they like
+- A way for users to upload their own content
 
 ### Content
 
-- A wider range of countries and images. At the moment I didn't want to clutter the map.
-- The user selects a country and an API pull in relevant images of that location.
-- An API wherein the placename and the blurb are automatically generated.
-- Blog posts on the website for more flavour text.
+- More recipes
+- Video Guides
 
 ---
 
@@ -321,14 +251,12 @@ Wireframes: To see the wireframes created at the UX stage [Click Here!](https://
   - Page markup.
 - [CSS](w3.org/standards/webdesign/htmlcss)
   - Styling.
-- [SASS](https://sass-lang.com/)
-  - Used to customise Bootstrap and CSS styles.
 - [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
   - Running functions for interactive components, AJAX, etc.
 
 ## Frameworks
 
-- [Bootstrap4](https://getbootstrap.com/)
+- [Bootstrap 5](https://getbootstrap.com/)
   - Used for basic styles and outline.
 
 ## Libraries
@@ -342,15 +270,15 @@ Wireframes: To see the wireframes created at the UX stage [Click Here!](https://
 
 ## APIs
 
-- [Google Maps Javascript API](https://developers.google.com/maps/documentation/javascript/tutorial)
-  - Map, markers and styles.
-- [REST Countries API](https://restcountries.eu/)
-  - Statistics for infowindow, marker information
+- [Edamam Recipe API](https://developer.edamam.com/edamam-docs-recipe-api-v1)
+  - Recipe API used for searchbox function
+- [EmailJS](https://www.emailjs.com/)
+   - EmailAPI used for having a contact page with no backend
 
 ## Platforms
 
 - [Github](https://github.com/)
-  - Storing code remotely and deployment.
+  - Storing code remotely and deployment.  
 - [Gitpod](https://gitpod.io/)
   - IDE for project development.
 
@@ -360,8 +288,6 @@ Wireframes: To see the wireframes created at the UX stage [Click Here!](https://
   - To create wireframes.
 - [Favicon Generator](https://www.favicon-generator.org/)
   - Favicons
-- [Mockup Generator](https://techsini.com/multi-mockup/index.php)
-  - For device mockup images.
 - [Coolors](https://coolors.co/)
   - Creating color pallettes.
 
@@ -374,139 +300,56 @@ Wireframes: To see the wireframes created at the UX stage [Click Here!](https://
 ### Validation
 
 - HTML has been validated with [W3C HTML5 Validator](https://validator.w3.org/).
-- CSS has been validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and auto-prefixed with [CSS Autoprefixer](https://autoprefixer.github.io/).
+- CSS has been validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 - Links checked with [W3C Link Checker](https://validator.w3.org/checklink).
-- Each javascript file was tested on the site for errors and functionality using the console and with [JSHint](https://jshint.com/).
 
-### General Testing
-
-- Each feature was developed and tested in its own branch before being merged with master. Branches were subsequently deleted.
-- Each time a feature was added, all the functions were tested to see if there was an impact.
-- The site was sent to friends for feedback and testing.
-- All forms have validation and will not submit without the proper information.
-- .gitignore file has been included to prevent system file commits.
-- The image loading blur has been thoroughly tested and gone through numerous iterations to optimise the smoothness of the transition on different devices and internet speeds.
-- Backup Map functions have been tested in a local deployment.
-- Email error functions have been tested offline as well.
-- External links open in a new tab.
-
-### Mobile Testing
-
-- I tested the site personally on my Android device, going through the entire process, checking buttons, functions, checking out, etc. I was personally unable to test on iOS.
-- The site was sent to friends and relatives for them to follow the same process. They have tested on their devices, including iOS.
-- Chrome was utilised to inspect the site in mobile format, going through the pages and functions.
-
-### Desktop Testing
-
-- The site was developed on a Chromebook and, as such, the majority of testing occurred on Chrome.
-- The site was tested by friends and relatives on numerous desktop devices.
-- The site was marginally tested on other browsers, such as Firefox and Edge.
-- Internet Explorer was not tested and the site was not developed with it in mind as support for the browser is gradually being dropped.
+### Manual Testing
+**TEST** | **ACTION** | **EXPECTATION** | **RESULT** 
+----------|----------|----------|----------
+Index | Size to 320px by 800px using Chrome Dev Tools	| Elements look good @ 320px by 800px | Works as expected
+Index | Size to 1920px by 1080px using Chrome Dev Tools | Elements look good 1920px by 1080px | Works as expected
+About | Size to 320px by 800px using Chrome Dev Tools	| Elements look good @ 320px by 800px | Works as expected
+About | Size to 1920px by 1080px using Chrome Dev Tools | Elements look good 1920px by 1080px | Works as expected
+Contact | Size to 320px by 800px using Chrome Dev Tools	| Elements look good @ 320px by 800px | Works as expected
+Contact | Size to 1920px by 1080px using Chrome Dev Tools | Elements look good 1920px by 1080px | Works as expected
+Index page test | All phone sizes checked using Chrome Dev Tools | Elements look good | Works at expected
+About page test | All phone sizes checked using Chrome Dev Tools | Elements look good | Works at expected
+Contact page test | All phone sizes checked using Chrome Dev Tools | Elements look good | Works at expected
 
 ## Bugs
 
 ### Known Bugs
 
-- Occasionally on a device with low RAM, the Google Maps API won't load.
-- Devices with low RAM may have stuttered animations.
-- Offline, using the backup map, the images don't switch the first time the page loads. No errors are shown on the console. A refresh usually solves the issue.
-- Very slow connections may have users see the thumbnails pop in during iframe loading, rather than having the switch occur during the animation.
+- 
 
 ### Fixed Bugs
 
-- Jumbotron image wouldn't de-blur. Fixed by adding a custom class for selection and differentiation.
-- Markers wouldn't load if the connection to the API was slow. Fixed by adding a backup array to be used as a fall-back.
-- EmailJS wasn't allowing newsletters to be sent on the contact page. Fixed by giving each form a separate ID.
-- The map info window wouldn't dispose of itself but would open multiple instances, one over the other. Fixed by moving the initialisation instance outside of the click function.
-- The info window would concatenate one country's information with another after clicked. Fixed by clearing the info window content on each click before populating it with info.
-- If a country had multiple first languages, the info window would have a display that clipped them as they were stored in an array themselves. Fixed by writing a custom function to deal with languages.
-- All map markers would bounce if they had animations set to active. Fixed by looping through the markers and setting them to no animation before activating the clicked marker's animation.
-- The modal for images in the gallery wouldn't open because of the blur function. Fixed by changing the HTML structure on the page and the iframe.
-- One I added SASS, many of the site's display features were broken. Fixed by cleaning up the CSS files and removing clashing styles.
+- 
 
 ---
 
-# Deployment
+## Deployment
 
-## Local Deployment
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+  - In the GitHub repository, navigate to the Settings tab
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-### Local Preparation
+The live link can be found [HERE](https://xttrust.github.io/HolyRecipes/)
 
-**Requirements:**
+## Credits
 
-- An IDE of your choice, such as [Visual Studio Code](https://code.visualstudio.com/)
-- [Git](https://git-scm.com/)
-- You will have to set up a connection with an email server through EmailJS:
-- You will have to install SASS to compile the CSS. This depends on your system and your method choice. Please see the instructions [here](https://sass-lang.com/install).
+#### Images
 
-### Local Instructions
+- Images of team on About Us page from <a href="https://www.freepik.com/free-photo/portrait-happy-male-female-businesspeople_2554804.htm#query=office%20team&position=6&from_view=search&track=ais&uuid=4574dab0-1db6-46d9-b877-074af12a0f27">Freepik</a>
 
-1. Download a copy of the project repository [here](https://github.com/Ri-Dearg/neverlost-thrift/archive/master.zip) and extract the zip file to your base folder. Or you can clone the repository with:
-   ```
-   git clone https://github.com/Ri-Dearg/neverlost-thrift
-   ```
-   To disconnect it from the master repository, use:
-   ```
-   git remote rm origin
-   ```
-2. Open your IDE and choose the base directory.
-3. Here you can install SASS with npm, if you choose, with:
-   ```
-   npm install -g sass
-   ```
-4. Run the compiler with:
-   ```
-   sass --watch assets/css/bootstrap_sass:assets/css
-   ```
-   This will also watch the bootstrap_sass folder for changes and re-compile the CSS when they are made. This way you can make changes quickly and not worry about re-compiling.
-5. Switch the user token for EmailJS with your own. It can be found in the head tag:
-   ```
-   (function () {
-       emailjs.init("<your user token>");
-   })();
-   ```
-6. Run the project with your chosen method. You can drop index.html into a web browser and it should run fine, open a local port and access it or, if you have python installed, run it on an HTTP server with python with a command such as:
-   ```
-   python3 -m http.server
-   ```
-7. Enjoy the site!
+- Images taken from <a href="https://www.pexels.com/">Pexels</a>
 
-## Github Deployment
+- Images taken from <a href="https://www.flaticon.com/">Flaticon</a>
 
-### Github Preparation
+#### Writing
 
-- It is possible to copy or clone the repository to directly for deployment, but you will have to compile the make sure the SCSS compiles correctly first. Github Pages' Jekyll themes support this but you will have to make some customisations. Details can be found [here](https://jekyllrb.com/docs/assets/).
-  **Requirements:**
-- A free GitHub account.
-- A free EmailJS account.
-
-### Github Instructions
-
-1. Log in to your GitHub account.
-   navigate to [https://github.com/Ri-Dearg/neverlost-thrift](https://github.com/Ri-Dearg/neverlost-thrift).
-1. You can set up your own repository and copy or clone it, or you fork the repository.
-1. `git add`, `git commit` and `git push` to a GitHub repository, if necessary.
-1. GitHub pages will update from the master branch by default.
-1. Go to the **Settings** page of the repository.
-1. Scroll down to the **Github Pages** section.
-1. Select the Master Branch as the source and **Confirm** the selection.
-1. Wait a minute or two and it should be live for viewing. See my own [here](https://ri-dearg.github.io/horizon-photo/).
-
-## Credits and Contact
-
-### Content
-
-Nearly all text content was generated by the AI, GPT-2, at [Talk to Transformer](https://talktotransformer.com/).
-\*\*(So there will be plenty of grammar or spelling errors or even a bit of nonsense, but I thought it would be a fun addition to the project)88
-Any code utilised from a site is documented and credited within the code.
-All photographs, authors, license rights, copyright, etc. used in this project can be found [here](https://unsplash.com/collections/8825126/used-in-horizon-photo). No credit is required from Unsplash,  
-All other media used is my own.
-
-- Background image is taking from Freepik, taken by kjpargeter.
-
-### Contact
-
-Please feel free to contact me at `sheridan.rp@gmail.com`
+- Recipes taken from <a href="https://www.taste.com.au/">www.taste.au</a>
 
 ## Contributors
 
