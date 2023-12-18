@@ -1,27 +1,23 @@
-const searchForms = document.querySelectorAll('.search-function');
+const searchForms = document.querySelectorAll(".search-function");
 let searchQuery = "";
 let dishType = "";
 let health = "";
 let results;
 
-
-
-let resultsHTML = document.querySelector('#results');
-
-
+let resultsHTML = document.querySelector("#results");
 
 function fetchAPI() {
     // Define a callback function name (replace CALLBACK_FUNCTION_NAME)
-    const callbackFunctionName = 'handleEdamamResponse';
+    const callbackFunctionName = "handleEdamamResponse";
 
     // Create a script element
-    const script = document.createElement('script');
+    const script = document.createElement("script");
 
     // Define the API URL with the callback parameter
     let apiURL = `https://api.edamam.com/search?q=christmas+${searchQuery}&app_id=ebe37918&app_key=cde781a09234a419b1ddc5809bca99d8&to=20&tag=christmas&callback=${callbackFunctionName}`;
 
     if (dishType != "") {
-        apiURL += `&dishType=${dishType}`
+        apiURL += `&dishType=${dishType}`;
     }
 
     if (health != "") {
@@ -40,7 +36,6 @@ function fetchAPI() {
     health = "";
 }
 
-
 function handleEdamamResponse(data) {
     // Process the data here
     results = data.hits;
@@ -52,7 +47,6 @@ function handleEdamamResponse(data) {
 }
 
 function showResults(results) {
-
     let ingredientLines = "";
     let instructionLines = "";
     let ingredients = results.recipe.ingredientLines;
@@ -97,39 +91,31 @@ function showResults(results) {
     }
 }
 
-
-
-searchForms.forEach(searchForm => {
-    searchForm.addEventListener('submit', (e) => {
+searchForms.forEach((searchForm) => {
+    searchForm.addEventListener("submit", (e) => {
         e.preventDefault();
-        resultsHTML.innerHTML = '';
-        searchQuery = e.target.querySelector('input').value;
-        let checkboxes = document.querySelectorAll('.btn-check');
+        resultsHTML.innerHTML = "";
+        searchQuery = e.target.querySelector("input").value;
+        let checkboxes = document.querySelectorAll(".btn-check");
         checkboxes.forEach((checkbox) => {
             if (checkbox.checked == true) {
                 health += `&health=${checkbox.value}`;
             }
         });
-        dishType = e.target.querySelector('#dishType').value;
+        dishType = e.target.querySelector("#dishType").value;
         fetchAPI();
     });
 });
 
-
-
-
-
-
-// Functionality to change navbar styles when page is hovered 
+// Functionality to change navbar styles when page is hovered
 $(document).ready(function () {
-
     $(window).scroll(function () {
-        // style when scrolling 
+        // style when scrolling
         if ($(window).scrollTop() > 50) {
-            $('#navbar').removeClass('bg-transparent').addClass('bg-scroll');
+            $("#navbar").removeClass("bg-transparent").addClass("bg-scroll");
             // style when scrolled to top
         } else {
-            $('#navbar').removeClass('bg-scroll').addClass('bg-transparent');
+            $("#navbar").removeClass("bg-scroll").addClass("bg-transparent");
         }
     });
 });
@@ -138,70 +124,96 @@ $(document).ready(function () {
 
 // Function to show the modal for Recipe 1
 function showRecipeModal1() {
-    $('#recipeModal1').modal('show');
+    $("#recipeModal1").modal("show");
 }
 
 // Function to show the modal for Recipe 2
 function showRecipeModal2() {
-    $('#recipeModal2').modal('show');
+    $("#recipeModal2").modal("show");
+}
+
+// Function to show the modal for Recipe 10
+function showRecipeModal10() {
+    $("#recipeModal10").modal("show");
 }
 
 // Function to close Recipe Modal 1
 function closeRecipeModal1() {
-    $('#recipeModal1').modal('hide');
+    $("#recipeModal1").modal("hide");
 }
 
 // Function to close Recipe Modal 2
 function closeRecipeModal2() {
-    $('#recipeModal2').modal('hide');
+    $("#recipeModal2").modal("hide");
+}
+
+// Function to close Recipe Modal 10
+function closeRecipeModal10() {
+    $("#recipeModal10").modal("hide");
 }
 
 // Event listener for close buttons
 $(document).ready(function () {
-    $('.btn2').click(function () {
+    $(".btn2").click(function () {
         closeRecipeModal1();
     });
 
-    $('.btn1').click(function () {
+    $(".btn1").click(function () {
         closeRecipeModal2();
+    });
+
+    $(".btn10").click(function () {
+        closeRecipeModal10();
     });
 });
 
 // Function to show the modal for Recipe 3
 function showRecipeModal3() {
-    $('#recipeModal3').modal('show');
+    $("#recipeModal3").modal("show");
 }
 
 // Function to show the modal for Recipe 4
 function showRecipeModal4() {
-    $('#recipeModal4').modal('show');
+    $("#recipeModal4").modal("show");
 }
 
 // Function to show the modal for Recipe 5
 function showRecipeModal5() {
-    $('#recipeModal5').modal('show');
+    $("#recipeModal5").modal("show");
 }
 
 // Function to close modals
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
     // Get the modal elements
-    var recipeModal3 = new bootstrap.Modal(document.getElementById('recipeModal3'));
-    var recipeModal4 = new bootstrap.Modal(document.getElementById('recipeModal4'));
-    var recipeModal5 = new bootstrap.Modal(document.getElementById('recipeModal5'));
+    var recipeModal3 = new bootstrap.Modal(
+        document.getElementById("recipeModal3")
+    );
+    var recipeModal4 = new bootstrap.Modal(
+        document.getElementById("recipeModal4")
+    );
+    var recipeModal5 = new bootstrap.Modal(
+        document.getElementById("recipeModal5")
+    );
 
     // Attach click event listeners to the close buttons
-    document.getElementById('closeRecipeModal3').addEventListener('click', function () {
-        // Close the modal
-        recipeModal3.hide();
-    });
+    document
+        .getElementById("closeRecipeModal3")
+        .addEventListener("click", function () {
+            // Close the modal
+            recipeModal3.hide();
+        });
 
-    document.getElementById('closeRecipeModal4').addEventListener('click', function () {
-        // Close the modal
-        recipeModal4.hide();
-    });
+    document
+        .getElementById("closeRecipeModal4")
+        .addEventListener("click", function () {
+            // Close the modal
+            recipeModal4.hide();
+        });
 
-    document.getElementById('closeRecipeModal5').addEventListener('click', function () {
-        // Close the modal
-        recipeModal5.hide();
-    });
+    document
+        .getElementById("closeRecipeModal5")
+        .addEventListener("click", function () {
+            // Close the modal
+            recipeModal5.hide();
+        });
 });
