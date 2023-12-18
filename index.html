@@ -1,1143 +1,1384 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HolyRecipes</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HolyRecipes</title>
 
-    <!-- ===== SEO Meta Tags ===== -->
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="subject" content="" />
-    <meta name="language" content="" />
-    <meta name="distribution" content="Global" />
-    <meta name="rating" content="General" />
-    <meta name="robots" content="index,follow" />
+        <!-- ===== SEO Meta Tags ===== -->
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="subject" content="" />
+        <meta name="language" content="" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+        <meta name="robots" content="index,follow" />
 
-    <!-- ====== Theme color for address bar ====== -->
-    <meta name="theme-color" content="" />
+        <!-- ====== Theme color for address bar ====== -->
+        <meta name="theme-color" content="" />
 
-    <!-- ====== Favicon ====== -->
-    <!-- ====== Standard favicon ====== -->
-    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicon/favicon-16x16.png"
-    />
-    <!-- ====== Apple Touch Icons ====== -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
-    <!-- ====== Favicon for Microsoft Edge ====== -->
-    <meta
-      name="msapplication-config"
-      content="assets/favicon/site.webmanifest"
-    />
-    <!-- ===== Bootstrap styles ===== -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <!-- ====== Favicon ====== -->
+        <!-- ====== Standard favicon ====== -->
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="assets/favicon/favicon.ico"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="assets/favicon/favicon-16x16.png"
+        />
+        <!-- ====== Apple Touch Icons ====== -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="assets/favicon/apple-touch-icon.png"
+        />
+        <!-- ====== Favicon for Microsoft Edge ====== -->
+        <meta
+            name="msapplication-config"
+            content="assets/favicon/site.webmanifest"
+        />
+        <!-- ===== Bootstrap styles ===== -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
-    <!-- ===== Website styles ===== -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+        <!-- ===== Website styles ===== -->
+        <link rel="stylesheet" href="assets/css/style.css" />
 
-    <!-- ===== Font awesome styles ===== -->
-    <link rel="stylesheet" href="assets/css/font-awesome-all.min.css" />
+        <!-- ===== Font awesome styles ===== -->
+        <link rel="stylesheet" href="assets/css/font-awesome-all.min.css" />
 
-    <!-- ===== Animate CSS styles ===== -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-  </head>
+        <!-- ===== Animate CSS styles ===== -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+    </head>
 
-  <body>
-    <!-- ===== Header ===== -->
-    <header>
-      <!-- ===== Navbar ===== -->
-      <nav
-        class="navbar navbar-expand-lg bg-transparent bg-body-tertiary fixed-top p-4"
-        id="navbar"
-      >
-        <div class="container">
-          <a class="navbar-brand ps-4" href="index.html">
-            <img
-              id="logo"
-              src="assets/images/holyrecipes-logo.png"
-              alt="company logo"
-              width="135"
-              height="60"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul id="nav-links" class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  id="active"
-                  aria-current="page"
-                  href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-            <form class="d-flex pe-2 top-search-form" role="search">
-              <div class="input-group mb-3 me-2 mt-3">
-                <button
-                  class="btn d-block"
-                  type="button"
-                  id="button-search"
-                  data-bs-toggle="modal"
-                  data-bs-target="#searchModal"
-                >
-                  <i class="fa fa-search"></i>
-                  Search
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </nav>
-      <!-- ===== /Navbar ===== -->
-    </header>
-    <!-- ===== /Header ===== -->
-
-    <!-- ===== Modal ===== -->
-    <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <!-- ===== Modal header ===== -->
-          <div class="modal-header">
-            <!-- ===== Search form ===== -->
-            <form class="search-function">
-              <h3 class="mb-3">Find your Christmas recipe</h3>
-              <p>
-                We have a delightful collection of Christmas recipes that will
-                add joy to your festive celebrations. From classic holiday
-                treats to creative twists on traditional dishes, our curated
-                selection is sure to inspire your holiday menu.
-              </p>
-
-              <div class="row">
-                <div class="col-md-6 col-sm-12 mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Search Your Recipe..."
-                  />
-                </div>
-
-                <div class="col-md-4 col-sm-12 mb-3">
-                  <select class="form-select" name="dishType" id="dishType">
-                    <option value="">Category</option>
-                    <option value="cocktail">Cocktail</option>
-                    <option value="biscuits">Biscuits</option>
-                    <option value="Bread">Bread</option>
-                    <option value="condiments">Condiments</option>
-                    <option value="desserts">Dessert</option>
-                  </select>
-                </div>
-                <div class="checkbox-div">
-                  <input
-                    type="checkbox"
-                    name="health"
-                    class="btn-check"
-                    id="dairy-free"
-                    value="dairy-free"
-                  />
-                  <label class="btn btn-outline-primary" for="dairy-free"
-                    >Dairy Free</label
-                  >
-                  <input
-                    type="checkbox"
-                    name="health"
-                    class="btn-check"
-                    id="gluten-free"
-                    value="gluten-free"
-                  />
-                  <label class="btn btn-outline-primary" for="gluten-free"
-                    >Gluten Free</label
-                  >
-
-                  <input
-                    type="checkbox"
-                    name="health"
-                    class="btn-check"
-                    id="vegetarian"
-                    value="vegetarian"
-                  />
-                  <label class="btn btn-outline-primary" for="vegetarian"
-                    >Vegetarian</label
-                  >
-                  <input
-                    type="checkbox"
-                    name="health"
-                    class="btn-check"
-                    id="vegan"
-                    value="vegan"
-                  />
-                  <label class="btn btn-outline-primary" for="vegan"
-                    >Vegan</label
-                  >
-
-                  <button
-                    type="submit"
-                    class="btn btn-outline-success d-flex align-items-center"
-                  >
-                    <i class="fa fa-search me-2"></i>
-                    Search
-                  </button>
-                </div>
-              </div>
-            </form>
-            <!-- ===== /Search form ===== -->
-          </div>
-          <!-- ===== /Modal header ===== -->
-
-          <!-- ===== Modal body ===== -->
-          <div class="modal-body">
-            <div id="results"></div>
-          </div>
-          <!-- ===== /Modal body ===== -->
-
-          <!-- ===== Modal footer ===== -->
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-outline-danger"
-              data-bs-dismiss="modal"
+    <body>
+        <!-- ===== Header ===== -->
+        <header>
+            <!-- ===== Navbar ===== -->
+            <nav
+                class="navbar navbar-expand-lg bg-transparent bg-body-tertiary fixed-top p-4"
+                id="navbar"
             >
-              <i class="fa fa-remove"></i>
-              Close
-            </button>
-          </div>
-          <!-- ===== /Modal footer ===== -->
-        </div>
-      </div>
-    </div>
-    <!-- ===== /Modal ===== -->
-
-    <!-- ===== Main ===== -->
-    <main class="container index-main">
-      <!-- ===== Carousel ===== -->
-      <div class="container">
-        <div id="carouselExampleCaptions" class="carousel slide">
-          <div class="carousel-indicators pb-2">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner rounded">
-            <div class="carousel-item active">
-              <img
-                src="./assets/images/carousel_slide_1.png"
-                class="d-block w-100"
-                alt="image 1"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>
-                  <strong>Enchanting Moments</strong>
-                </h5>
-                <p>
-                  <strong
-                    >Experience enchanting moments of seasonal splendor
-                    <br />
-                    as we bring you the best of holiday joy and
-                    celebration</strong
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./assets/images/carousel_slide_2.png"
-                class="d-block w-100"
-                alt="image 2"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>
-                  <strong>Warm Winter Vibes</strong>
-                </h5>
-                <p>
-                  <strong
-                    >Embrace warm winter vibes in cozy gatherings <br />that
-                    fill your home with love, laughter, and the spirit of the
-                    holidays</strong
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./assets/images/carousel_slide_3.png"
-                class="d-block w-100"
-                alt="image 3"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>
-                  <strong>Savory Herb-Roasted Turkey</strong>
-                </h5>
-                <p>
-                  <strong
-                    >Elevate your Christmas feast with the grandeur of a Savory
-                    Herb-Roasted Turkey a true culinary masterpiece <br />a true
-                    culinary masterpiece</strong
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-      <!-- ===== /Carousel ===== -->
-
-      <!-- ===== Featured Recipes ===== -->
-      <div class="container text-center">
-        <div class="row align-items-md-stretch mt-4">
-          <!-- ===== Featured Recipe 1 ===== -->
-          <div class="col-md-6 mb-4">
-            <div class="h-100 p-5 text-bg-dark feature-recipes-col-1 shadow">
-              <img
-                src="assets/images/gingerbread-man.png"
-                width="150"
-                class="mb-3"
-                alt="Gingerbread man"
-              />
-              <h2 class="mb-3">
-                <i class="fa fa-star text-danger"></i>
-                Christmas Sugar Cookies
-              </h2>
-              <p class="mb-4">
-                Delight your guests with these classic Christmas Sugar Cookies.
-                The soft, buttery cookies are cut into holiday shapes and
-                decorated with vibrant royal icing and festive sprinkles.
-                Perfect for spreading holiday cheer and creating sweet memories
-                with your loved ones. Get creative with the shapes and colors to
-                make your Christmas celebration even more special.
-              </p>
-              <button
-                class="btn btn-light btn1"
-                type="button"
-                onclick="showRecipeModal1()"
-              >
-                <i class="fa-regular fa-rectangle-list"></i>
-                View Recipe
-              </button>
-            </div>
-          </div>
-          <!-- ===== /Featured Recipe 1 ===== -->
-
-          <!-- ===== Featured Recipe 2 ===== -->
-          <div class="col-md-6 mb-4">
-            <div
-              class="h-100 p-5 bg-body-tertiary feature-recipes-col-2 shadow"
-            >
-              <img
-                src="assets/images/cup.png"
-                width="150"
-                class="mb-3"
-                alt="Cup of Peppermint Hot Chocolate"
-              />
-              <h2 class="mb-3">
-                <i class="fa fa-star text-danger"></i>
-                Peppermint Hot Chocolate
-              </h2>
-              <p class="mb-4">
-                Warm up your winter festivities with this indulgent Peppermint
-                Hot Chocolate. This comforting drink combines rich cocoa with a
-                hint of peppermint, creating a delicious and festive treat.
-                Garnish with whipped cream and crushed candy canes for an extra
-                touch of holiday magic. Share a cup with friends and family by
-                the fireplace or as a sweet ending to your Christmas dinner.
-              </p>
-              <button
-                class="btn btn-dark btn2"
-                type="button"
-                onclick="showRecipeModal2()"
-              >
-                <i class="fa-regular fa-rectangle-list"></i>
-                View Recipe
-              </button>
-            </div>
-          </div>
-          <!-- ===== /Featured Recipe 2 ===== -->
-        </div>
-      </div>
-
-      <!-- ===== Featured Recipe Modals ===== -->
-      <div
-        class="modal fade"
-        id="recipeModal1"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="recipeModal1Label"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <img
-              src="assets/images/cookies-.jpg"
-              class="rounded feature-recipes-modal-image"
-              alt="Christmas Cookies"
-            />
-            <div class="modal-header">
-              <h2 class="modal-title" id="recipeModal1Label">
-                Christmas Sugar Cookies
-              </h2>
-            </div>
-            <div class="modal-body">
-              <!-- Recipe 1 Details -->
-              <h3 class="mb-3">Ingredients:</h3>
-              <p>
-                - Sugar cookie dough
-                <br />
-                - Royal icing (in various colors)
-                <br />
-                - Festive sprinkles
-              </p>
-              <h3 class="mb-3">Instructions:</h3>
-              <p>
-                <strong>1.</strong>
-                Roll out the sugar cookie dough and cut into Christmas shapes
-                using cookie cutters.<br />
-                <strong>2.</strong>
-                Bake the cookies according to the recipe instructions.<br />
-                <strong>3.</strong>
-                Once cooled, decorate the cookies with royal icing and
-                sprinkles.<br />
-                <strong>4.</strong>
-                Allow the icing to set before serving.
-              </p>
-              <h2 class="text-uppercase text-success">Enjoy!</h2>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary btn2"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="modal fade"
-        id="recipeModal2"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="recipeModal2Label"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <img
-              src="assets/images/hot-chocolate.jpg"
-              class="rounded feature-recipes-modal-image"
-              alt="Hot Chocolate"
-            />
-            <div class="modal-header">
-              <h2 class="modal-title" id="recipeModal2Label">
-                Peppermint Hot Chocolate
-              </h2>
-            </div>
-            <div class="modal-body">
-              <!-- Recipe 2 Details -->
-              <h3 class="mb-3">Ingredients:</h3>
-              <p>
-                - Hot chocolate mix or cocoa powder
-                <br />
-                - Peppermint extract
-                <br />
-                - Whipped cream
-                <br />
-                - Crushed candy canes
-              </p>
-              <h3 class="mb-3">Instructions:</h3>
-              <p class="mb-4">
-                <strong>1.</strong>
-                Prepare hot chocolate according to package instructions or using
-                your favorite homemade recipe.<br />
-                <strong>2.</strong>
-                Stir in a few drops of peppermint extract to taste.<br />
-                <strong>3.</strong>
-                Pour the hot chocolate into mugs and top with a generous dollop
-                of whipped cream.<br />
-                <strong>4.</strong>
-                Sprinkle crushed candy canes over the whipped cream.
-              </p>
-              <h2 class="text-uppercase text-success">Enjoy!</h2>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary btn1"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ===== /Featured Recipe Modals ===== -->
-      <!-- ===== /Featured Recipes ===== -->
-
-      <!-- ===== Recipes ===== -->
-      <div class="album py-5 bg-body-tertiary">
-        <div class="container">
-          <h2 class="display-6 text-center mb-4 py-4">
-            Discover Our Most Popular Recipes
-          </h2>
-
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-4 py-4">
-            <!-- Recipe Card 1 -->
-            <div class="col">
-              <div class="card shadow-sm shadow">
-                <img src="assets/images/recipe-1.jpg" alt="Christmas Turkey" />
-                <div class="card-body">
-                  <p class="card-text">
-                    The sweet glaze on the turkey is a delicious contrast to the
-                    sour cherry flavours in the stuffing and gravy. The simple
-                    grain-based stuffing is packed with flavour, too.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group mx-auto">
-                      <button
+                <div class="container">
+                    <a class="navbar-brand ps-4" href="index.html">
+                        <img
+                            id="logo"
+                            src="assets/images/holyrecipes-logo.png"
+                            alt="company logo"
+                            width="135"
+                            height="60"
+                        />
+                    </a>
+                    <button
+                        class="navbar-toggler"
                         type="button"
-                        class="btn btn-sm btn-outline-secondary btn2"
-                        onclick="showRecipeModal3()"
-                      >
-                        <i class="fa-regular fa-rectangle-list"></i>
-                        View Recipe
-                      </button>
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul id="nav-links" class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    id="active"
+                                    aria-current="page"
+                                    href="index.html"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                        <form class="d-flex pe-2 top-search-form" role="search">
+                            <div class="input-group mb-3 me-2 mt-3">
+                                <button
+                                    class="btn d-block"
+                                    type="button"
+                                    id="button-search"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#searchModal"
+                                >
+                                    <i class="fa fa-search"></i>
+                                    Search
+                                </button>
+                            </div>
+                        </form>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
+            </nav>
+            <!-- ===== /Navbar ===== -->
+        </header>
+        <!-- ===== /Header ===== -->
 
-            <!-- Recipe Card 2 -->
-            <div class="col">
-              <div class="card shadow-sm shadow">
-                <img src="assets/images/recipe-2.jpg" alt="Christmas Cake" />
-                <div class="card-body">
-                  <p class="card-text">
-                    Add the wow factor to your Christmas table with this easy
-                    choc ripple wreath. Assemble the day before with biscuits
-                    and cream. No cooking, no stress, just decorate.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group mx-auto">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary btn2"
-                        onclick="showRecipeModal4()"
-                      >
-                        <i class="fa-regular fa-rectangle-list"></i>
-                        View Recipe
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Recipe Card 3 -->
-            <div class="col">
-              <div class="card shadow-sm shadow">
-                <img src="assets/images/recipe-3.jpeg" alt="Christmas Fish" />
-                <div class="card-body">
-                  <p class="card-text">
-                    A wonderful, gluten-free baked fish option for easy
-                    entertaining. This baked fish option is not only a culinary
-                    triumph but also a surefire way to elevate your entertaining
-                    game with ease.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group mx-auto">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary btn2"
-                        data-toggle="modal"
-                        data-target="#recipeModal5"
-                        onclick="showRecipeModal5()"
-                      >
-                        <i class="fa-regular fa-rectangle-list"></i>
-                        View Recipe
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <form class="d-flex top-search-form" role="search">
-            <div class="input-group view">
-              <button
-                class="viewmore-btn btn d-block p-3 mx-auto"
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#searchModal"
-              >
-                <i class="fa-solid fa-candy-cane"></i> View More Recipes
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-
-      <!-- Recipe Modals -->
-
-      <!-- Recipe Modal 3 -->
-      <div
-        class="modal fade"
-        id="recipeModal3"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="recipeModal3Label"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog recipe-modal modal3" role="document">
-          <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h2 class="modal-title" id="recipeModal3Label">
-                Maple butter turkey with 3-ingredient stuffing
-              </h2>
-            </div>
-            <!-- Modal Body -->
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-12 col-md-6 col-lg-6">
-                  <img
-                    src="assets/images/recipe-1.jpg"
-                    alt="Christmas Turkey recipe"
-                  />
-                  <div class="card border-0">
-                    <h3 class="mb-3 my-3">12 Ingredients</h3>
-                    <br />
-                    <p>
-                      <strong>1. </strong>125g butter, chopped<br />
-                      <strong>2. </strong>80ml (1/3 cup) maple syrup<br />
-                      <strong>3. </strong>5-6kg whole turkey<br />
-                      <strong>4. </strong>10 fresh sage leaves, plus extra, to
-                      serve<br />
-                      <strong>5. </strong>1kg kent pumpkin, deseeded, cut into
-                      large wedges<br />
-                      <strong>6. </strong>2 garlic bulbs, sliced in half<br />
-                    </p>
-                    <p>
-                      <strong>3-ingredient stuffing</strong><br />
-                      <strong>1. </strong>250g pkt microwave brown rice and
-                      quinoa<br />
-                      <strong>2. </strong>55g (1/3 cup) chopped toasted
-                      pistachios<br />
-                      <strong>3. </strong>125g (3/4 cup) morello cherries,
-                      drained, reserving 125ml (1/2 cup) cherry juice<br />
-                    </p>
-                    <p>
-                      <strong>Gravy</strong><br />
-                      <strong>1. </strong>2 tbsp plain flour<br />
-                      <strong>2. </strong>375ml (1 1/2 cups) Massel chicken
-                      style liquid stock<br />
-                      <strong>3. </strong>125ml (1/2 cup) white wine
-                    </p>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6">
-                  <div class="card border-0">
-                    <h3>6 Method Steps</h3>
-                    <br />
-                    <strong>Step 1</strong><br />
-                    <p>
-                      For the stuffing, squeeze the packet to break up the rice
-                      and quinoa mix. Place in a bowl. Add the pistachios and
-                      cherries and stir to combine. Season and set aside.
-                    </p>
-                    <strong>Step 2</strong><br />
-                    <p>
-                      Place butter and maple syrup in a small saucepan over
-                      medium heat. Cook, stirring, for 2-3 minutes or until
-                      melted. Set aside, covered to keep warm.
-                    </p>
-                    <strong>Step 3</strong><br />
-                    <p>
-                      Preheat oven to 180C/160C fan forced. Remove turkey
-                      giblets, neck and excess fat. Pat turkey dry, inside and
-                      out, with paper towel. Gently run your fingers under the
-                      breast skin to loosen. Carefully push the sage leaves
-                      under the skin, making sure they sit flat. Fill the cavity
-                      with the stuffing. Tie legs with kitchen string and tuck
-                      the wings underneath. Place the turkey, breast side up, on
-                      a rack in a large roasting pan. Pour 375ml (11⁄2 cups)
-                      water into base of pan. Brush turkey all over with maple
-                      butter. Season. Place a large piece of baking paper over
-                      turkey, then 2 layers of foil over pan, securing tightly.
-                      Roast for 2 hours, basting with melted maple butter after
-                      1 hour. Remove foil and paper. Roast, basting once, for a
-                      further 1 hour or until golden and cooked through.
-                      Transfer to a platter, cover and set aside for 30 minutes
-                      to rest. (Set pan aside for making the gravy.)
-                    </p>
-                    <strong>Step 4</strong>
-                    <p>
-                      Meanwhile, place pumpkin and garlic on a large baking tray
-                      lined with baking paper. Season. Spray with oil. Drizzle
-                      pumpkin with the remaining maple butter. Roast for 40
-                      minutes or until the pumpkin is lightly caramelised and
-                      garlic is tender.
-                    </p>
-                    <strong>Step 5</strong><br />
-                    <p>
-                      For the gravy, skim fat from the juices in the roasting
-                      pan and discard. Place the pan over medium heat and scrape
-                      base to dislodge any cooked-on bits. Add flour and cook,
-                      stirring, for 2 minutes. Add stock, wine and reserved
-                      cherry juice. Stir until smooth. Bring to the boil. Simmer
-                      for 5-7 minutes or until slightly thickened. Season.
-                    </p>
-                    <strong>Step 6</strong><br />
-                    <p>
-                      Place the turkey on a large platter with the pumpkin,
-                      garlic and extra sage leaves. Serve with the warm gravy.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- Modal Footer -->
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-secondary btn2"
-                  data-dismiss="modal"
-                  id="closeRecipeModal3"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Recipe Modal 4 -->
-      <div
-        class="modal fade"
-        id="recipeModal4"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="recipeModal4Label"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog recipe-modal modal3" role="document">
-          <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h2 class="modal-title" id="recipeModal4Label">
-                Easy choc ripple wreath
-              </h2>
-            </div>
-            <!-- Modal Body -->
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-12 col-md-6 col-lg-6">
-                  <img
-                    src="assets/images/recipe-2.jpg"
-                    alt="Easy choc ripple wreath"
-                  />
-                  <div class="card border-0">
-                    <h3 class="mb-3 my-3">14 Ingredients</h3>
-                    <br />
-                    <p>
-                      <strong>1. </strong>4 cups thickened cream<br />
-                      <strong>2. </strong>2 tbsp icing sugar<br />
-                      <strong>3. </strong>1/2 tsp finely grated orange rind<br />
-                      <strong>4. </strong>2 tbsp Cointreau (see note)<br />
-                      <strong>5. </strong>2 x 250g packets choc ripple
-                      biscuits<br />
-                      <strong>6. </strong>10 Oreo cookies<br />
-                      <strong>7. </strong>12 mini meringue drops<br />
-                      <strong>8. </strong>1/2 cup Maltesers<br />
-                      <strong>9. </strong>1/2 cup Jaffas<br />
-                      <strong>10. </strong>1/2 x 180g packet BB’s mint balls<br />
-                      <strong>11. </strong>Christmas sprinkles, to serve<br />
-                      <strong>12. </strong>Fresh mint leaves, to serve<br />
-                      <strong>13. </strong>Icing sugar, to serve<br />
-                      <strong>14. </strong>Icing snowflakes, to serve
-                    </p>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6">
-                  <div class="card border-0">
-                    <h3>3 Method Steps</h3>
-                    <br />
-                    <strong>Step 1</strong><br />
-                    <p>
-                      Using an electric mixer, beat 3 cups cream, icing sugar
-                      and orange rind until firm peaks form. Fold in Cointreau.
-                    </p>
-                    <strong>Step 2</strong><br />
-                    <p>
-                      Spoon 1/2 cup cream mixture into a snap-lock bag. Snip 2cm
-                      off one corner. Pipe a 20cm circle on a flat serving plate
-                      to form a base. Spread flat side of 1 biscuit with a
-                      little cream mixture. Stand biscuit upright on its edge on
-                      cream on serving plate. Spread another biscuit with a
-                      little cream mixture. Place in front of the biscuit on
-                      plate and sandwich together. Using the piped cream round
-                      as a guide, continue to sandwich biscuits together with
-                      cream mixture to form a wreath shape. Spread biscuits all
-                      over with remaining cream mixture. Refrigerate overnight
-                      to set.
-                    </p>
-                    <strong>Step 3</strong><br />
-                    <p>
-                      Using an electric mixer, beat the remaining 1 cup cream
-                      until just-firm peaks form. Spread wreath with cream.
-                      Decorate with Oreos, mini meringues, Maltesers, Jaffas,
-                      mint balls, snowflakes, sprinkles and mint leaves. Dust
-                      with icing sugar. Serve.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- Modal Footer -->
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-secondary btn2"
-                  data-dismiss="modal"
-                  id="closeRecipeModal4"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal Recipe 5 -->
-      <div
-        class="modal fade"
-        id="recipeModal5"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="recipeModal5Label"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog recipe-modal modal3" role="document">
-          <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h2 class="modal-title" id="recipeModal5Label">
-                Whole snapper with herb pesto and crispy potatoes
-              </h2>
-            </div>
-            <!-- Modal Body -->
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-12 col-md-6 col-lg-6">
-                  <img
-                    src="assets/images/recipe-3.jpeg"
-                    alt="Whole snapper with herb pesto and crispy potatoes"
-                  />
-                  <div class="card border-0">
-                    <h3 class="mb-3 my-3">13 Ingredients</h3>
-                    <br />
-                    <p>
-                      <strong>1. </strong>1.5kg chat potatoes, cut into 5mm
-                      thick slices<br />
-                      <strong>2. </strong>1/2 cup extra virgin olive oil<br />
-                      <strong>3. </strong>2kg whole snapper<br />
-                      <strong>4. </strong>1 cup fresh flat-leaf parsley leaves,
-                      firmly packed<br />
-                      <strong>5. </strong>1/3 cup fresh chives, chopped<br />
-                      <strong>6. </strong>2/3 cup fresh dill leaves, firmly
-                      packed<br />
-                      <strong>7. </strong>2 garlic cloves, crushed<br />
-                      <strong>8. </strong>1/2 cup walnuts, toasted<br />
-                      <strong>9. </strong>1 lemon, sliced<br />
-                      <strong>10. </strong>400g punnet tomato medley mix<br />
-                      <strong>11. </strong>3 cups watercress sprigs<br />
-                      <strong>12. </strong>Steamed asparagus, to serve<br />
-                      <strong>13. </strong>Lemon wedges, to serve<br />
-                    </p>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6">
-                  <div class="card border-0">
-                    <h3>5 Method Steps</h3>
-                    <br />
-                    <strong>Step 1</strong><br />
-                    <p>
-                      Preheat oven to 220C/200C fan-forced. Line a large baking
-                      tray (with sides) with baking paper.
-                    </p>
-                    <strong>Step 2</strong><br />
-                    <p>
-                      Place potatoes on prepared tray. Drizzle with 2
-                      tablespoons oil. Season with salt and pepper. Bake for 10
-                      minutes.
-                    </p>
-                    <strong>Step 3</strong><br />
-                    <p>Meanwhile, pat fish dry with paper towel.</p>
-                    <strong>Step 4</strong>
-                    <p>
-                      Place parsley, chives, dill, garlic and walnuts in a food
-                      processor. Process until roughly chopped. Add 2
-                      tablespoons oil. Process until combined. Spread fish
-                      cavity with herb mixture. Top with lemon slices. Drizzle
-                      fish with remaining oil. Season with salt and pepper.
-                    </p>
-                    <strong>Step 5</strong><br />
-                    <p>
-                      Place fish on potatoes. Bake for 15 minutes. Reduce oven
-                      temperature to 180C/160C fan-forced. Bake for 20 minutes.
-                      Add tomatoes. Bake for a further 10 to 15 minutes or until
-                      fish is cooked through and tomatoes are tender. Sprinkle
-                      with 1 cup watercress. Serve with remaining watercress,
-                      asparagus and lemon.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- Modal Footer -->
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-secondary btn2"
-                  data-dismiss="modal"
-                  id="closeRecipeModal5"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ===== /Recipes ===== -->
-
-      <!-- ===== Instant Classic Section ===== -->
-      <div class="container py-4 p-4">
-        <div class="row py-4">
-          <div
-            class="col-md-6 d-flex justify-content-center instant-classic-bg-img"
-          >
-            <img
-              src="./assets/images/xmas_drink_instant_classic.png"
-              alt="Christmas Instant Drinks"
-              class="img-fluid"
-            />
-          </div>
-
-          <div class="col-md-6 instant-content instant-div">
-            <div
-              class="d-flex flex-column justify-content-center align-items-center instant-content"
-            >
-              <h2 class="text-center pt-3">An Instant Classic</h2>
-              <p class="text-center pb-1">
-                Sip into the magic of our Instant Classic Christmas drink, a
-                delightful fusion of smooth vanilla topped with chocolate
-                sprinkles. Click below to unveil the secret ingredients that
-                make this festive concoction an absolute delight.
-              </p>
-              <button
-                class="btn btn-success mb-4 p-3"
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#searchModal"
-              >
-                <i class="fa-solid fa-mug-hot"></i>
-                View Ingredients
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ===== Family Dinner Traditions ===== -->
-      <div class="container text-center my-4">
-        <h2 class="display-6 text-center mb-4 py-4">
-          Family Dinner Traditions
-        </h2>
-
-        <div class="row mt-4 py-4">
-          <div class="col-md-6 mb-4 family-section">
-            <div class="h-100 p-3 bg-white shadow rounded">
-              <img
-                src="assets/images/family.jpg"
-                class="img-fluid rounded my-2"
-                alt="Family"
-              />
-              <p class="text-dark">
-                Family dinner traditions hold a special place in our hearts,
-                weaving a tapestry of warmth, love, and shared experiences. As
-                we gather around the table, the aroma of home-cooked meals fills
-                the air, and the clinking of utensils becomes a melody of
-                togetherness. In these moments, we not only nourish our bodies
-                but also nurture the bonds that tie us together.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 mb-4 family-section">
-            <div class="h-100 p-3 bg-white shadow rounded">
-              <img
-                src="assets/images/kid.jpg"
-                class="img-fluid rounded my-2"
-                alt="Child hanging tree decorations"
-              />
-              <p>
-                As the winter chill embraces the world, a special kind of
-                enchantment blankets the hearts of children. Christmas, with its
-                twinkling lights and festive cheer, becomes a playground for
-                their boundless imagination and infectious joy. The anticipation
-                in their eyes mirrors the promise of wonder that the season
-                brings.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <!--Footer-->
-    <footer class="py-3 my-4 border-top-0 container text-white">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-12 col-lg-5 mb-3 mb-lg-0 text-lg-left">
-          <p id="footer-text" class="my-2">Hacked together by...</p>
-        </div>
-        <div class="col-12 col-lg-2 d-flex justify-content-center mb-3 mb-lg-0">
-          <img
-            class="img-fluid footer-logo"
-            src="assets/images/holyrecipes-logo.png"
-            alt="footer logo"
-          />
-        </div>
+        <!-- ===== Modal ===== -->
         <div
-          class="col-12 col-lg-5 d-flex justify-content-center justify-content-lg-end"
+            class="modal fade"
+            id="searchModal"
+            tabindex="-1"
+            aria-hidden="true"
         >
-          <ul class="nav text-capitalize">
-            <li class="nav-item">
-              <a
-                href="https://github.com/xttrust"
-                class="nav-link text-white px-2"
-                >florin</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                href="https://github.com/lee-joanne"
-                class="nav-link text-white px-2"
-                >joanne</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                href="https://github.com/caleom"
-                class="nav-link text-white px-2"
-                >liam</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                href="https://github.com/NikolettaGr"
-                class="nav-link text-white px-2"
-                >nikoletta</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                href="https://github.com/phillywhitty"
-                class="nav-link text-white px-2"
-                >phil whitty</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                href="https://github.com/sammartin92"
-                class="nav-link text-white px-2"
-                >sam</a
-              >
-            </li>
-          </ul>
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <!-- ===== Modal header ===== -->
+                    <div class="modal-header">
+                        <!-- ===== Search form ===== -->
+                        <form class="search-function">
+                            <h3 class="mb-3">Find your Christmas recipe</h3>
+                            <p>
+                                We have a delightful collection of Christmas
+                                recipes that will add joy to your festive
+                                celebrations. From classic holiday treats to
+                                creative twists on traditional dishes, our
+                                curated selection is sure to inspire your
+                                holiday menu.
+                            </p>
+
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 mb-3">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Search Your Recipe..."
+                                    />
+                                </div>
+
+                                <div class="col-md-4 col-sm-12 mb-3">
+                                    <select
+                                        class="form-select"
+                                        name="dishType"
+                                        id="dishType"
+                                    >
+                                        <option value="">Category</option>
+                                        <option value="cocktail">
+                                            Cocktail
+                                        </option>
+                                        <option value="biscuits">
+                                            Biscuits
+                                        </option>
+                                        <option value="Bread">Bread</option>
+                                        <option value="condiments">
+                                            Condiments
+                                        </option>
+                                        <option value="desserts">
+                                            Dessert
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="checkbox-div">
+                                    <input
+                                        type="checkbox"
+                                        name="health"
+                                        class="btn-check"
+                                        id="dairy-free"
+                                        value="dairy-free"
+                                    />
+                                    <label
+                                        class="btn btn-outline-primary"
+                                        for="dairy-free"
+                                        >Dairy Free</label
+                                    >
+                                    <input
+                                        type="checkbox"
+                                        name="health"
+                                        class="btn-check"
+                                        id="gluten-free"
+                                        value="gluten-free"
+                                    />
+                                    <label
+                                        class="btn btn-outline-primary"
+                                        for="gluten-free"
+                                        >Gluten Free</label
+                                    >
+
+                                    <input
+                                        type="checkbox"
+                                        name="health"
+                                        class="btn-check"
+                                        id="vegetarian"
+                                        value="vegetarian"
+                                    />
+                                    <label
+                                        class="btn btn-outline-primary"
+                                        for="vegetarian"
+                                        >Vegetarian</label
+                                    >
+                                    <input
+                                        type="checkbox"
+                                        name="health"
+                                        class="btn-check"
+                                        id="vegan"
+                                        value="vegan"
+                                    />
+                                    <label
+                                        class="btn btn-outline-primary"
+                                        for="vegan"
+                                        >Vegan</label
+                                    >
+
+                                    <button
+                                        type="submit"
+                                        class="btn btn-outline-success d-flex align-items-center"
+                                    >
+                                        <i class="fa fa-search me-2"></i>
+                                        Search
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- ===== /Search form ===== -->
+                    </div>
+                    <!-- ===== /Modal header ===== -->
+
+                    <!-- ===== Modal body ===== -->
+                    <div class="modal-body">
+                        <div id="results"></div>
+                    </div>
+                    <!-- ===== /Modal body ===== -->
+
+                    <!-- ===== Modal footer ===== -->
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-outline-danger"
+                            data-bs-dismiss="modal"
+                        >
+                            <i class="fa fa-remove"></i>
+                            Close
+                        </button>
+                    </div>
+                    <!-- ===== /Modal footer ===== -->
+                </div>
+            </div>
         </div>
-      </div>
-    </footer>
-    <!-- ===== jQuery===== -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- ===== Bootstrap javascript ===== -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!-- ===== Website javascript ===== -->
-    <script src="assets/js/script.js"></script>
-  </body>
+        <!-- ===== /Modal ===== -->
+
+        <!-- ===== Main ===== -->
+        <main class="container index-main">
+            <!-- ===== Carousel ===== -->
+            <div class="container">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators pb-2">
+                        <button
+                            type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"
+                        ></button>
+                    </div>
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img
+                                src="./assets/images/carousel_slide_1.png"
+                                class="d-block w-100"
+                                alt="image 1"
+                            />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>
+                                    <strong>Enchanting Moments</strong>
+                                </h5>
+                                <p>
+                                    <strong
+                                        >Experience enchanting moments of
+                                        seasonal splendor
+                                        <br />
+                                        as we bring you the best of holiday joy
+                                        and celebration</strong
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="./assets/images/carousel_slide_2.png"
+                                class="d-block w-100"
+                                alt="image 2"
+                            />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>
+                                    <strong>Warm Winter Vibes</strong>
+                                </h5>
+                                <p>
+                                    <strong
+                                        >Embrace warm winter vibes in cozy
+                                        gatherings <br />that fill your home
+                                        with love, laughter, and the spirit of
+                                        the holidays</strong
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="./assets/images/carousel_slide_3.png"
+                                class="d-block w-100"
+                                alt="image 3"
+                            />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>
+                                    <strong>Savory Herb-Roasted Turkey</strong>
+                                </h5>
+                                <p>
+                                    <strong
+                                        >Elevate your Christmas feast with the
+                                        grandeur of a Savory Herb-Roasted Turkey
+                                        a true culinary masterpiece <br />a true
+                                        culinary masterpiece</strong
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev"
+                    >
+                        <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next"
+                    >
+                        <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- ===== /Carousel ===== -->
+
+            <!-- ===== Featured Recipes ===== -->
+            <div class="container text-center">
+                <div class="row align-items-md-stretch mt-4">
+                    <!-- ===== Featured Recipe 1 ===== -->
+                    <div class="col-md-6 mb-4">
+                        <div
+                            class="h-100 p-5 text-bg-dark feature-recipes-col-1 shadow"
+                        >
+                            <img
+                                src="assets/images/gingerbread-man.png"
+                                width="150"
+                                class="mb-3"
+                                alt="Gingerbread man"
+                            />
+                            <h2 class="mb-3">
+                                <i class="fa fa-star text-danger"></i>
+                                Christmas Sugar Cookies
+                            </h2>
+                            <p class="mb-4">
+                                Delight your guests with these classic Christmas
+                                Sugar Cookies. The soft, buttery cookies are cut
+                                into holiday shapes and decorated with vibrant
+                                royal icing and festive sprinkles. Perfect for
+                                spreading holiday cheer and creating sweet
+                                memories with your loved ones. Get creative with
+                                the shapes and colors to make your Christmas
+                                celebration even more special.
+                            </p>
+                            <button
+                                class="btn btn-light btn1"
+                                type="button"
+                                onclick="showRecipeModal1()"
+                            >
+                                <i class="fa-regular fa-rectangle-list"></i>
+                                View Recipe
+                            </button>
+                        </div>
+                    </div>
+                    <!-- ===== /Featured Recipe 1 ===== -->
+
+                    <!-- ===== Featured Recipe 2 ===== -->
+                    <div class="col-md-6 mb-4">
+                        <div
+                            class="h-100 p-5 bg-body-tertiary feature-recipes-col-2 shadow"
+                        >
+                            <img
+                                src="assets/images/cup.png"
+                                width="150"
+                                class="mb-3"
+                                alt="Cup of Peppermint Hot Chocolate"
+                            />
+                            <h2 class="mb-3">
+                                <i class="fa fa-star text-danger"></i>
+                                Peppermint Hot Chocolate
+                            </h2>
+                            <p class="mb-4">
+                                Warm up your winter festivities with this
+                                indulgent Peppermint Hot Chocolate. This
+                                comforting drink combines rich cocoa with a hint
+                                of peppermint, creating a delicious and festive
+                                treat. Garnish with whipped cream and crushed
+                                candy canes for an extra touch of holiday magic.
+                                Share a cup with friends and family by the
+                                fireplace or as a sweet ending to your Christmas
+                                dinner.
+                            </p>
+                            <button
+                                class="btn btn-dark btn2"
+                                type="button"
+                                onclick="showRecipeModal2()"
+                            >
+                                <i class="fa-regular fa-rectangle-list"></i>
+                                View Recipe
+                            </button>
+                        </div>
+                    </div>
+                    <!-- ===== /Featured Recipe 2 ===== -->
+                </div>
+            </div>
+
+            <!-- ===== Featured Recipe Modals ===== -->
+            <div
+                class="modal fade"
+                id="recipeModal1"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="recipeModal1Label"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <img
+                            src="assets/images/cookies-.jpg"
+                            class="rounded feature-recipes-modal-image"
+                            alt="Christmas Cookies"
+                        />
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="recipeModal1Label">
+                                Christmas Sugar Cookies
+                            </h2>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Recipe 1 Details -->
+                            <h3 class="mb-3">Ingredients:</h3>
+                            <p>
+                                - Sugar cookie dough
+                                <br />
+                                - Royal icing (in various colors)
+                                <br />
+                                - Festive sprinkles
+                            </p>
+                            <h3 class="mb-3">Instructions:</h3>
+                            <p>
+                                <strong>1.</strong>
+                                Roll out the sugar cookie dough and cut into
+                                Christmas shapes using cookie cutters.<br />
+                                <strong>2.</strong>
+                                Bake the cookies according to the recipe
+                                instructions.<br />
+                                <strong>3.</strong>
+                                Once cooled, decorate the cookies with royal
+                                icing and sprinkles.<br />
+                                <strong>4.</strong>
+                                Allow the icing to set before serving.
+                            </p>
+                            <h2 class="text-uppercase text-success">Enjoy!</h2>
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-secondary btn2"
+                                data-dismiss="modal"
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="modal fade"
+                id="recipeModal2"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="recipeModal2Label"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <img
+                            src="assets/images/hot-chocolate.jpg"
+                            class="rounded feature-recipes-modal-image"
+                            alt="Hot Chocolate"
+                        />
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="recipeModal2Label">
+                                Peppermint Hot Chocolate
+                            </h2>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Recipe 2 Details -->
+                            <h3 class="mb-3">Ingredients:</h3>
+                            <p>
+                                - Hot chocolate mix or cocoa powder
+                                <br />
+                                - Peppermint extract
+                                <br />
+                                - Whipped cream
+                                <br />
+                                - Crushed candy canes
+                            </p>
+                            <h3 class="mb-3">Instructions:</h3>
+                            <p class="mb-4">
+                                <strong>1.</strong>
+                                Prepare hot chocolate according to package
+                                instructions or using your favorite homemade
+                                recipe.<br />
+                                <strong>2.</strong>
+                                Stir in a few drops of peppermint extract to
+                                taste.<br />
+                                <strong>3.</strong>
+                                Pour the hot chocolate into mugs and top with a
+                                generous dollop of whipped cream.<br />
+                                <strong>4.</strong>
+                                Sprinkle crushed candy canes over the whipped
+                                cream.
+                            </p>
+                            <h2 class="text-uppercase text-success">Enjoy!</h2>
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-secondary btn1"
+                                data-dismiss="modal"
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ===== /Featured Recipe Modals ===== -->
+            <!-- ===== /Featured Recipes ===== -->
+
+            <!-- ===== Recipes ===== -->
+            <div class="album py-5 bg-body-tertiary">
+                <div class="container">
+                    <h2 class="display-6 text-center mb-4 py-4">
+                        Discover Our Most Popular Recipes
+                    </h2>
+
+                    <div
+                        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-4 py-4"
+                    >
+                        <!-- Recipe Card 1 -->
+                        <div class="col">
+                            <div class="card shadow-sm shadow">
+                                <img
+                                    src="assets/images/recipe-1.jpg"
+                                    alt="Christmas Turkey"
+                                />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        The sweet glaze on the turkey is a
+                                        delicious contrast to the sour cherry
+                                        flavours in the stuffing and gravy. The
+                                        simple grain-based stuffing is packed
+                                        with flavour, too.
+                                    </p>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center"
+                                    >
+                                        <div class="btn-group mx-auto">
+                                            <button
+                                                type="button"
+                                                class="btn btn-sm btn-outline-secondary btn2"
+                                                onclick="showRecipeModal3()"
+                                            >
+                                                <i
+                                                    class="fa-regular fa-rectangle-list"
+                                                ></i>
+                                                View Recipe
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recipe Card 2 -->
+                        <div class="col">
+                            <div class="card shadow-sm shadow">
+                                <img
+                                    src="assets/images/recipe-2.jpg"
+                                    alt="Christmas Cake"
+                                />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Add the wow factor to your Christmas
+                                        table with this easy choc ripple wreath.
+                                        Assemble the day before with biscuits
+                                        and cream. No cooking, no stress, just
+                                        decorate.
+                                    </p>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center"
+                                    >
+                                        <div class="btn-group mx-auto">
+                                            <button
+                                                type="button"
+                                                class="btn btn-sm btn-outline-secondary btn2"
+                                                onclick="showRecipeModal4()"
+                                            >
+                                                <i
+                                                    class="fa-regular fa-rectangle-list"
+                                                ></i>
+                                                View Recipe
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recipe Card 3 -->
+                        <div class="col">
+                            <div class="card shadow-sm shadow">
+                                <img
+                                    src="assets/images/recipe-3.jpeg"
+                                    alt="Christmas Fish"
+                                />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        A wonderful, gluten-free baked fish
+                                        option for easy entertaining. This baked
+                                        fish option is not only a culinary
+                                        triumph but also a surefire way to
+                                        elevate your entertaining game with
+                                        ease.
+                                    </p>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center"
+                                    >
+                                        <div class="btn-group mx-auto">
+                                            <button
+                                                type="button"
+                                                class="btn btn-sm btn-outline-secondary btn2"
+                                                data-toggle="modal"
+                                                data-target="#recipeModal5"
+                                                onclick="showRecipeModal5()"
+                                            >
+                                                <i
+                                                    class="fa-regular fa-rectangle-list"
+                                                ></i>
+                                                View Recipe
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="d-flex top-search-form" role="search">
+                        <div class="input-group view">
+                            <button
+                                class="viewmore-btn btn d-block p-3 mx-auto"
+                                type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#searchModal"
+                            >
+                                <i class="fa-solid fa-candy-cane"></i> View More
+                                Recipes
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Recipe Modals -->
+
+            <!-- Recipe Modal 3 -->
+            <div
+                class="modal fade"
+                id="recipeModal3"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="recipeModal3Label"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog recipe-modal modal3" role="document">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="recipeModal3Label">
+                                Maple butter turkey with 3-ingredient stuffing
+                            </h2>
+                        </div>
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <img
+                                        src="assets/images/recipe-1.jpg"
+                                        alt="Christmas Turkey recipe"
+                                    />
+                                    <div class="card border-0">
+                                        <h3 class="mb-3 my-3">
+                                            12 Ingredients
+                                        </h3>
+                                        <br />
+                                        <p>
+                                            <strong>1. </strong>125g butter,
+                                            chopped<br />
+                                            <strong>2. </strong>80ml (1/3 cup)
+                                            maple syrup<br />
+                                            <strong>3. </strong>5-6kg whole
+                                            turkey<br />
+                                            <strong>4. </strong>10 fresh sage
+                                            leaves, plus extra, to serve<br />
+                                            <strong>5. </strong>1kg kent
+                                            pumpkin, deseeded, cut into large
+                                            wedges<br />
+                                            <strong>6. </strong>2 garlic bulbs,
+                                            sliced in half<br />
+                                        </p>
+                                        <p>
+                                            <strong
+                                                >3-ingredient stuffing</strong
+                                            ><br />
+                                            <strong>1. </strong>250g pkt
+                                            microwave brown rice and quinoa<br />
+                                            <strong>2. </strong>55g (1/3 cup)
+                                            chopped toasted pistachios<br />
+                                            <strong>3. </strong>125g (3/4 cup)
+                                            morello cherries, drained, reserving
+                                            125ml (1/2 cup) cherry juice<br />
+                                        </p>
+                                        <p>
+                                            <strong>Gravy</strong><br />
+                                            <strong>1. </strong>2 tbsp plain
+                                            flour<br />
+                                            <strong>2. </strong>375ml (1 1/2
+                                            cups) Massel chicken style liquid
+                                            stock<br />
+                                            <strong>3. </strong>125ml (1/2 cup)
+                                            white wine
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <div class="card border-0">
+                                        <h3>6 Method Steps</h3>
+                                        <br />
+                                        <strong>Step 1</strong><br />
+                                        <p>
+                                            For the stuffing, squeeze the packet
+                                            to break up the rice and quinoa mix.
+                                            Place in a bowl. Add the pistachios
+                                            and cherries and stir to combine.
+                                            Season and set aside.
+                                        </p>
+                                        <strong>Step 2</strong><br />
+                                        <p>
+                                            Place butter and maple syrup in a
+                                            small saucepan over medium heat.
+                                            Cook, stirring, for 2-3 minutes or
+                                            until melted. Set aside, covered to
+                                            keep warm.
+                                        </p>
+                                        <strong>Step 3</strong><br />
+                                        <p>
+                                            Preheat oven to 180C/160C fan
+                                            forced. Remove turkey giblets, neck
+                                            and excess fat. Pat turkey dry,
+                                            inside and out, with paper towel.
+                                            Gently run your fingers under the
+                                            breast skin to loosen. Carefully
+                                            push the sage leaves under the skin,
+                                            making sure they sit flat. Fill the
+                                            cavity with the stuffing. Tie legs
+                                            with kitchen string and tuck the
+                                            wings underneath. Place the turkey,
+                                            breast side up, on a rack in a large
+                                            roasting pan. Pour 375ml (11⁄2 cups)
+                                            water into base of pan. Brush turkey
+                                            all over with maple butter. Season.
+                                            Place a large piece of baking paper
+                                            over turkey, then 2 layers of foil
+                                            over pan, securing tightly. Roast
+                                            for 2 hours, basting with melted
+                                            maple butter after 1 hour. Remove
+                                            foil and paper. Roast, basting once,
+                                            for a further 1 hour or until golden
+                                            and cooked through. Transfer to a
+                                            platter, cover and set aside for 30
+                                            minutes to rest. (Set pan aside for
+                                            making the gravy.)
+                                        </p>
+                                        <strong>Step 4</strong>
+                                        <p>
+                                            Meanwhile, place pumpkin and garlic
+                                            on a large baking tray lined with
+                                            baking paper. Season. Spray with
+                                            oil. Drizzle pumpkin with the
+                                            remaining maple butter. Roast for 40
+                                            minutes or until the pumpkin is
+                                            lightly caramelised and garlic is
+                                            tender.
+                                        </p>
+                                        <strong>Step 5</strong><br />
+                                        <p>
+                                            For the gravy, skim fat from the
+                                            juices in the roasting pan and
+                                            discard. Place the pan over medium
+                                            heat and scrape base to dislodge any
+                                            cooked-on bits. Add flour and cook,
+                                            stirring, for 2 minutes. Add stock,
+                                            wine and reserved cherry juice. Stir
+                                            until smooth. Bring to the boil.
+                                            Simmer for 5-7 minutes or until
+                                            slightly thickened. Season.
+                                        </p>
+                                        <strong>Step 6</strong><br />
+                                        <p>
+                                            Place the turkey on a large platter
+                                            with the pumpkin, garlic and extra
+                                            sage leaves. Serve with the warm
+                                            gravy.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal Footer -->
+                            <div class="modal-footer">
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary btn2"
+                                    data-dismiss="modal"
+                                    id="closeRecipeModal3"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe Modal 4 -->
+            <div
+                class="modal fade"
+                id="recipeModal4"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="recipeModal4Label"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog recipe-modal modal3" role="document">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="recipeModal4Label">
+                                Easy choc ripple wreath
+                            </h2>
+                        </div>
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <img
+                                        src="assets/images/recipe-2.jpg"
+                                        alt="Easy choc ripple wreath"
+                                    />
+                                    <div class="card border-0">
+                                        <h3 class="mb-3 my-3">
+                                            14 Ingredients
+                                        </h3>
+                                        <br />
+                                        <p>
+                                            <strong>1. </strong>4 cups thickened
+                                            cream<br />
+                                            <strong>2. </strong>2 tbsp icing
+                                            sugar<br />
+                                            <strong>3. </strong>1/2 tsp finely
+                                            grated orange rind<br />
+                                            <strong>4. </strong>2 tbsp Cointreau
+                                            (see note)<br />
+                                            <strong>5. </strong>2 x 250g packets
+                                            choc ripple biscuits<br />
+                                            <strong>6. </strong>10 Oreo
+                                            cookies<br />
+                                            <strong>7. </strong>12 mini meringue
+                                            drops<br />
+                                            <strong>8. </strong>1/2 cup
+                                            Maltesers<br />
+                                            <strong>9. </strong>1/2 cup
+                                            Jaffas<br />
+                                            <strong>10. </strong>1/2 x 180g
+                                            packet BB’s mint balls<br />
+                                            <strong>11. </strong>Christmas
+                                            sprinkles, to serve<br />
+                                            <strong>12. </strong>Fresh mint
+                                            leaves, to serve<br />
+                                            <strong>13. </strong>Icing sugar, to
+                                            serve<br />
+                                            <strong>14. </strong>Icing
+                                            snowflakes, to serve
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <div class="card border-0">
+                                        <h3>3 Method Steps</h3>
+                                        <br />
+                                        <strong>Step 1</strong><br />
+                                        <p>
+                                            Using an electric mixer, beat 3 cups
+                                            cream, icing sugar and orange rind
+                                            until firm peaks form. Fold in
+                                            Cointreau.
+                                        </p>
+                                        <strong>Step 2</strong><br />
+                                        <p>
+                                            Spoon 1/2 cup cream mixture into a
+                                            snap-lock bag. Snip 2cm off one
+                                            corner. Pipe a 20cm circle on a flat
+                                            serving plate to form a base. Spread
+                                            flat side of 1 biscuit with a little
+                                            cream mixture. Stand biscuit upright
+                                            on its edge on cream on serving
+                                            plate. Spread another biscuit with a
+                                            little cream mixture. Place in front
+                                            of the biscuit on plate and sandwich
+                                            together. Using the piped cream
+                                            round as a guide, continue to
+                                            sandwich biscuits together with
+                                            cream mixture to form a wreath
+                                            shape. Spread biscuits all over with
+                                            remaining cream mixture. Refrigerate
+                                            overnight to set.
+                                        </p>
+                                        <strong>Step 3</strong><br />
+                                        <p>
+                                            Using an electric mixer, beat the
+                                            remaining 1 cup cream until
+                                            just-firm peaks form. Spread wreath
+                                            with cream. Decorate with Oreos,
+                                            mini meringues, Maltesers, Jaffas,
+                                            mint balls, snowflakes, sprinkles
+                                            and mint leaves. Dust with icing
+                                            sugar. Serve.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal Footer -->
+                            <div class="modal-footer">
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary btn2"
+                                    data-dismiss="modal"
+                                    id="closeRecipeModal4"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal Recipe 5 -->
+            <div
+                class="modal fade"
+                id="recipeModal5"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="recipeModal5Label"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog recipe-modal modal3" role="document">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="recipeModal5Label">
+                                Whole snapper with herb pesto and crispy
+                                potatoes
+                            </h2>
+                        </div>
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <img
+                                        src="assets/images/recipe-3.jpeg"
+                                        alt="Whole snapper with herb pesto and crispy potatoes"
+                                    />
+                                    <div class="card border-0">
+                                        <h3 class="mb-3 my-3">
+                                            13 Ingredients
+                                        </h3>
+                                        <br />
+                                        <p>
+                                            <strong>1. </strong>1.5kg chat
+                                            potatoes, cut into 5mm thick
+                                            slices<br />
+                                            <strong>2. </strong>1/2 cup extra
+                                            virgin olive oil<br />
+                                            <strong>3. </strong>2kg whole
+                                            snapper<br />
+                                            <strong>4. </strong>1 cup fresh
+                                            flat-leaf parsley leaves, firmly
+                                            packed<br />
+                                            <strong>5. </strong>1/3 cup fresh
+                                            chives, chopped<br />
+                                            <strong>6. </strong>2/3 cup fresh
+                                            dill leaves, firmly packed<br />
+                                            <strong>7. </strong>2 garlic cloves,
+                                            crushed<br />
+                                            <strong>8. </strong>1/2 cup walnuts,
+                                            toasted<br />
+                                            <strong>9. </strong>1 lemon,
+                                            sliced<br />
+                                            <strong>10. </strong>400g punnet
+                                            tomato medley mix<br />
+                                            <strong>11. </strong>3 cups
+                                            watercress sprigs<br />
+                                            <strong>12. </strong>Steamed
+                                            asparagus, to serve<br />
+                                            <strong>13. </strong>Lemon wedges,
+                                            to serve<br />
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <div class="card border-0">
+                                        <h3>5 Method Steps</h3>
+                                        <br />
+                                        <strong>Step 1</strong><br />
+                                        <p>
+                                            Preheat oven to 220C/200C
+                                            fan-forced. Line a large baking tray
+                                            (with sides) with baking paper.
+                                        </p>
+                                        <strong>Step 2</strong><br />
+                                        <p>
+                                            Place potatoes on prepared tray.
+                                            Drizzle with 2 tablespoons oil.
+                                            Season with salt and pepper. Bake
+                                            for 10 minutes.
+                                        </p>
+                                        <strong>Step 3</strong><br />
+                                        <p>
+                                            Meanwhile, pat fish dry with paper
+                                            towel.
+                                        </p>
+                                        <strong>Step 4</strong>
+                                        <p>
+                                            Place parsley, chives, dill, garlic
+                                            and walnuts in a food processor.
+                                            Process until roughly chopped. Add 2
+                                            tablespoons oil. Process until
+                                            combined. Spread fish cavity with
+                                            herb mixture. Top with lemon slices.
+                                            Drizzle fish with remaining oil.
+                                            Season with salt and pepper.
+                                        </p>
+                                        <strong>Step 5</strong><br />
+                                        <p>
+                                            Place fish on potatoes. Bake for 15
+                                            minutes. Reduce oven temperature to
+                                            180C/160C fan-forced. Bake for 20
+                                            minutes. Add tomatoes. Bake for a
+                                            further 10 to 15 minutes or until
+                                            fish is cooked through and tomatoes
+                                            are tender. Sprinkle with 1 cup
+                                            watercress. Serve with remaining
+                                            watercress, asparagus and lemon.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal Footer -->
+                            <div class="modal-footer">
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary btn2"
+                                    data-dismiss="modal"
+                                    id="closeRecipeModal5"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== /Recipes ===== -->
+
+            <!-- ===== Instant Classic Section ===== -->
+            <div class="container py-4 p-4">
+                <div class="row py-4">
+                    <div
+                        class="col-md-6 d-flex justify-content-center instant-classic-bg-img"
+                    >
+                        <img
+                            src="./assets/images/xmas_drink_instant_classic.png"
+                            alt="Christmas Instant Drinks"
+                            class="img-fluid"
+                        />
+                    </div>
+
+                    <div class="col-md-6 instant-content instant-div">
+                        <div
+                            class="d-flex flex-column justify-content-center align-items-center instant-content"
+                        >
+                            <h2 class="text-center pt-3">An Instant Classic</h2>
+                            <p class="text-center pb-1">
+                                Sip into the magic of our Instant Classic
+                                Christmas drink, a delightful fusion of smooth
+                                vanilla topped with chocolate sprinkles. Click
+                                below to unveil the secret ingredients that make
+                                this festive concoction an absolute delight.
+                            </p>
+                            <button
+                                class="btn btn-success mb-4 p-3 btn10"
+                                type="button"
+                                onclick="showRecipeModal10()"
+                            >
+                                <i class="fa-solid fa-mug-hot"></i>
+                                View Ingredients
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== Instant Classic Modals ===== -->
+            <div
+                class="modal fade"
+                id="recipeModal10"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="recipeModal10Label"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <img
+                            src="assets/images/instant_classic_model.png"
+                            class="rounded feature-recipes-modal-image"
+                            alt="Christmas Cookies"
+                        />
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="recipeModal1Label">
+                                Vanilla Winter Wonderland
+                            </h2>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Recipe 1 Details -->
+                            <h3 class="mb-3">Ingredients:</h3>
+                            <p>
+                                - Vanilla ice cream
+                                <br />
+                                - Whole milk
+                                <br />
+                                - Vanilla extract
+                                <br />
+                                - Chocolate sprinkles
+                                <br />
+                                - Cadbury flake
+                            </p>
+                            <h3 class="mb-3">Instructions:</h3>
+                            <p>
+                                <strong>1.</strong>
+                                Add the ice cream, vanilla extract, and milk to
+                                a blender and blend until smooth.<br />
+                                <strong>2.</strong>
+                                Add a little additional milk to reach the
+                                desired consistency, if desired.<br />
+                                <strong>3.</strong>
+                                Pour the milkshake into a chilled glass or add
+                                ice. <br />
+                                <strong>4.</strong>
+                                Top it off with chocolate sprinkles and, if you
+                                desire an extra treat, add a Cadbury Flake for a
+                                delightful touch.
+                            </p>
+                            <h2 class="text-uppercase text-success">
+                                Take a sip and enjoy
+                            </h2>
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-secondary btn10"
+                                data-dismiss="modal"
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== Family Dinner Traditions ===== -->
+            <div class="container text-center my-4">
+                <h2 class="display-6 text-center mb-4 py-4">
+                    Family Dinner Traditions
+                </h2>
+
+                <div class="row mt-4 py-4">
+                    <div class="col-md-6 mb-4 family-section">
+                        <div class="h-100 p-3 bg-white shadow rounded">
+                            <img
+                                src="assets/images/family.jpg"
+                                class="img-fluid rounded my-2"
+                                alt="Family"
+                            />
+                            <p class="text-dark">
+                                Family dinner traditions hold a special place in
+                                our hearts, weaving a tapestry of warmth, love,
+                                and shared experiences. As we gather around the
+                                table, the aroma of home-cooked meals fills the
+                                air, and the clinking of utensils becomes a
+                                melody of togetherness. In these moments, we not
+                                only nourish our bodies but also nurture the
+                                bonds that tie us together.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4 family-section">
+                        <div class="h-100 p-3 bg-white shadow rounded">
+                            <img
+                                src="assets/images/kid.jpg"
+                                class="img-fluid rounded my-2"
+                                alt="Child hanging tree decorations"
+                            />
+                            <p>
+                                As the winter chill embraces the world, a
+                                special kind of enchantment blankets the hearts
+                                of children. Christmas, with its twinkling
+                                lights and festive cheer, becomes a playground
+                                for their boundless imagination and infectious
+                                joy. The anticipation in their eyes mirrors the
+                                promise of wonder that the season brings.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--Footer-->
+        <footer class="py-3 my-4 border-top-0 container text-white">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-lg-5 mb-3 mb-lg-0 text-lg-left">
+                    <p id="footer-text" class="my-2">Hacked together by...</p>
+                </div>
+                <div
+                    class="col-12 col-lg-2 d-flex justify-content-center mb-3 mb-lg-0"
+                >
+                    <img
+                        class="img-fluid footer-logo"
+                        src="assets/images/holyrecipes-logo.png"
+                        alt="footer logo"
+                    />
+                </div>
+                <div
+                    class="col-12 col-lg-5 d-flex justify-content-center justify-content-lg-end"
+                >
+                    <ul class="nav text-capitalize">
+                        <li class="nav-item">
+                            <a
+                                href="https://github.com/xttrust"
+                                class="nav-link text-white px-2"
+                                >florin</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="https://github.com/lee-joanne"
+                                class="nav-link text-white px-2"
+                                >joanne</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="https://github.com/caleom"
+                                class="nav-link text-white px-2"
+                                >liam</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="https://github.com/NikolettaGr"
+                                class="nav-link text-white px-2"
+                                >nikoletta</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="https://github.com/phillywhitty"
+                                class="nav-link text-white px-2"
+                                >phil whitty</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="https://github.com/sammartin92"
+                                class="nav-link text-white px-2"
+                                >sam</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- ===== jQuery===== -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- ===== Bootstrap javascript ===== -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- ===== Website javascript ===== -->
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>
