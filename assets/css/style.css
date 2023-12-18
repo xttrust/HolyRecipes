@@ -275,6 +275,15 @@ nav a:hover {
     animation: rotation 20s linear infinite;
 }
 
+.instant-content .btn {
+    border: none;
+}
+
+.instant-content .btn:hover {
+    background-color: #DA2C38 !important;
+    border: none;
+}
+
 .col-md-6 img {
     height: auto;
     border-radius: 0.5rem;
