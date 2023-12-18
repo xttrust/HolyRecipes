@@ -1,440 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HolyRecipes</title>
 
-    <!-- ===== SEO Meta Tags ===== -->
-    <meta name="description" content="About Us Page" />
-    <meta name="keywords" content="About" />
-    <meta name="subject" content="" />
-    <meta name="language" content="English" />
-    <meta name="distribution" content="Global" />
-    <meta name="rating" content="General" />
-    <meta name="robots" content="index,follow" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HolyRecipes</title>
 
-    <!-- ====== Theme color for address bar ====== -->
-    <meta name="theme-color" content="" />
+  <!-- ===== SEO Meta Tags ===== -->
+  <meta name="description" content="About Us Page">
+  <meta name="keywords" content="About">
+  <meta name="subject" content="">
+  <meta name="language" content="English">
+  <meta name="distribution" content="Global">
+  <meta name="rating" content="General">
+  <meta name="robots" content="index,follow">
 
-    <!-- ====== Favicon ====== -->
-    <!-- ====== Standard favicon ====== -->
-    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicon/favicon-16x16.png"
-    />
-    <!-- ====== Apple Touch Icons ====== -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
-    <!-- ====== Favicon for Microsoft Edge ====== -->
-    <meta
-      name="msapplication-config"
-      content="assets/favicon/site.webmanifest"
-    />
-    <!-- ===== Bootstrap styles ===== -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!-- ====== Theme color for address bar ====== -->
+  <meta name="theme-color" content="">
 
-    <!-- ===== Website styles ===== -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- ====== Favicon ====== -->
+  <!-- ====== Standard favicon ====== -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <!-- ====== Apple Touch Icons ====== -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <!-- ====== Favicon for Microsoft Edge ====== -->
+  <meta name="msapplication-config" content="assets/favicon/site.webmanifest">
+  <!-- ===== Bootstrap styles ===== -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-    <!-- ===== Font awesome styles ===== -->
-    <link rel="stylesheet" href="assets/css/font-awesome-all.min.css" />
+  <!-- ===== Website styles ===== -->
+  <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- ===== Animate CSS styles ===== -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-  </head>
+  <!-- ===== Font awesome styles ===== -->
+  <link rel="stylesheet" href="assets/css/font-awesome-all.min.css">
 
-  <body>
-    <!-- ===== Header ===== -->
-    <header>
-      <!-- ===== Navbar ===== -->
-      <nav
-        class="navbar navbar-expand-lg bg-transparent bg-body-tertiary fixed-top p-4"
-        id="navbar"
-      >
-        <div class="container">
-          <a class="navbar-brand ps-4" href="index.html">
-            <img
-              id="logo"
-              src="assets/images/holyrecipes-logo.png"
-              alt="company logo"
-              width="135"
-              height="60"
-            />
-            <img
-              id="scroll-logo"
-              class="hide"
-              src="assets/images/holyrecipes-logo.png"
-              alt="company logo"
-              width="135"
-              height="60"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul id="nav-links" class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" id="active" href="about.html"
-                  >About</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-            <form class="d-flex pe-2 top-search-form" role="search">
-              <div class="input-group mb-3 me-2 mt-3">
-                <button
-                  class="btn d-block"
-                  type="button"
-                  id="button-search"
-                  data-bs-toggle="modal"
-                  data-bs-target="#searchModal"
-                >
-                  <i class="fa fa-search"></i> Search
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </nav>
-      <!-- ===== /Navbar ===== -->
-    </header>
-    <!-- ===== /Header ===== -->
+  <!-- ===== Animate CSS styles ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
 
-    <!-- ===== Modal ===== -->
-    <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <!-- ===== Modal header ===== -->
-          <div class="modal-header">
-            <!-- ===== Search form ===== -->
-            <form class="search-function">
-              <h3 class="mb-3">Find your Christmas recipe</h3>
-              <p>
-                We have a delightful collection of Christmas recipes that will
-                add joy to your festive celebrations. From classic holiday
-                treats to creative twists on traditional dishes, our curated
-                selection is sure to inspire your holiday menu.
-              </p>
-
-              <div class="row">
-                <div class="col-md-6 col-sm-12 mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Search Your Recipe..."
-                  />
-                </div>
-
-                <div class="col-md-4 col-sm-12 mb-3">
-                  <select class="form-select" name="dishType" id="dishType">
-                    <option value="">Category</option>
-                    <option value="cocktail">Cocktail</option>
-                    <option value="biscuits">Biscuits</option>
-                    <option value="Bread">Bread</option>
-                    <option value="condiments">Condiments</option>
-                    <option value="desserts">Dessert</option>
-                  </select>
-                </div>
-                <div class="checkbox-div">
-                  <input
-                    type="checkbox"
-                    name="health"
-                    class="btn-check"
-                    id="dairy-free"
-                    value="dairy-free"
-                  />
-                  <label class="btn btn-outline-primary" for="dairy-free"
-                    >Dairy Free</label
-                  >
-                  <input
-                    type="checkbox"
-                    name="health"
-                    class="btn-check"
-                    id="gluten-free"
-                    value="gluten-free"
-                  />
-                  <label class="btn btn-outline-primary" for="gluten-free"
-                    >Gluten Free</label
-                  >
-
-                  <input
-                    type="checkbox"
-                    name="health"
-                    class="btn-check"
-                    id="vegetarian"
-                    value="vegetarian"
-                  />
-                  <label class="btn btn-outline-primary" for="vegetarian"
-                    >Vegetarian</label
-                  >
-                  <input
-                    type="checkbox"
-                    name="health"
-                    class="btn-check"
-                    id="vegan"
-                    value="vegan"
-                  />
-                  <label class="btn btn-outline-primary" for="vegan"
-                    >Vegan</label
-                  >
-
-                  <button
-                    type="submit"
-                    class="btn btn-outline-success d-flex align-items-center"
-                  >
-                    <i class="fa fa-search me-2"></i>
-                    Search
-                  </button>
-                </div>
-              </div>
-            </form>
-            <!-- ===== /Search form ===== -->
-          </div>
-          <!-- ===== /Modal header ===== -->
-
-          <!-- ===== Modal body ===== -->
-          <div class="modal-body">
-            <div id="results"></div>
-          </div>
-          <!-- ===== /Modal body ===== -->
-
-          <!-- ===== Modal footer ===== -->
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-outline-danger"
-              data-bs-dismiss="modal"
-            >
-              <i class="fa fa-remove"></i>
-              Close
-            </button>
-          </div>
-          <!-- ===== /Modal footer ===== -->
-        </div>
-      </div>
-    </div>
-    <!-- ===== /Modal ===== -->
-
-    <!-- ===== Main ===== -->
-    <main class="container">
-      <div class="container-flex">
-        <h1 class="text-center display-3">About Us!</h1>
-        <div class="text-center bg-white p-3">
-          <p>
-            At HolyRecipes, we believe that the joy of cooking and sharing
-            delicious food can bring people together and create meaningful
-            connections. Our recipe website is designed to inspire, educate, and
-            empower home cooks of all skill levels to discover their culinary
-            talents and create amazing dishes for their loved ones.
-          </p>
-          <p>
-            Our team of passionate food enthusiasts and chefs have come together
-            to curate a wide range of recipes that cater to diverse tastes,
-            dietary preferences, or cooking abilities. Whether you are a novice
-            chef looking to whip up a quick and easy holiday dinner or an
-            experienced cook searching for gourmet inspiration, HolyRecipes has
-            got you covered.
-          </p>
-          <p>
-            We understand that the heart of any recipe lies in its ingredients.
-            That's why we strive to provide a comprehensive list of ingredients,
-            along with step-by-step instructions and helpful tips, ensuring that
-            your cooking experience is seamless and enjoyable. From traditional
-            classics and international cuisines to healthier alternatives and
-            special dietary needs, we have a vast collection of recipes to suit
-            every palate and occasion.
-          </p>
-          <p>
-            But HolyRecipes is more than just a recipe website; it's a community
-            of food lovers who share a common passion for creating and savoring
-            fantastic flavors. We welcome you to join our community on other
-            socials and be part of our joyful culinary journey. Connect with
-            fellow home cooks, share your favorite recipes, and exchange tips
-            and tricks that make cooking a delightful experience for everyone
-            involved.
-          </p>
-          <p>
-            Thank you for visiting HolyRecipes. We hope that our platform
-            becomes your trusted companion in the kitchen, guiding you through
-            the creation of mouthwatering dishes and helping you create
-            cherished memories around the dining table. Whether you are cooking
-            for yourself, your family, or your friends, HolyRecipes is here to
-            inspire and support you every step of the way.
-          </p>
-          <p>
-            Get ready to embark on a culinary adventure like no other. Let's
-            cook up something extraordinary at HolyRecipes!
-          </p>
-        </div>
-
-        <!-- Team Cards -->
-        <div class="container Team">
-          <h1 class="text-center pt-3 pb-2">Meet The Team!</h1>
-          <div class="row">
-            <div class="card col-12 col-md-6 col-lg-4 text-center">
-              <img
-                class="card-img-top rounded-circle"
-                src="assets/images/aboutus-face1.png"
-                alt="Card image"
-              />
-              <div class="card-body">
-                <h4 class="card-title">Michael Baker</h4>
-                <h6 class="card-subtitle text-muted mb-2">Marketing</h6>
-                <p class="card-text">
-                  With an eye for detail it's Michael who helps get HolyRecipes
-                  out there. He works with brands who want to get feautured on
-                  the site and works with advertisers and influencers to help
-                  <strong>you</strong> hear our name.
-                </p>
-              </div>
-            </div>
-            <div class="card col-12 col-md-6 col-lg-4 text-center">
-              <img
-                class="card-img-top rounded-circle"
-                src="assets/images/aboutus-face2.png"
-                alt="Card image"
-              />
-              <div class="card-body">
-                <h4 class="card-title">Pepper Smith</h4>
-                <h6 class="card-subtitle text-muted mb-2">Head Chef</h6>
-                <p class="card-text">
-                  As head chef at HolyRecipes it's up to Pepper to tackle the
-                  challenge of making something new and interesting for people
-                  to cook at a time steeped in tradition. Pepper worked in a top
-                  London bakery from the start of her career until leaving for a
-                  new challenge by joining the HolyRecipe team.
-                </p>
-              </div>
-            </div>
-            <div class="card col-12 col-md-6 col-lg-4 text-center">
-              <img
-                class="card-img-top rounded-circle"
-                src="assets/images/aboutus-face3.png"
-                alt="Card image"
-              />
-              <div class="card-body">
-                <h4 class="card-title">Fred Candy</h4>
-                <h6 class="card-subtitle text-muted mb-2">Photography</h6>
-                <p class="card-text">
-                  Fred has had a passion for food photography ever since his
-                  first job at a magazine in 2012. Since then Fred has worked
-                  all over the world photographing sweet, savoury to some
-                  outright strange food. Fred started with the HolyRecipe team
-                  because he wanted to make a difference in the holiday food
-                  scene and get more new families cooking at Christmas.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Team Cards -->
-      </div>
-    </main>
-    <!-- ===== /Main ===== -->
-
-    <!-- ===== Footer ===== -->
-    <footer class="py-3 my-4 border-top-0 container text-white">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-12 col-lg-5 mb-3 mb-lg-0 text-lg-left">
-          <p id="footer-text" class="my-2">Hacked together by...</p>
-        </div>
-        <div class="col-12 col-lg-2 d-flex justify-content-center mb-3 mb-lg-0">
-          <img
-            class="img-fluid footer-logo"
-            src="assets/images/holyrecipes-logo.png"
-            alt="footer logo"
-          />
-        </div>
-        <div
-          class="col-12 col-lg-5 d-flex justify-content-center justify-content-lg-end"
-        >
-          <ul class="nav text-capitalize">
+<body>
+  <!-- ===== Header ===== -->
+  <header>
+    <!-- ===== Navbar ===== -->
+    <nav class="navbar navbar-expand-lg bg-transparent bg-body-tertiary fixed-top p-4" id="navbar">
+      <div class="container">
+        <a class="navbar-brand ps-4" href="index.html">
+          <img id="logo" src="assets/images/holyrecipes-logo.png" alt="company logo" width="135" height="60">
+          <img id="scroll-logo" class="hide" src="assets/images/holyrecipes-logo.png" alt="company logo" width="135"
+            height="60">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="nav-links" class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a
-                href="https://github.com/xttrust"
-                class="nav-link text-white px-2"
-                >florin</a
-              >
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a
-                href="https://github.com/lee-joanne"
-                class="nav-link text-white px-2"
-                >joanne</a
-              >
+              <a class="nav-link active" id="active" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a
-                href="https://github.com/caleom"
-                class="nav-link text-white px-2"
-                >liam</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                href="https://github.com/NikolettaGr"
-                class="nav-link text-white px-2"
-                >nikoletta</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                href="https://github.com/phillywhitty"
-                class="nav-link text-white px-2"
-                >phil whitty</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                href="https://github.com/sammartin92"
-                class="nav-link text-white px-2"
-                >sam</a
-              >
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
+          <form class="d-flex pe-2 top-search-form" role="search">
+            <div class="input-group mb-3 me-2 mt-3">
+              <button class="btn d-block" type="button" id="button-search" data-bs-toggle="modal"
+                data-bs-target="#searchModal">
+                <i class="fa fa-search"></i> Search
+              </button>
+            </div>
+          </form>
         </div>
       </div>
-    </footer>
-    <!-- ===== /Footer ===== -->
+    </nav>
+    <!-- ===== /Navbar ===== -->
+  </header>
+  <!-- ===== /Header ===== -->
 
-    <!-- ===== jQuery===== -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- ===== Modal ===== -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <!-- ===== Modal header ===== -->
+        <div class="modal-header">
+          <!-- ===== Search form ===== -->
+          <form class="search-function">
+            <h3 class="mb-3">Find your Christmas recipe</h3>
+            <p>
+              We have a delightful collection of Christmas recipes that will
+              add joy to your festive celebrations. From classic holiday
+              treats to creative twists on traditional dishes, our curated
+              selection is sure to inspire your holiday menu.
+            </p>
 
-    <!-- ===== Bootstrap javascript ===== -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!-- ===== Website javascript ===== -->
-    <script src="assets/js/script.js"></script>
-  </body>
+            <div class="row">
+              <div class="col-md-6 col-sm-12 mb-3">
+                <input type="text" class="form-control" placeholder="Search Your Recipe...">
+              </div>
+
+              <div class="col-md-4 col-sm-12 mb-3">
+                <select class="form-select" name="dishType" id="dishType">
+                  <option value="">Category</option>
+                  <option value="cocktail">Cocktail</option>
+                  <option value="biscuits">Biscuits</option>
+                  <option value="Bread">Bread</option>
+                  <option value="condiments">Condiments</option>
+                  <option value="desserts">Dessert</option>
+                </select>
+              </div>
+              <div class="checkbox-div">
+                <input type="checkbox" name="health" class="btn-check" id="dairy-free" value="dairy-free">
+                <label class="btn btn-outline-primary" for="dairy-free">Dairy Free</label>
+                <input type="checkbox" name="health" class="btn-check" id="gluten-free" value="gluten-free">
+                <label class="btn btn-outline-primary" for="gluten-free">Gluten Free</label>
+
+                <input type="checkbox" name="health" class="btn-check" id="vegetarian" value="vegetarian">
+                <label class="btn btn-outline-primary" for="vegetarian">Vegetarian</label>
+                <input type="checkbox" name="health" class="btn-check" id="vegan" value="vegan">
+                <label class="btn btn-outline-primary" for="vegan">Vegan</label>
+
+                <button type="submit" class="btn btn-outline-success d-flex align-items-center">
+                  <i class="fa fa-search me-2"></i>
+                  Search
+                </button>
+              </div>
+            </div>
+          </form>
+          <!-- ===== /Search form ===== -->
+        </div>
+        <!-- ===== /Modal header ===== -->
+
+        <!-- ===== Modal body ===== -->
+        <div class="modal-body">
+          <div id="results"></div>
+        </div>
+        <!-- ===== /Modal body ===== -->
+
+        <!-- ===== Modal footer ===== -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">
+            <i class="fa fa-remove"></i>
+            Close
+          </button>
+        </div>
+        <!-- ===== /Modal footer ===== -->
+      </div>
+    </div>
+  </div>
+  <!-- ===== /Modal ===== -->
+
+  <!-- ===== Main ===== -->
+  <main class="container">
+    <div class="container-flex">
+      <h1 class="text-center display-3">About Us!</h1>
+      <div class="text-center bg-white p-3">
+        <p>
+          At HolyRecipes, we believe that the joy of cooking and sharing
+          delicious food can bring people together and create meaningful
+          connections. Our recipe website is designed to inspire, educate, and
+          empower home cooks of all skill levels to discover their culinary
+          talents and create amazing dishes for their loved ones.
+        </p>
+        <p>
+          Our team of passionate food enthusiasts and chefs have come together
+          to curate a wide range of recipes that cater to diverse tastes,
+          dietary preferences, or cooking abilities. Whether you are a novice
+          chef looking to whip up a quick and easy holiday dinner or an
+          experienced cook searching for gourmet inspiration, HolyRecipes has
+          got you covered.
+        </p>
+        <p>
+          We understand that the heart of any recipe lies in its ingredients.
+          That's why we strive to provide a comprehensive list of ingredients,
+          along with step-by-step instructions and helpful tips, ensuring that
+          your cooking experience is seamless and enjoyable. From traditional
+          classics and international cuisines to healthier alternatives and
+          special dietary needs, we have a vast collection of recipes to suit
+          every palate and occasion.
+        </p>
+        <p>
+          But HolyRecipes is more than just a recipe website; it's a community
+          of food lovers who share a common passion for creating and savoring
+          fantastic flavors. We welcome you to join our community on other
+          socials and be part of our joyful culinary journey. Connect with
+          fellow home cooks, share your favorite recipes, and exchange tips
+          and tricks that make cooking a delightful experience for everyone
+          involved.
+        </p>
+        <p>
+          Thank you for visiting HolyRecipes. We hope that our platform
+          becomes your trusted companion in the kitchen, guiding you through
+          the creation of mouthwatering dishes and helping you create
+          cherished memories around the dining table. Whether you are cooking
+          for yourself, your family, or your friends, HolyRecipes is here to
+          inspire and support you every step of the way.
+        </p>
+        <p>
+          Get ready to embark on a culinary adventure like no other. Let's
+          cook up something extraordinary at HolyRecipes!
+        </p>
+      </div>
+
+      <!-- Team Cards -->
+      <div class="container Team">
+        <h1 class="text-center pt-3 pb-2">Meet The Team!</h1>
+        <div class="row">
+          <div class="card col-12 col-md-6 col-lg-4 text-center">
+            <img class="card-img-top rounded-circle" src="assets/images/aboutus-face1.png" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Michael Baker</h4>
+              <h6 class="card-subtitle text-muted mb-2">Marketing</h6>
+              <p class="card-text">
+                With an eye for detail it's Michael who helps get HolyRecipes
+                out there. He works with brands who want to get feautured on
+                the site and works with advertisers and influencers to help
+                <strong>you</strong> hear our name.
+              </p>
+            </div>
+          </div>
+          <div class="card col-12 col-md-6 col-lg-4 text-center">
+            <img class="card-img-top rounded-circle" src="assets/images/aboutus-face2.png" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Pepper Smith</h4>
+              <h6 class="card-subtitle text-muted mb-2">Head Chef</h6>
+              <p class="card-text">
+                As head chef at HolyRecipes it's up to Pepper to tackle the
+                challenge of making something new and interesting for people
+                to cook at a time steeped in tradition. Pepper worked in a top
+                London bakery from the start of her career until leaving for a
+                new challenge by joining the HolyRecipe team.
+              </p>
+            </div>
+          </div>
+          <div class="card col-12 col-md-6 col-lg-4 text-center">
+            <img class="card-img-top rounded-circle" src="assets/images/aboutus-face3.png" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Fred Candy</h4>
+              <h6 class="card-subtitle text-muted mb-2">Photography</h6>
+              <p class="card-text">
+                Fred has had a passion for food photography ever since his
+                first job at a magazine in 2012. Since then Fred has worked
+                all over the world photographing sweet, savoury to some
+                outright strange food. Fred started with the HolyRecipe team
+                because he wanted to make a difference in the holiday food
+                scene and get more new families cooking at Christmas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Cards -->
+    </div>
+  </main>
+  <!-- ===== /Main ===== -->
+
+  <!-- ===== Footer ===== -->
+  <footer class="py-3 my-4 border-top-0 container text-white">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12 col-lg-5 mb-3 mb-lg-0 text-lg-left">
+        <p id="footer-text" class="my-2">Hacked together by...</p>
+      </div>
+      <div class="col-12 col-lg-2 d-flex justify-content-center mb-3 mb-lg-0">
+        <img class="img-fluid footer-logo" src="assets/images/holyrecipes-logo.png" alt="footer logo">
+      </div>
+      <div class="col-12 col-lg-5 d-flex justify-content-center justify-content-lg-end">
+        <ul class="nav text-capitalize">
+          <li class="nav-item">
+            <a href="https://github.com/xttrust" class="nav-link text-white px-2">florin</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/lee-joanne" class="nav-link text-white px-2">joanne</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/caleom" class="nav-link text-white px-2">liam</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/NikolettaGr" class="nav-link text-white px-2">nikoletta</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/phillywhitty" class="nav-link text-white px-2">phil whitty</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/sammartin92" class="nav-link text-white px-2">sam</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- ===== /Footer ===== -->
+
+  <!-- ===== jQuery===== -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- ===== Bootstrap javascript ===== -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- ===== Website javascript ===== -->
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>
