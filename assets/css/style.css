@@ -240,12 +240,14 @@ nav a:hover {
 
 .instant-content {
     background-color: #f8f9fad9;
+    border-radius: 5px;
 }
 
 .instant-classic-bg-img {
     position: relative;
     z-index: 1;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .instant-classic-bg-img::before,
